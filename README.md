@@ -2,7 +2,7 @@
 
 This a PopTracker pack for lilDavid's Archipelago implementation of Metroid: Samus Returns.
 
-There is no release yet.
+Autotracking is not supported yet.
 
 ## Next Steps
 
