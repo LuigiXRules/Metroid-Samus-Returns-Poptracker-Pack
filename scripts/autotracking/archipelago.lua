@@ -327,7 +327,7 @@ end
 -- your own settings
 -- function autoFill()
 --     if SLOT_DATA == nil  then
---         print("its fucked")
+--         print("whoops")
 --         return
 --     end
 --     -- print(dump_table(SLOT_DATA))
