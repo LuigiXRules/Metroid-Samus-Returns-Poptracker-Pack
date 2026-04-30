@@ -13,7 +13,7 @@ There is no release yet.
 - Make locations you can see but not obtain appear blue
 - Create the framework for blast shield/elevator rando (if I have time)
 
-## Special Thanks:
+## Special Thanks
 
 This is the first time I've done anything even remotely close to coding in 10 years, so I needed a lot of help to put this together. Special thanks to all of the following people for helping me through this:
 
