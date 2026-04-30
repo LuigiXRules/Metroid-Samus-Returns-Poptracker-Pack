@@ -1,0 +1,119 @@
+[
+  {
+    "type": "consumable",
+    "increment": 1,
+    "max_quantity": 39,
+    "initial_quantity": 39,
+    "img": "images/settings/dna_required.png",
+    "codes": "dna, metroid_dna, dnarequired"
+  },
+    {
+    "type": "consumable",
+    "increment": 1,
+    "max_quantity": 39,
+    "initial_quantity": 39,
+    "img": "images/settings/dna_available.png",
+    "codes": "dna, metroid_dna, dnaavailable"
+  },
+  {
+    "codes": "WallJump, wall_jump",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/settings/wall_jump_disabled.png",
+        "img_mods": "@disabled",
+        "codes": "wall_jump, wall_jump_disabled"
+      },
+      {
+        "img": "images/settings/wall_jump_simple.png",
+        "codes": "wall_jump, wall_jump_simple"
+      },
+      {
+        "img": "images/settings/wall_jump_intermediate.png",
+        "codes": "wall_jump, wall_jump_intermediate"
+      }
+    ]
+  },
+  {
+    "codes": "IBJ, ibj, infinite_bomb_jump",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/settings/ibj_disabled.png",
+        "img_mods": "@disabled",
+        "codes": "ibj, ibj_disabled"
+      },
+      {
+        "img": "images/settings/ibj_double.png",
+        "codes": "ibj, ibj_double"
+      },
+      {
+        "img": "images/settings/ibj_vertical.png",
+        "codes": "ibj, ibj_vertical"
+      },
+      {
+        "img": "images/settings/ibj_diagonal.png",
+        "codes": "ibj, ibj_diagonal"
+      }
+    ]
+  },
+  {
+    "codes": "DamageBoost, damage_boost",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/settings/damage_boost_disabled.png",
+        "img_mods": "@disabled",
+        "codes": "damage_boost, damage_boost_disabled"
+      },
+      {
+        "img": "images/settings/damage_boost_static.png",
+        "codes": "damage_boost, damage_boost_static"
+      }
+    ]
+  },
+  {
+    "codes": "Knowledge, knowledge",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/settings/knowledge_disabled.png",
+        "img_mods": "@disabled",
+        "codes": "knowledge, knowledge_disabled"
+      },
+      {
+        "img": "images/settings/knowledge_simple.png",
+        "codes": "knowledge, knowledge_simple"
+      }
+    ]
+  },
+  {
+    "codes": "Movement, movement",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/settings/movement_disabled.png",
+        "img_mods": "@disabled",
+        "codes": "movement, movement_disabled"
+      },
+      {
+        "img": "images/settings/movement_simple.png",
+        "codes": "movement, movement_simple"
+      },
+      {
+        "img": "images/settings/movement_intermediate.png",
+        "codes": "movement, movement_intermediate"
+      }
+    ]
+  }
+]

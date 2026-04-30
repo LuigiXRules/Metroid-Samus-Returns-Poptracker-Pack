@@ -1,0 +1,110 @@
+[
+  {
+    "name": "surfaceeast",
+    "location_size": 18,
+    "location_border_thickness": 2,
+    "img": "images/maps/surface_east.png"
+  },
+  {
+    "name": "surfacewest",
+    "location_size": 28,
+    "location_border_thickness": 2,
+    "img": "images/maps/surface_west.png"
+  },
+  {
+    "name": "area1",
+    "location_size": 16,
+    "location_border_thickness": 1,
+    "img": "images/maps/area1.png"
+  },
+  {
+    "name": "area2entrance",
+    "location_size": 16,
+    "location_border_thickness": 1,
+    "img": "images/maps/area2_dam_entryway.png"
+  },
+  {
+    "name": "area2exterior",
+    "location_size": 16,
+    "location_border_thickness": 1,
+    "img": "images/maps/area2_dam_exterior.png"
+  },
+  {
+    "name": "area2interior",
+    "location_size": 16,
+    "location_border_thickness": 1,
+    "img": "images/maps/area2_dam_interior.png"
+  },
+  {
+    "name": "area3exterior",
+    "location_size": 16,
+    "location_border_thickness": 1,
+    "img": "images/maps/area3_factory_exterior.png"
+  },
+  {
+    "name": "area3interior",
+    "location_size": 16,
+    "location_border_thickness": 1,
+    "img": "images/maps/area3_factory_interior.png"
+  },
+  {
+    "name": "area3caverns",
+    "location_size": 16,
+    "location_border_thickness": 1,
+    "img": "images/maps/area3_metroid_caverns.png"
+  },
+  {
+    "name": "area4caves",
+    "location_size": 30,
+    "location_border_thickness": 1,
+    "img": "images/maps/area4_central_caves.png"
+  },
+  {
+    "name": "area4mines",
+    "location_size": 22,
+    "location_border_thickness": 1,
+    "img": "images/maps/area4_crystal_mines.png"
+  },
+  {
+    "name": "area5lobby",
+    "location_size": 18,
+    "location_border_thickness": 1,
+    "img": "images/maps/area5_tower_lobby.png"
+  },
+  {
+    "name": "area5interior",
+    "location_size": 22,
+    "location_border_thickness": 1,
+    "img": "images/maps/area5_tower_interior.png"
+  },
+  {
+    "name": "area5exterior",
+    "location_size": 22,
+    "location_border_thickness": 1,
+    "img": "images/maps/area5_tower_exterior.png"
+  },
+  {
+    "name": "area6",
+    "location_size": 22,
+    "location_border_thickness": 1,
+    "img": "images/maps/area6.png"
+  },
+  {
+    "name": "area7",
+    "location_size": 20,
+    "location_border_thickness": 1,
+    "img": "images/maps/area7.png"
+  },
+  {
+    "name": "area8lower",
+    "location_size": 20,
+    "location_border_thickness": 1,
+    "img": "images/maps/area8_lower.png"
+  },
+  {
+    "name": "area8upper",
+    "location_size": 20,
+    "location_border_thickness": 1,
+    "img": "images/maps/area8_upper.png"
+  }
+]

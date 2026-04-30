@@ -1,0 +1,43 @@
+{
+  "settings_popup": {
+    "type": "container",
+    "background": "#000000",
+    "margin": "6, 6",
+    "content": {
+      "type": "tabbed",
+      "tabs": [
+          {
+          "title": "DNA Settings",
+          "content": [
+            {
+              "type": "itemgrid",
+              "item_h_alignment": "center",
+              "item_size": "150, 20",
+              "rows": [
+                [ "dnaavailable" ],
+                [ "dnarequired" ]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Tricks",
+          "content": [
+            {
+              "type": "itemgrid",
+              "item_h_alignment": "center",
+              "item_size": "300, 40",
+              "rows": [
+                [ "wall_jump" ],
+                [ "infinite_bomb_jump" ],
+                [ "damage_boost" ],
+                [ "knowledge" ],
+                [ "movement" ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

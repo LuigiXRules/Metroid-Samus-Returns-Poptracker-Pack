@@ -1,0 +1,33 @@
+require("scripts.utils")
+require("scripts.logic.definition_helper")
+require("scripts.logic.logic")
+require("scripts.logic.location_definitions")
+require("scripts.logic.logic_helper")
+-- require("scripts.autotracking")
+require("scripts.logic.menu")
+require("scripts.logic.region_connections.surface")
+require("scripts.logic.region_connections.area1")
+require("scripts.logic.region_connections.area2")
+require("scripts.logic.region_connections.area3")
+require("scripts.logic.region_connections.area4")
+require("scripts.logic.region_connections.area5")
+require("scripts.logic.region_connections.area6")
+require("scripts.logic.region_connections.area7")
+require("scripts.logic.region_connections.area8")
+
+Tracker:AddLocations("locations/locations.jsonc")
+
+Tracker:AddItems("items/items.jsonc")
+Tracker:AddItems("items/options.jsonc")
+Tracker:AddMaps("maps/maps.jsonc")
+
+Tracker:AddLayouts("layouts/items.jsonc")
+Tracker:AddLayouts("layouts/options.jsonc")
+Tracker:AddLayouts("layouts/broadcast.jsonc")
+Tracker:AddLayouts("layouts/tracker.jsonc")
+
+-- require("scripts.autotracking.manual_override")
+-- CreateLuaManualLocationStorage(ManualStorageCode)
+-- ScriptHost:AddOnLocationSectionChangedHandler("manual location handler", ManualLocationHandler)
+
+-- StateChange()

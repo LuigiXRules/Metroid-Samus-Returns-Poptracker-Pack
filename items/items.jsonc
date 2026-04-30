@@ -1,0 +1,270 @@
+[
+  {
+    "name": "Missile Launcher",
+    "type": "toggle",
+    "img": "images/items/missile_launcher.png",
+    "disabled_img": "images/items/missile_launcher_obtained.png",
+    "disabled_img_mods": "",
+    "codes": "missile, missile_launcher, missilelauncher"
+  },
+  {
+    "name": "Super Missile",
+    "type": "toggle",
+    "img": "images/items/super_missile.png",
+    "disabled_img": "images/items/super_missile_obtained.png",
+    "disabled_img_mods": "",
+    "codes": "super_missile, super_missile_launcher, supermissile"
+  },
+  {
+    "name": "Power Bomb",
+    "type": "toggle",
+    "img": "images/items/power_bomb.png",
+    "disabled_img": "images/items/power_bomb_obtained.png",
+    "disabled_img_mods": "",
+    "codes": "power_bomb, power_bomb_launcher, powerbomb"
+  },
+  {
+    "name": "Wave Beam",
+    "type": "toggle",
+    "img": "images/items/wave_beam.png",
+    "disabled_img": "images/items/wave_beam_obtained.png",
+    "disabled_img_mods": "",
+    "codes": "wave_beam, wbeam, wavebeam"
+  },
+  {
+    "name": "Spazer Beam",
+    "type": "toggle",
+    "img": "images/items/spazer_crab.png",
+    "disabled_img": "images/items/spazer_crab_obtained.png",
+    "disabled_img_mods": "",
+    "codes": "spazer_beam, sbeam, spazerbeam"
+  },
+  {
+    "name": "Plasma Beam",
+    "type": "toggle",
+    "img": "images/items/plasma_beam.png",
+    "disabled_img": "images/items/plasma_beam_obtained.png",
+    "disabled_img_mods": "",
+    "codes": "plasma_beam, pbeam, plasmabeam"
+  },
+  {
+    "name": "Charge Beam",
+    "type": "toggle",
+    "img": "images/items/charge_beam.png",
+    "disabled_img": "images/items/charge_beam_obtained.png",
+    "disabled_img_mods": "",
+    "codes": "charge_beam, cbeam, chargebeam"
+  },
+  {
+    "name": "Ice Beam",
+    "type": "toggle",
+    "img": "images/items/ice_beam.png",
+    "disabled_img": "images/items/ice_beam_obtained.png",
+    "disabled_img_mods": "",
+    "codes": "ice_beam, ibeam, icebeam"
+  },
+  {
+    "name": "Morph Ball",
+    "type": "toggle",
+    "img": "images/items/morph_ball.png",
+    "disabled_img": "images/items/morph_ball_obtained.png",
+    "disabled_img_mods": "",
+    "codes": "ball, morph_ball, morphball"
+  },
+  {
+    "name": "Spider Ball",
+    "type": "toggle",
+    "img": "images/items/spider_ball.png",
+    "disabled_img": "images/items/spider_ball_obtained.png",
+    "disabled_img_mods": "",
+    "codes": "spiball, spider_ball, spiderball"
+  },
+  {
+    "name": "Bomb",
+    "type": "toggle",
+    "img": "images/items/bomb.png",
+    "disabled_img": "images/items/bomb_obtained.png",
+    "disabled_img_mods": "",
+    "codes": "bomb, bombs"
+  },
+  {
+    "name": "Spring Ball",
+    "type": "toggle",
+    "img": "images/items/spring_ball.png",
+    "disabled_img": "images/items/spring_ball_obtained.png",
+    "disabled_img_mods": "",
+    "codes": "sprball, spring_ball, springball"
+  },
+  {
+    "name": "Varia Suit",
+    "type": "toggle",
+    "img": "images/items/varia_suit.png",
+    "disabled_img": "images/items/varia_suit_obtained.png",
+    "disabled_img_mods": "",
+    "codes": "vsuit, varia_suit, variasuit"
+  },
+  {
+    "name": "Gravity Suit",
+    "type": "toggle",
+    "img": "images/items/gravity_suit.png",
+    "disabled_img": "images/items/gravity_suit_obtained.png",
+    "disabled_img_mods": "",
+    "codes": "gsuit, gravity_suit, gravitysuit"
+  },
+  {
+    "name": "Grapple Beam",
+    "type": "toggle",
+    "img": "images/items/grapple_beam.png",
+    "disabled_img": "images/items/grapple_beam_obtained.png",
+    "disabled_img_mods": "",
+    "codes": "gbeam, grapple_beam, grapplebeam"
+  },
+  {
+    "name": "High Jump Boots",
+    "type": "toggle",
+    "img": "images/items/high_jump_boots.png",
+    "disabled_img": "images/items/high_jump_boots_obtained.png",
+    "disabled_img_mods": "",
+    "codes": "hijump, high_jump_boots, highjumpboots"
+  },
+  {
+    "name": "Space Jump",
+    "type": "toggle",
+    "img": "images/items/space_jump.png",
+    "disabled_img": "images/items/space_jump_obtained.png",
+    "disabled_img_mods": "",
+    "codes": "spajump, space_jump, spacejump"
+  },
+  {
+    "name": "Screw Attack",
+    "type": "toggle",
+    "img": "images/items/screw_attack.png",
+    "disabled_img": "images/items/screw_attack_obtained.png",
+    "disabled_img_mods": "",
+    "codes": "jumpattack, screw_attack, screwattack"
+  },
+  {
+    "name": "Scan Pulse",
+    "type": "toggle",
+    "img": "images/items/scan_pulse.png",
+    "disabled_img": "images/items/scan_pulse_obtained.png",
+    "disabled_img_mods": "",
+    "codes": "pulse, scan_pulse, scanpulse"
+  },
+  {
+    "name": "Lightning Armor",
+    "type": "toggle",
+    "img": "images/items/lightning_armor.png",
+    "disabled_img": "images/items/lightning_armor_obtained.png",
+    "disabled_img_mods": "",
+    "codes": "armor, lightning_armor, lightningarmor"
+  },
+  {
+    "name": "Beam Burst",
+    "type": "toggle",
+    "img": "images/items/beam_burst.png",
+    "disabled_img": "images/items/beam_burst_obtained.png",
+    "disabled_img_mods": "",
+    "codes": "burst, beam_burst, beamburst"
+  },
+  {
+    "name": "Phase Drift",
+    "type": "toggle",
+    "img": "images/items/phase_drift.png",
+    "disabled_img": "images/items/phase_drift_obtained.png",
+    "disabled_img_mods": "",
+    "codes": "phase, phase_drift, phasedrift"
+  },
+  {
+    "name": "Energy Tank",
+    "type": "consumable",
+    "increment": 1,
+    "max_quantity": 10,
+    "img": "images/items/energy_tank.png",
+    "disabled_img": "images/items/energy_tank_obtained.png",
+    "disabled_img_mods": "",
+    "codes": "energy_tank, etank, energytank"
+  },
+  {
+    "name": "Aeion Tank",
+    "type": "consumable",
+    "increment": 1,
+    "max_quantity": 15,
+    "img": "images/items/aeion_tank.png",
+    "disabled_img": "images/items/aeion_tank_obtained.png",
+    "disabled_img_mods": "",
+    "codes": "aeion_tank, atank, aeiontank"
+  },
+  {
+    "name": "Missile Tank",
+    "type": "consumable",
+    "increment": 1,
+    "max_quantity": 80,
+    "img": "images/items/missile_tank.png",
+    "disabled_img": "images/items/missile_tank_obtained.png",
+    "disabled_img_mods": "",
+    "codes": "missile_tank, mtank, missiletank"
+  },
+  {
+    "name": "Super Missile Tank",
+    "type": "consumable",
+    "increment": 1,
+    "max_quantity": 30,
+    "img": "images/items/super_missile_tank.png",
+    "disabled_img": "images/items/super_missile_tank_obtained.png",
+    "disabled_img_mods": "",
+    "codes": "super_missile_tank, stank, supermissiletank"
+  },
+  {
+    "name": "Power Bomb Tank",
+    "type": "consumable",
+    "increment": 1,
+    "max_quantity": 15,
+    "img": "images/items/power_bomb_tank.png",
+    "disabled_img": "images/items/power_bomb_tank_obtained.png",
+    "disabled_img_mods": "",
+    "codes": "power_bomb_tank, ptank, powerbombtank"
+  },
+  {
+    "name": "Energy Reserve Tank",
+    "type": "toggle",
+    "img": "images/items/energy_reserve_tank.png",
+    "disabled_img": "images/items/energy_reserve_tank_obtained.png",
+    "disabled_img_mods": "",
+    "codes": "energy_reserve_tank, etankres, etank_reserve, energyreservetank"
+  },
+  {
+    "name": "Aeion Reserve Tank",
+    "type": "toggle",
+    "img": "images/items/aeion_reserve_tank.png",
+    "disabled_img": "images/items/aeion_reserve_tank_obtained.png",
+    "disabled_img_mods": "",
+    "codes": "aeion_reserve_tank, atankres, atank_reserve, aeionreservetank"
+  },
+  {
+    "name": "Missile Reserve Tank",
+    "type": "toggle",
+    "img": "images/items/missile_reserve_tank.png",
+    "disabled_img": "images/items/missile_reserve_tank_obtained.png",
+    "disabled_img_mods": "",
+    "codes": "missile_reserve_tank, mtankres, mtank_reserve, missilereservetank"
+  },
+  {
+    "name": "Metroid DNA",
+    "type": "consumable",
+    "increment": 1,
+    "max_quantity": 39,
+    "img": "images/items/dna.png",
+    "disabled_img": "images/items/dna_obtained.png",
+    "disabled_img_mods": "",
+    "codes": "dna, metroid_dna, metroiddna"
+  },
+  {
+    "name": "Metroid Hatchling",
+    "type": "toggle",
+    "img": "images/items/baby.png",
+    "disabled_img": "images/items/baby_obtained.png",
+    "disabled_img_mods": "",
+    "codes": "baby, hatchling, metroid_hatchling, metroidhatchling"
+  }
+]
