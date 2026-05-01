@@ -3075,10 +3075,10 @@
     ]
   },
   {
-    "name": "Area 5 - Tower Exterior Alcove",
+    "name": "Area 5 - Tower Exterior",
     "children": [
       {
-        "name": "Tower Exterior",
+        "name": "Tower Exterior Alcove",
         "children": [
           {
             "name": "Tower Exterior",

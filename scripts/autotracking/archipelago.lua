@@ -1,5 +1,6 @@
 require("scripts/autotracking/item_mapping")
 require("scripts/autotracking/location_mapping")
+require("scripts/autotracking/area_mapping")
 
 CUR_INDEX = -1
 --SLOT_DATA = nil
@@ -80,43 +81,6 @@ function LocationHandler(location)
     end
     -- local custom_storage_item = Tracker:FindObjectForCode("manual_location_storage").ItemState
     -- print(dump_table(storage_item.ItemState.MANUAL_LOCATIONS))
-    ForceUpdate() --
-end
-
-function ForceUpdate()
-    local update = Tracker:FindObjectForCode("update")
-    if update == nil then
-        return
-    end
-    update.Active = not update.Active
-end
-
-function onClearHandler(slot_data)
-    local clear_timer = os.clock()
-
-    ScriptHost:RemoveWatchForCode("StateChange")
-    -- Disable tracker updates.
-    Tracker.BulkUpdate = true
-    -- Use a protected call so that tracker updates always get enabled again, even if an error occurred.
-    local ok, err = pcall(onClear, slot_data)
-    -- Enable tracker updates again.
-    if ok then
-        -- Defer re-enabling tracker updates until the next frame, which doesn't happen until all received items/cleared
-        -- locations from AP have been processed.
-        local handlerName = "AP onClearHandler"
-        local function frameCallback()
-            ScriptHost:AddWatchForCode("StateChange", "*", StateChanged)
-            ScriptHost:RemoveOnFrameHandler(handlerName)
-            Tracker.BulkUpdate = false
-            ForceUpdate()
-            print(string.format("Time taken total: %.2f", os.clock() - clear_timer))
-        end
-        ScriptHost:AddOnFrameHandler(handlerName, frameCallback)
-    else
-        Tracker.BulkUpdate = false
-        print("Error: onClear failed:")
-        print(err)
-    end
 end
 
 function preOnClear()
@@ -140,8 +104,9 @@ function preOnClear()
             table.insert(ALL_LOCATIONS, #ALL_LOCATIONS + 1, value)
         end
         HINTS_ID = "_read_hints_" .. TEAM_NUMBER .. "_" .. PLAYER_ID
-        Archipelago:SetNotify({HINTS_ID})
-        Archipelago:Get({HINTS_ID})
+        CUR_LOC_ID = "msr_area_" .. TEAM_NUMBER .. "_" .. PLAYER_ID
+        Archipelago:SetNotify({HINTS_ID, CUR_LOC_ID})
+        Archipelago:Get({HINTS_ID, CUR_LOC_ID})
     end
 
     -- print(Archipelago.Seed)
@@ -169,13 +134,14 @@ function preOnClear()
 end
 
 function onClear(slot_data)
+    print(dump(slot_data))
     MANUAL_CHECKED = false
     local custom_storage_item = Tracker:FindObjectForCode("manual_location_storage").ItemState
     if custom_storage_item == nil then
         CreateLuaManualStorageItem("manual_location_storage")
         custom_storage_item = Tracker:FindObjectForCode("manual_location_storage").ItemState
     end
-    -- repeat that here for every cache-storage item you create just to be save
+    -- repeat that here for every cache-storage item you create just to be safe
 
     preOnClear()
 
@@ -246,12 +212,16 @@ function onClear(slot_data)
         for _, value in pairs(Archipelago.CheckedLocations) do
             table.insert(ALL_LOCATIONS, #ALL_LOCATIONS + 1, value)
         end
-
-        HINTS_ID = "_read_hints_" .. TEAM_NUMBER .. "_" .. PLAYER_ID
-        Archipelago:SetNotify({HINTS_ID})
-        Archipelago:Get({HINTS_ID})
     end
-    ScriptHost:AddOnFrameHandler("load handler", OnFrameHandler)
+    for _, v in ipairs(SlotDataTable) do
+        print(dump(v))
+		if (v[2] == "progressive") then
+            print(dump(slot_data))
+            Tracker:FindObjectForCode(v[1]).CurrentStage = slot_data["options"][v[1]]
+		elseif (v[2] == "consumable") then
+			Tracker:FindObjectForCode(v[1]).AcquiredCount = slot_data["options"][v[1]]
+		end
+	end
     MANUAL_CHECKED = true
 end
 
@@ -372,6 +342,9 @@ function OnNotify(key, value, old_value)
         end
         Tracker.BulkUpdate = false
     end
+    if key == CUR_LOC_ID then
+        UpdateMap(value)
+    end
 end
 
 function OnNotifyLaunch(key, value)
@@ -387,6 +360,9 @@ function OnNotifyLaunch(key, value)
             end
         end
         Tracker.BulkUpdate = false
+    end
+    if key == CUR_LOC_ID then
+        UpdateMap(value)
     end
 end
 
@@ -412,13 +388,23 @@ function UpdateHints(locationID, status) -->
     end
 end
 
--- ScriptHost:AddWatchForCode("settings autofill handler", "autofill_settings", autoFill)
-Archipelago:AddClearHandler("clear handler", onClearHandler)
-Archipelago:AddItemHandler("item handler", onItem)
--- Archipelago:AddLocationHandler("location handler", onLocation)
+function UpdateMap(value)
+    print(value)
+    if not area_mapping[value] then return end
+    for _, room in ipairs(area_mapping[value]) do
+        print(room)
+        Tracker:UiHint("ActivateTab", room)
+    end
+end
 
--- Archipelago:AddSetReplyHandler("notify handler", OnNotify)
--- Archipelago:AddRetrievedHandler("notify launch handler", OnNotifyLaunch)
+-- ScriptHost:AddWatchForCode("settings autofill handler", "autofill_settings", autoFill)
+ScriptHost:AddWatchForCode("StateChange", "*", StateChange)
+Archipelago:AddClearHandler("clear handler", onClear)
+Archipelago:AddItemHandler("item handler", onItem)
+Archipelago:AddLocationHandler("location handler", onLocation)
+
+Archipelago:AddSetReplyHandler("notify handler", OnNotify)
+Archipelago:AddRetrievedHandler("notify launch handler", OnNotifyLaunch)
 
 --doc
 --hint layout

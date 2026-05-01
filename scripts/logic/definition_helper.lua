@@ -53,12 +53,22 @@ DNARequired = "dnarequired"
 DNAAvailable = "dnaavailable"
 
 -- Start Locations
--- StartImpa = "start_impa"
+-- LandingSiteEast = "landing_site_east"
 
 -- Helpers
 VersionMismatch = "version_mismatch"
 HiddenSetting = "hidden_setting"
 LocationRefresh = "location_refresh"
 ManualStorageCode = "manual_location_storage"
+
+-- SlotData Table
+SlotDataTable = {
+	{"movement", "progressive"},
+	{"wall_jump", "progressive"},
+	{"knowledge", "progressive"},
+	{"damage_boost", "progressive"},
+	{"infinite_bomb_jump", "progressive"},
+	{"dna_required", "consumable"}
+}
 
 

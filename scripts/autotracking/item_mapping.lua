@@ -30,6 +30,5 @@ ITEM_MAPPING = {
 	[71] = {{"energyreservetank", "toggle"}},
 	[72] = {{"missilereservetank", "toggle"}},
 	[73] = {{"aeionreservetank", "toggle"}},
-	[91] = {{"metroiddna", "consumable"}},
-	[100] = {{"nothing", "toggle"}},
+	[91] = {{"metroiddna", "consumable"}}
 }

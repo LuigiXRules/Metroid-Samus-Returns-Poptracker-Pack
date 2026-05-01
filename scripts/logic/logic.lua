@@ -114,9 +114,9 @@ function SRLocation:discover(accessibility)
 			end
 		end
 		for _, exit in pairs(self.exits) do
-			print(self.name)
+			-- print(self.name)
 			if (exit[1]:accessibility() < accessibility) then
-				print(self.name, exit[1].name)
+				-- print(self.name, exit[1].name)
 				local location, access = CheckAccess(self, exit)
 				location:discover(access)
 			end
@@ -211,9 +211,9 @@ end
 function All(...)
 	local args = { ... }
 	local min = AccessibilityLevel.Normal
-	print ("All", #args)
+	-- print ("All", #args)
 	for i, access in ipairs(args) do
-        print(dump(access), type(access), i)
+        -- print(dump(access), type(access), i)
 		if type(access) == "function" then
 			access = access()
 		elseif type(access) == "string" then
@@ -222,7 +222,7 @@ function All(...)
 		if type(access) == "boolean" then
 			access = BoolToAccess(access)
 		end
-        print(dump(access), type(access), i)
+        -- print(dump(access), type(access), i)
 		if access < min then
 			if access == AccessibilityLevel.None then
 				return AccessibilityLevel.None

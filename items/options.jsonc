@@ -4,8 +4,9 @@
     "increment": 1,
     "max_quantity": 39,
     "initial_quantity": 39,
+    "initial_stage_idx": 0,
     "img": "images/settings/dna_required.png",
-    "codes": "dna, metroid_dna, dnarequired"
+    "codes": "dna, metroid_dna, dnarequired, dna_required"
   },
     {
     "type": "consumable",
@@ -18,6 +19,7 @@
   {
     "codes": "WallJump, wall_jump",
     "type": "progressive",
+    "initial_stage_idx": 0,
     "allow_disabled": false,
     "loop": true,
     "stages": [
@@ -39,6 +41,7 @@
   {
     "codes": "IBJ, ibj, infinite_bomb_jump",
     "type": "progressive",
+    "initial_stage_idx": 0,
     "allow_disabled": false,
     "loop": true,
     "stages": [
@@ -64,6 +67,7 @@
   {
     "codes": "DamageBoost, damage_boost",
     "type": "progressive",
+    "initial_stage_idx": 0,
     "allow_disabled": false,
     "loop": true,
     "stages": [
@@ -81,6 +85,7 @@
   {
     "codes": "Knowledge, knowledge",
     "type": "progressive",
+    "initial_stage_idx": 0,
     "allow_disabled": false,
     "loop": true,
     "stages": [
@@ -98,6 +103,7 @@
   {
     "codes": "Movement, movement",
     "type": "progressive",
+    "initial_stage_idx": 0,
     "allow_disabled": false,
     "loop": true,
     "stages": [

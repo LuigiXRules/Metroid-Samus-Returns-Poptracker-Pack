@@ -1,0 +1,19 @@
+area_mapping = {
+    ["s000_surface"] = {"Surface", "East"},
+    ["s010_area1"] = {"Area 1"},
+    ["s020_area2"] = {"Area 2", "Dam Exterior"},
+    ["s025_area2b"] = {"Area 2", "Dam Interior"},
+    ["s028_area2c"] = {"Area 2", "Dam Entryway"},
+    ["s030_area3"] = {"Area 3", "Factory Exterior"},
+    ["s033_area3b"] = {"Area 3", "Metroid Caverns"},
+    ["s036_area3c"] = {"Area 3", "Factory Interior"},
+    ["s040_area4"] = {"Area 4", "Central Caves"},
+    ["s050_area5"] = {"Area 4", "Crystal Mines"},
+    ["s060_area6"] = {"Area 5", "Tower Lobby"},
+    ["s065_area6b"] = {"Area 5", "Tower Exterior"},
+    ["s067_area6c"] = {"Area 5", "Tower Interior"},
+    ["s070_area7"] = {"Area 6"},
+    ["s090_area9"] = {"Area 7"},
+    ["s100_area10"] = {"Area 8", "Lower"},
+    ["s110_surfaceb"] = {"Surface", "West"}
+}
