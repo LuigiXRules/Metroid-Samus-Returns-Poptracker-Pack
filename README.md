@@ -14,6 +14,7 @@ Some of the maps are kinda big, but you can zoom in using the scroll wheel on yo
 
 ## Next Steps
 
+- Add an overview map tab
 - Fine-tune some of the location placements
 - Make locations you could obtain with higher trick levels appear yellow
 - Make locations you can see but not obtain appear blue
