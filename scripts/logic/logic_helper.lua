@@ -408,6 +408,13 @@ function CanEscapeFleechFireContainment()
 		CanClimbShaft
 	)
 end
+function CanEscapeInteriorGammaArenatoIntersectionTerminal()
+	return All(
+		CanAnyMissile,
+		CanBombBlock,
+		CanSpider
+	)
+end
 
 function CanEscapeTransportAccess()
 	return Any(
@@ -445,6 +452,10 @@ function CanEscapeFactoryExteriorAccess()
 		CanFly
 	)
 end
+function CanEscapeFactoryExteriorCrevice()
+	return CanClimbWall()
+end
+
 function CanEscapeEvolvedAlphaNorthtoGamma()
 	return All(
 		CanClimbWall,
