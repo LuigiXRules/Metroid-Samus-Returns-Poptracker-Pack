@@ -3,7 +3,16 @@ DamExteriorEast:connect_one_way_entrance(LightningArmorUpper) -- Elevator
 DamExteriorEast:connect_one_way_entrance(CritterPlaygroundBottom) -- Normal Door
 DamExteriorEast:connect_one_way_entrance(CritterPlaygroundTunnel, OpenMorphTunnelDoor)
 DamExteriorEast:connect_one_way_entrance(DamExteriorTop, CanFlyVertical)
-DamExteriorEast:connect_one_way(DamExteriorEastPickup, CanFlyVertical)
+DamExteriorEast:connect_one_way(DamExteriorEastPickup, function()
+	return Any(
+		SpaceJump,
+		CanSpiderBoost,
+		All(
+			CanIBJVertical,
+			LightningArmor
+		)
+	)
+end)
 DamExteriorTop:connect_one_way_entrance(DamExteriorEast)
 DamExteriorTop:connect_one_way_entrance(DamExteriorWest)
 DamExteriorTop:connect_one_way_entrance(DamExteriorInner, CanEscapeArachnusDrop)
@@ -143,13 +152,14 @@ Area2ExteriorCavernsEntrance:connect_one_way(Area2ExteriorCavernsEntrancePickup,
 	return All(
 		Any(
 			CanSpider,
-			SpaceJump
+			PhaseDrift,
+			MovementSimple
 		),
 		Any(
 			MetroidHatchling,
-			SuperMissile,
-			CanBombBlock
-		)
+			SuperMissile
+		),
+		CanBombBlock
 	)
 end)
 SpikeRavineUpper:connect_one_way_entrance(Area2ExteriorCavernsEntrance, function()
@@ -356,7 +366,12 @@ Area2InteriorIntersectionSideTunnel:connect_one_way_entrance(WaveBeamNortheast, 
 Area2InteriorIntersectionSideTunnel:connect_one_way_entrance(Area2InteriorIntersectionSouthTunnel, function() return Has(ScrewAttack) end)
 Area2InteriorIntersectionSoutheast:connect_one_way_entrance(Area2InteriorIntersectionSideTunnel, CanHighLedge)
 Area2InteriorIntersectionSoutheast:connect_one_way_entrance(WhimsicalWaterwheels) -- Normal Door
-Area2InteriorIntersectionSouthTunnel:connect_one_way_entrance(Area2InteriorIntersectionSouth, OpenMorphTunnelDoor)
+Area2InteriorIntersectionSouthTunnel:connect_one_way_entrance(Area2InteriorIntersectionSouth, function()
+	return All(
+		OpenMorphTunnelDoor,
+		CanEscapeInteriorGammaArenatoIntersectionTerminal
+	)
+end)		
 Area2InteriorIntersectionSouthTunnel:connect_one_way_entrance(Area2InteriorIntersectionNorthTunnel, CanClimbWall)
 Area2InteriorIntersectionNorthTunnel:connect_one_way_entrance(Area2InteriorIntersectionSouthTunnel)
 Area2InteriorIntersectionNorthTunnel:connect_one_way_entrance(Area2InteriorIntersectionSouthChamber, function() return Has(ScrewAttack) end)
@@ -369,9 +384,7 @@ Area2InteriorIntersectionSouthChamber:connect_one_way(Area2InteriorIntersectionS
 Area2InteriorIntersectionSouth:connect_one_way_entrance(Area2InteriorIntersectionSouthTunnel, function()
 	return All(
 		OpenMorphTunnelDoor,
-		MissileLauncher,
-		CanBombBlock,
-		CanSpider
+		CanEscapeInteriorGammaArenatoIntersectionTerminal
 	)
 end)
 Area2InteriorIntersectionSouth:connect_one_way_entrance(Area2InteriorGamma) -- Normal Door
@@ -549,6 +562,12 @@ TransportAreas1And3Seal:connect_one_way_entrance(TransportAreas1And3Area3, funct
 end)
 TransportAreas1And3Seal:connect_one_way(TransportAreas1And3SealPlantsPickup, function()
 	return All(
+		LightningArmor,
+		CanBombBlock
+	)
+end)
+TransportAreas1And3Seal:connect_one_way(TransportAreas1And3SealTunnelPickup, function()
+	return All(
 		MorphBall,
 		Any(
 			MetroidHatchling,
@@ -556,7 +575,6 @@ TransportAreas1And3Seal:connect_one_way(TransportAreas1And3SealPlantsPickup, fun
 		)
 	)
 end)
-TransportAreas1And3Seal:connect_one_way(TransportAreas1And3SealTunnelPickup, CanBombBlock)
 TransportAreas1And3Area3:connect_one_way_entrance(TransportAreas1And3Seal, OpenMorphTunnelDoor)
 TransportAreas1And3Area3:connect_one_way_entrance(TransportArea2Upper) -- Elevator
 Area2EntrywayTeleporterLower:connect_one_way_entrance(TransportAreas1And3Seal) -- Normal Door
