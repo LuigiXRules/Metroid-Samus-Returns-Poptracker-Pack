@@ -293,7 +293,8 @@ HatchlingChamber:connect_one_way_entrance(TransportSurfaceBottom, function ()
 		Has(MetroidHatchling),
 		CanReach(Queen)
 	)
-end) -- wall somewhere?
+end, {Queen}) -- wall somewhere?
+HatchlingChamber:connect_one_way(HatchlingChamberPickup, function () return CanReach(Queen) end, {Queen})
 NestVestibule:connect_one_way_entrance(Area8TransportArea7) -- Normal Door
 NestVestibule:connect_one_way_entrance(Area8EntranceTeleporterLower) -- Normal Door
 NestVestibule:connect_one_way(NestVestibulePickup, function ()

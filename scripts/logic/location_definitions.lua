@@ -759,4 +759,5 @@ Area8EntranceTeleporterLowerPickup = SRLocation.New("Area8EntranceTeleporterLowe
 NestNoduleTopPickup = SRLocation.New("NestNoduleTopPickup")
 NestNodulePickupPickup = SRLocation.New("NestNodulePickupPickup")
 NestShaftWPickup = SRLocation.New("NestShaftWPickup")
+HatchlingChamberPickup = SRLocation.New("HatchlingChamberPickup")
 NestVestibulePickup = SRLocation.New("NestVestibulePickup")

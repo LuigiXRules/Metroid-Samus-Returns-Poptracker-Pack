@@ -53,7 +53,7 @@ LabTeleporterW:connect_one_way_entrance(RobotRetreatBottom, function ()
 						HighJumpBoots,
 						WallJumpSimple
 					)
-				}
+				)
 			),
 			All(
 				CanBombBlock,

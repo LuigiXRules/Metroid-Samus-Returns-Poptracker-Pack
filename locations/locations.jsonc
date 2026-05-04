@@ -4608,7 +4608,7 @@
         "sections": [
           {
             "item_count": 1,
-            "access_rules": ["^$CanReach|HatchlingChamber"],
+            "access_rules": ["^$CanReach|HatchlingChamberPickup"],
             "chest_unopened_img": "images/items/baby.png",
             "chest_opened_img": "images/items/baby_obtained.png"
           }
