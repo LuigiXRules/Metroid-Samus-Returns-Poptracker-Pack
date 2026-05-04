@@ -262,7 +262,7 @@ Queen:connect_one_way_entrance(QueenAccess, function ()
 		ScrewAttack
 	)
 end)
-Queen:connect_one_way_entrance(HatchlingChamber)
+Queen:connect_one_way_entrance(HatchlingChamber, CanCombatQueen)
 Area8TransportArea7:connect_one_way_entrance(Area7TransportArea8, function ()
 	return Any(
 		MorphBall,
@@ -275,14 +275,26 @@ Area8TransportArea7:connect_one_way_entrance(NestVestibule, function ()
 		Any(
 			SpaceJump,
 			All(
-				WallJumpIntermediate,
-				CanSpider
+				CanClimbWall,
+				Any(
+					WallJumpIntermediate,
+					All(
+						WallJumpSimple,
+						HighJumpBoots
+					)
+				)		
 			)
 		)
 	)
 end) -- Normal Door
-HatchlingChamber:connect_one_way_entrance(Queen, CanEscapeQueenArena)
--- HatchlingChamber:connect_one_way_entrance(TransportSurfaceBottom, function () return Has(MetroidHatchling) end) - wall somewhere?
+-- HatchlingChamber:connect_one_way_entrance(Queen, CanEscapeQueenArena)
+HatchlingChamber:connect_one_way_entrance(TransportSurfaceBottom, function () 
+	return All(
+		Has(MetroidHatchling),
+		CanReach(Queen)
+	)
+end, {Queen}) -- wall somewhere?
+HatchlingChamber:connect_one_way(HatchlingChamberPickup, function () return CanReach(Queen) end, {Queen})
 NestVestibule:connect_one_way_entrance(Area8TransportArea7) -- Normal Door
 NestVestibule:connect_one_way_entrance(Area8EntranceTeleporterLower) -- Normal Door
 NestVestibule:connect_one_way(NestVestibulePickup, function ()

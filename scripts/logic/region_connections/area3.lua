@@ -39,6 +39,13 @@ Area3ExteriorMaze:connect_one_way(Area3ExteriorMazePickup, function()
 	return All(
 		CanBombBlock,
 		Any(
+			MetroidHatchling,
+			All(
+				CanPowerBomb,
+				CanClimbWall
+			)
+		),
+		Any(
 			CanSpiderBoost,
 			MovementSimple,
 			All(
@@ -74,7 +81,7 @@ FactoryExtEntrance:connect_one_way(FactoryExtEntrancePickup, function ()
 	)
 end)
 FactoryExtPlatform:connect_one_way_entrance(FactoryExtEntrance)
-FactoryExtPlatform:connect_one_way_entrance(FactoryExtCrevice)
+FactoryExtPlatform:connect_one_way_entrance(FactoryExtCrevice, CanEscapeFactoryExteriorCrevice)
 FactoryExtPlatform:connect_one_way_entrance(FactoryExtTop, function ()
 	return Any(
 		SpaceJump,
@@ -85,7 +92,7 @@ FactoryExtPlatform:connect_one_way_entrance(FactoryExtTop, function ()
 		)
 	)
 end)
-FactoryExtCrevice:connect_one_way_entrance(FactoryExtPlatform, CanClimbWall)
+FactoryExtCrevice:connect_one_way_entrance(FactoryExtPlatform, CanEscapeFactoryExteriorCrevice)
 FactoryExtCrevice:connect_one_way_entrance(GrappleBeamChamber, OpenMissileDoor)
 FactoryExtCrevice:connect_one_way_entrance(FactoryExtTop, function ()
 	return All(
@@ -252,7 +259,18 @@ FactoryExtAccessLower:connect_one_way_entrance(Area3ExteriorTransportCavernsNTra
 FactoryExtAccessLower:connect_one_way_entrance(BeamBurstPickup, function ()
 	return All(
 		OpenMorphTunnelDoor,
-		GrappleBeam
+		GrappleBeam,
+		Any(
+			All(
+				CanBombBlock,
+				CanBlobthrower
+			),
+			All(
+				MorphBall,
+				LightningArmor
+			),
+			WallJumpIntermediate
+		)
 	)
 end)
 FactoryExtAccessLower:connect_one_way_entrance(FactoryExtAccessUpper, function ()
@@ -464,15 +482,24 @@ RamulkenRollwayLower:connect_one_way_entrance(RamulkenRollwayUpper, function ()
 	)
 end)
 RamulkenRollwayLower:connect_one_way(RamulkenRollwayLowerPickup, function ()
-	return All(
-		CanAnyMissile,
-		CanBombBlock,
-		Any(
-			All(
-				GravitySuit,
-				SpaceJump
-			),
-			CanSpiderBoostUnderwater
+	return Any(
+		All(
+			CanPowerBomb,
+			Any(
+				CanSpider,
+				MovementSimple
+			)
+		),
+		All(
+			CanAnyMissile,
+			CanBombBlock,
+			Any(
+				All(
+					GravitySuit,
+					SpaceJump
+				),
+				CanSpiderBoostUnderwater
+			)
 		)
 	)
 end)
@@ -486,7 +513,15 @@ end)
 
 Area3CavernsTeleporterELower:connect_one_way_entrance(QuarryShaftBottom, OpenChargeDoor)
 Area3CavernsTeleporterELower:connect_one_way_entrance(WaterfallCavern) -- Normal Door
-Area3CavernsTeleporterELower:connect_one_way_entrance(Area3CavernsTeleporterEUpper, CanClimbWall)
+Area3CavernsTeleporterELower:connect_one_way_entrance(Area3CavernsTeleporterEUpper, function()
+	return Any(
+		CanClimbWall,
+		All(
+			HighJumpBoots,
+			WallJumpSimple
+		)
+	)
+end)
 Area3CavernsTeleporterEUpper:connect_one_way_entrance(RamulkenRollwayLower, OpenChargeDoor)
 Area3CavernsTeleporterEUpper:connect_one_way_entrance(Area3CavernsTeleporterELower)
 Area3CavernsTeleporterEUpper:connect_one_way(Area3CavernsTeleporterEUpperPickup, function ()
@@ -577,6 +612,7 @@ WaterfallCavern:connect_one_way_entrance(Area3CavernsTeleporterELower) -- Normal
 Area3CavernsGamma2N:connect_one_way_entrance(Area3CavernsAlpha2NExit, function() return Has(VariaSuit) end)
 Area3CavernsGamma2N:connect_one_way(Area3CavernsGamma2NGamma, function ()
 	return All(
+		VariaSuit,
 		CanBombBlock,
 		Any(
 			CanSpider,

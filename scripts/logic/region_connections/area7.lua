@@ -46,8 +46,14 @@ LabTeleporterW:connect_one_way_entrance(RobotRetreatBottom, function ()
 		Any(
 			All(
 				MorphBall,
-				SpaceJump,
-				ScrewAttack
+				ScrewAttack,
+				Any(
+					SpaceJump,
+					All(
+						HighJumpBoots,
+						WallJumpSimple
+					)
+				)
 			),
 			All(
 				CanBombBlock,

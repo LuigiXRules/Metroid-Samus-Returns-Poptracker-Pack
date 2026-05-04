@@ -100,7 +100,13 @@ DestroyedArmory:connect_one_way(DestroyedArmoryPickup, function()
 	return Any(
 		SpaceJump,
 		IceBeam,
-		CanSpider
+		All(
+			CanSpider,
+			Any(
+				CanBombBlock,
+				MovementIntermediate
+			)
+		)
 	)
 end)
 SpiderBallDoorAccess:connect_one_way_entrance(TempleExteriorSoutheast, OpenMorphTunnelDoor)
