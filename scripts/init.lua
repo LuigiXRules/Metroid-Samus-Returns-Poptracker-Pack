@@ -17,6 +17,7 @@ require("scripts.logic.region_connections.area7")
 require("scripts.logic.region_connections.area8")
 
 Tracker:AddLocations("locations/locations.jsonc")
+Tracker:AddLocations("locations/overview.jsonc")
 
 Tracker:AddItems("items/items.jsonc")
 Tracker:AddItems("items/options.jsonc")

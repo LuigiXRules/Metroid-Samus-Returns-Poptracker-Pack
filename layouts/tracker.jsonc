@@ -8,204 +8,6 @@
       "content": [
         {
           "type": "dock",
-          "dock": "left",
-          "v_alignment": "stretch",
-          "content": [
-            {
-              "type": "group",
-              "header": "Items",
-              "dock": "top",
-              "content": {
-                "type": "layout",
-                "key": "items_grid"
-              }
-            }
-          ]
-        },
-        {
-          "type": "tabbed",
-          "tabs": [
-            {
-              "title": "Surface",
-              "content":{
-                "type": "tabbed",
-                "tabs": [
-                  {
-                  "title": "East",
-                  "content": {
-                  "type": "map",
-                  "maps": ["surfaceeast"]
-                    }
-                  },  
-                  {
-                  "title": "West",
-                  "content": {
-                  "type": "map",
-                  "maps": ["surfacewest"]
-                    }
-                  }
-                ] 
-              } 
-            },
-            {
-              "title": "Area 1",
-              "content": {
-                "type": "map",
-                "maps": [
-                  "area1"
-                ]
-              }
-            },
-            {
-              "title": "Area 2",
-              "content": {
-                "type": "tabbed",
-                "tabs": [
-                  {
-                  "title": "Dam Entryway",
-                  "content": {
-                  "type": "map",
-                  "maps": ["area2entrance"]
-                    }
-                  },  
-                  {
-                  "title": "Dam Exterior",
-                  "content": {
-                  "type": "map",
-                  "maps": ["area2exterior"]
-                    }
-                  },
-                  {
-                  "title": "Dam Interior",
-                  "content": {
-                  "type": "map",
-                  "maps": ["area2interior"]
-                    }
-                  }
-                ] 
-              }
-            },
-            {
-              "title": "Area 3",
-              "content": {
-                "type": "tabbed",
-                "tabs": [
-                  {
-                  "title": "Factory Exterior",
-                  "content": {
-                  "type": "map",
-                  "maps": ["area3exterior"]
-                    }
-                  },
-                  {
-                  "title": "Factory Interior",
-                  "content": {
-                  "type": "map",
-                  "maps": ["area3interior"]
-                    }
-                  },
-                  {
-                  "title": "Metroid Caverns",
-                  "content": {
-                  "type": "map",
-                  "maps": ["area3caverns"]
-                    }
-                  }
-                ]
-              } 
-            },
-            {
-              "title": "Area 4",
-              "content": {
-                "type": "tabbed",
-                "tabs": [
-                  {
-                  "title": "Central Caves",
-                  "content": {
-                  "type": "map",
-                  "maps": ["area4caves"]
-                    }
-                  },
-                  {
-                  "title": "Crystal Mines",
-                  "content": {
-                  "type": "map",
-                  "maps": ["area4mines"]
-                    }
-                  }
-                ]
-              } 
-            },
-            {
-              "title": "Area 5",
-              "content": {
-                "type": "tabbed",
-                "tabs": [
-                  {
-                  "title": "Tower Lobby",
-                  "content": {
-                  "type": "map",
-                  "maps": ["area5lobby"]
-                    }
-                  },
-                  {
-                  "title": "Tower Interior",
-                  "content": {
-                  "type": "map",
-                  "maps": ["area5interior"]
-                    }
-                  },  
-                  {
-                  "title": "Tower Exterior",
-                  "content": {
-                  "type": "map",
-                  "maps": ["area5exterior"]
-                    }
-                  }
-                ]
-              } 
-            },
-            {
-              "title": "Area 6",
-              "content": {
-                "type": "map",
-                "maps": [
-                  "area6"
-                ]
-              }
-            },
-            {
-              "title": "Area 7",
-              "content": {
-                "type": "map",
-                "maps": [
-                  "area7"
-                ]
-              }
-            },
-            {
-              "title": "Area 8",
-              "content": {
-                "type": "map",
-                "maps": [
-                  "area8"
-                ]
-              }
-            }
-          ]
-        }
-      ]
-    }
-  },
-  "tracker_horizontal": {
-    "type": "container",
-    "background": "#000000",
-    "content": {
-      "type": "dock",
-      "dropshadow": true,
-      "content": [
-        {
-          "type": "dock",
           "dock": "bottom",
           "content": [
             {
@@ -225,6 +27,15 @@
         {
           "type": "tabbed",
           "tabs": [
+            {
+              "title": "Overview",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "overview"
+                ]
+              }
+            },
             {
               "title": "Surface",
               "content":{

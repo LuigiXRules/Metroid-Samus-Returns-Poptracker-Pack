@@ -1,0 +1,1130 @@
+[
+    {
+        "name": "Surface",
+        "children": [
+            {
+                "name": "Surface East",
+                "sections": [
+                    {
+                        "name": "Proteus Ridley",
+                        "ref": "Surface East/Proteus Ridley/Commit one final murder"
+                    },
+                    {
+                        "name": "Surface: Twisty Tunnel",
+                        "ref": "Surface East/Twisty Tunnel/"
+                    },
+                    {
+                        "name": "Surface: Morph Ball Chamber",
+                        "ref": "Surface East/Morph Ball Chamber/"
+                    },
+                    {
+                        "name": "Surface: Chozo Seal",
+                        "ref": "Surface East/Chozo Seal/It's actually way below the seal"
+                    },
+                    {
+                        "name": "Surface: Transport to Area 1",
+                        "ref": "Surface East/Transport to Area 1/"
+                    },
+                    {
+                        "name": "Surface: Chozo Cache East",
+                        "ref": "Surface East/Chozo Cache East/"
+                    },
+                    {
+                        "name": "Surface: Charge Beam Chamber",
+                        "ref": "Surface East/Charge Beam Chamber/"
+                    },
+                    {
+                        "name": "Surface: Alpha Arena - Missile",
+                        "ref": "Surface East/Alpha Arena Pickup/Alpha Arena/Missile"
+                    },
+                    {
+                        "name": "Surface: Alpha Arena - Alpha Metroid",
+                        "ref": "Surface East/Alpha Arena Alpha Metroid/Alpha Arena/Commit murder"
+                    },
+                    {
+                        "name": "Surface: Scan Pulse Chamber",
+                        "ref": "Surface East/Scan Pulse Chamber/"
+                    },
+                    {
+                        "name": "Surface: Chozo Cache West",
+                        "ref": "Surface East/Chozo Cache West/"
+                    },
+                    {
+                        "name": "Surface: Charge Beam Chamber Access",
+                        "ref": "Surface East/Charge Beam Chamber Access/"
+                    },
+                    {
+                        "name": "Surface: Transport Cache",
+                        "ref": "Surface East/Transport Cache/"
+                    },
+                    {
+                        "name": "Surface: Cavern Alcove",
+                        "ref": "Surface East/Cavern Alcove/"
+                    },
+                    {
+                        "name": "Surface: Energy Recharge Station Shaft",
+                        "ref": "Surface East/Energy Recharge Station Shaft/"
+                    }
+                ],
+                    "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 196,
+                        "y": 49,
+                        "size": 7
+                    }
+                ]
+            },
+            {
+                "name": "Surface West",
+                "sections": [
+                    {
+                        "name": "Surface: Surface Stash",
+                        "ref": "Surface East/Surface Stash/"
+                    },
+                    {
+                        "name": "Surface: Surface Crumble Block Challenge",
+                        "ref": "Surface East/Surface Crumble Block Challenge/"
+                    },
+                    {
+                        "name": "Surface: Transport to Area 8 - Left",
+                        "ref": "Surface East/Transport to Area 8 Left/Transport to Area 8/Left"
+                    },
+                    {
+                        "name": "Surface: Transport to Area 8 - Right",
+                        "ref": "Surface East/Transport to Area 8 Right/Transport to Area 8/Right"
+                    }
+                ],
+                    "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 110,
+                        "y": 42,
+                        "size": 7
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Area 1",
+        "children": [
+            {
+                "name": "Area 1",
+                "sections": [
+                    {
+                        "name": "Area 1: Bomb Chamber - Missile",
+                        "ref": "Area 1/Bomb Chamber Missile/Bomb Chamber/Missile"
+                    },
+                    {
+                        "name": "Area 1: Bomb Chamber - Statue",
+                        "ref": "Area 1/Bomb Chamber Statue/Bomb Chamber/Statue"
+                    },
+                    {
+                        "name": "Area 1: Destroyed Armory",
+                        "ref": "Area 1/Destroyed Armory/"
+                    },
+                    {
+                        "name": "Area 1: Spider Ball Chamber - Tunnel",
+                        "ref": "Area 1/Spider Ball Chamber Tunnel/Spider Ball Chamber/Tunnel"
+                    },
+                    {
+                        "name": "Area 1: Spider Ball Chamber - Buried Item",
+                        "ref": "Area 1/Spider Ball Chamber Buried Item/Spider Ball Chamber/Buried Item"
+                    },
+                    {
+                        "name": "Area 1: Exterior Alpha Arena - Above Arena",
+                        "ref": "Area 1/Exterior Alpha Arena Above Arena/Exterior Alpha Arena/Above arena"
+                    },
+                    {
+                        "name": "Area 1: Exterior Alpha Arena - Alpha Metroid",
+                        "ref": "Area 1/Exterior Alpha Arena Alpha/Exterior Alpha Arena/Commit murder"
+                    },
+                    {
+                        "name": "Area 1: Temple Exterior - Crevice",
+                        "ref": "Area 1/Temple Exterior Crevice/Temple Exterior/Crevice"
+                    },
+                    {
+                        "name": "Area 1: Temple Exterior - Ceiling",
+                        "ref": "Area 1/Temple Exterior Ceiling/Temple Exterior/Ceiling"
+                    },
+                    {
+                        "name": "Area 1: Temple Exterior - Hidden",
+                        "ref": "Area 1/Temple Exterior Hidden/Temple Exterior/Hidden"
+                    },
+                    {
+                        "name": "Area 1: Metroid Caverns Alpha Arena Southeast",
+                        "ref": "Area 1/Metroid Caverns Alpha Arena Southeast/Commit murder"
+                    },
+                    {
+                        "name": "Area 1: Metroid Caverns Alpha Arena Northeast",
+                        "ref": "Area 1/Metroid Caverns Alpha Arena Northeast/Commit murder"
+                    },
+                    {
+                        "name": "Area 1: Water Maze",
+                        "ref": "Area 1/Water Maze/"
+                    },
+                    {
+                        "name": "Area 1: Ice Beam Chamber - Statue",
+                        "ref": "Area 1/Ice Beam Chamber Statue/Ice Beam Chamber/Statue"
+                    },
+                    {
+                        "name": "Area 1: Ice Beam Chamber - Crystals",
+                        "ref": "Area 1/Ice Beam Chamber Crystals/Ice Beam Chamber/Crystals"
+                    },
+                    {
+                        "name": "Area 1: Magma Pool - Alcove",
+                        "ref": "Area 1/Magma Pool Alcove/Magma Pool/Alcove"
+                    },
+                    {
+                        "name": "Area 1: Magma Pool - Magma",
+                        "ref": "Area 1/Magma Pool Magma/Magma Pool/Magma"
+                    },
+                    {
+                        "name": "Area 1: Metroid Caverns Save Station",
+                        "ref": "Area 1/Metroid Caverns Save Station/"
+                    },
+                    {
+                        "name": "Area 1: Inner Temple Ventilation Shaft",
+                        "ref": "Area 1/Inner Temple Ventilation Shaft/"
+                    },
+                    {
+                        "name": "Area 1: Transport Cache",
+                        "ref": "Area 1/Transport Cache/"
+                    },
+                    {
+                        "name": "Area 1: Metroid Caverns Alpha Arena Southwest",
+                        "ref": "Area 1/Metroid Caverns Alpha Arena Southwest/Commit murder"
+                    }
+                ],
+                    "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 256,
+                        "y": 64,
+                        "size": 7
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Area 2",
+        "children": [
+            {
+                "name": "Area 2 - Dam Exterior",
+                "sections": [
+                    {
+                        "name": "Area 2: Dam Exterior",
+                        "ref": "Area 2 - Dam Exterior/Dam Exterior/"
+                    },
+                    {
+                        "name": "Area 2: Arachnus Arena",
+                        "ref": "Area 2 - Dam Exterior/Arachnus Arena/Commit murder"
+                    },
+                    {
+                        "name": "Area 2: Critter Playground",
+                        "ref": "Area 2 - Dam Exterior/Critter Playground/"
+                    },
+                    {
+                        "name": "Area 2: Metroid Caverns Entrance",
+                        "ref": "Area 2 - Dam Exterior/Metroid Caverns Entrance/"
+                    },
+                    {
+                        "name": "Area 2: Spike Ravine",
+                        "ref": "Area 2 - Dam Exterior/Spike Ravine/"
+                    },
+                    {
+                        "name": "Area 2: Metroid Caverns Maze",
+                        "ref": "Area 2 - Dam Exterior/Metroid Caverns Maze/"
+                    },
+                    {
+                        "name": "Area 2: Metroid Caverns Alpha Arena Northwest",
+                        "ref": "Area 2 - Dam Exterior/Metroid Caverns Alpha Arena Northwest/Commit murder"
+                    },
+                    {
+                        "name": "Area 2: Metroid Caverns Alpha Arena Southwest",
+                        "ref": "Area 2 - Dam Exterior/Metroid Caverns Alpha Arena Southwest/Commit murder"
+                    },
+                    {
+                        "name": "Area 2: Metroid Caverns Teleporter",
+                        "ref": "Area 2 - Dam Exterior/Metroid Caverns Teleporter/"
+                    },
+                    {
+                        "name": "Area 2: Exterior Alpha+ Arena",
+                        "ref": "Area 2 - Dam Exterior/Exterior Alpha+ Arena/Commit murder"
+                    },
+                    {
+                        "name": "Area 2: Serene Shelter",
+                        "ref": "Area 2 - Dam Exterior/Serene Shelter/"
+                    },
+                    {
+                        "name": "Area 2: Metroid Caverns Alpha+ Arena",
+                        "ref": "Area 2 - Dam Exterior/Metroid Caverns Alpha+ Arena/Commit murder"
+                    },
+                    {
+                        "name": "Area 2: Inner Alpha Arena",
+                        "ref": "Area 2 - Dam Exterior/Inner Alpha Arena/Commit murder"
+                    },
+                    {
+                        "name": "Area 2: Metroid Caverns Alpha Arena East",
+                        "ref": "Area 2 - Dam Exterior/Metroid Caverns Alpha Arena East/Commit murder"
+                    }
+                ],
+                    "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 161,
+                        "y": 83,
+                        "size": 7
+                    }
+                ]
+            },
+            {
+                "name": "Area 2 - Dam Interior",
+                "sections": [
+                    {
+                        "name": "Area 2: Wave Beam & Transport to Dam Exterior West",
+                        "ref": "Area 2 - Dam Interior/Wave Beam & Transport to Dam Exterior West/Wave Beam Chamber"
+                    },
+                    {
+                        "name": "Area 2: Lava Generator",
+                        "ref": "Area 2 - Dam Interior/Lava Generator/"
+                    },
+                    {
+                        "name": "Area 2: Crumble Cavern",
+                        "ref": "Area 2 - Dam Interior/Crumble Cavern/"
+                    },
+                    {
+                        "name": "Area 2: Dam Basement - Lower",
+                        "ref": "Area 2 - Dam Interior/Dam Basement Lower/Dam Basement/Lower"
+                    },
+                    {
+                        "name": "Area 2: Dam Basement - Upper",
+                        "ref": "Area 2 - Dam Interior/Dam Basement Upper/Dam Basement/Upper"
+                    },
+                    {
+                        "name": "Area 2: High Jump Boots Chamber",
+                        "ref": "Area 2 - Dam Interior/High Jump Boots Chamber/"
+                    },
+                    {
+                        "name": "Area 2: Teleporter Storage",
+                        "ref": "Area 2 - Dam Interior/Teleporter Storage/"
+                    },
+                    {
+                        "name": "Area 2: Gamma Arena",
+                        "ref": "Area 2 - Dam Interior/Gamma Arena/Commit murder"
+                    },
+                    {
+                        "name": "Area 2: Interior Intersection Terminal - Statue",
+                        "ref": "Area 2 - Dam Interior/Interior Intersection Terminal Statue/Interior Intersection Terminal/Statue"
+                    },
+                    {
+                        "name": "Area 2: Interior Intersection Terminal - Tunnel",
+                        "ref": "Area 2 - Dam Interior/Interior Intersection Terminal Tunnel/Interior Intersection Terminal/Tunnel"
+                    }
+                ],
+                    "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 177,
+                        "y": 103,
+                        "size": 7
+                    }
+                ]
+            },
+            {
+                "name": "Area 2 - Dam Entryway",
+                "sections": [
+                    {
+                        "name": "Area 2: Transport to Areas 1 and 3 - Plants",
+                        "ref": "Area 2 - Dam Entryway/Transport to Areas 1 and 3 Plants/Transport to Areas 1 and 3/Plants"
+                    },
+                    {
+                        "name": "Area 2: Transport to Areas 1 and 3 - Tunnel",
+                        "ref": "Area 2 - Dam Entryway/Transport to Areas 1 and 3 Tunnel/Transport to Areas 1 and 3/Tunnel"
+                    },
+                    {
+                        "name": "Area 2: Entryway Teleporter",
+                        "ref": "Area 2 - Dam Entryway/Entryway Teleporter/"
+                    },
+                    {
+                        "name": "Area 2: Lightning Armor & Transport to Dam Exterior East - Tutorial",
+                        "ref": "Area 2 - Dam Entryway/Lightning Armor & Transport to Dam Exterior East Tutorial/Lightning Armor & Transport to Dam Exterior East/Tutorial"
+                    },
+                    {
+                        "name": "Area 2: Lightning Armor & Transport to Dam Exterior East - Artifact",
+                        "ref": "Area 2 - Dam Entryway/Lightning Armor & Transport to Dam Exterior East Artifact/Lightning Armor & Transport to Dam Exterior East/Artifact"
+                    },
+                    {
+                        "name": "Area 2: Fleech Swarm Floodway",
+                        "ref": "Area 2 - Dam Entryway/Fleech Swarm Floodway/"
+                    },
+                    {
+                        "name": "Area 2: Alpha+ Arena",
+                        "ref": "Area 2 - Dam Entryway/Alpha+ Arena/Commit murder"
+                    }
+                ],
+                    "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 204,
+                        "y": 92,
+                        "size": 7
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Area 3",
+        "children": [
+            {
+                "name": "Area 3 - Factory Exterior",
+                "sections": [
+                    {
+                        "name": "Area 3: Exterior Maze",
+                        "ref": "Area 3 - Factory Exterior/Exterior Maze/"
+                    },
+                    {
+                        "name": "Area 3: Grapple Beam Chamber",
+                        "ref": "Area 3 - Factory Exterior/Grapple Beam Chamber/"
+                    },
+                    {
+                        "name": "Area 3: Factory Exterior - Ceiling",
+                        "ref": "Area 3 - Factory Exterior/Factory Exterior Ceiling/Factory Exterior/Ceiling"
+                    },
+                    {
+                        "name": "Area 3: Factory Exterior - Shaft",
+                        "ref": "Area 3 - Factory Exterior/Factory Exterior Shaft/Factory Exterior/Shaft"
+                    },
+                    {
+                        "name": "Area 3: Transport to Metroid Caverns West",
+                        "ref": "Area 3 - Factory Exterior/Transport to Metroid Caverns West/"
+                    },
+                    {
+                        "name": "Area 3: Transport to Area 4",
+                        "ref": "Area 3 - Factory Exterior/Transport to Area 4/"
+                    },
+                    {
+                        "name": "Area 3: Entrance Maze",
+                        "ref": "Area 3 - Factory Exterior/Entrance Maze/"
+                    },
+                    {
+                        "name": "Area 3: Beam Burst Chamber & Tsumuri Station",
+                        "ref": "Area 3 - Factory Exterior/Beam Burst Chamber & Tsumuri Station/Beam Burst Chamber"
+                    },
+                    {
+                        "name": "Area 3: Halzyn Hangout - Top",
+                        "ref": "Area 3 - Factory Exterior/Halzyn Hangout Top/Halzyn Hangout/Top"
+                    },
+                    {
+                        "name": "Area 3: Halzyn Hangout - Bottom",
+                        "ref": "Area 3 - Factory Exterior/Halzyn Hangout Bottom/Halzyn Hangout/Bottom"
+                    },
+                    {
+                        "name": "Area 3: Exterior Gamma Arena",
+                        "ref": "Area 3 - Factory Exterior/Exterior Gamma Arena/Commit murder"
+                    }
+                ],
+                    "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 258,
+                        "y": 91,
+                        "size": 7
+                    }
+                ]
+            },
+            {
+                "name": "Area 3 - Metroid Caverns",
+                "sections": [
+                    {
+                        "name": "Area 3: Transport to Factory Exterior North",
+                        "ref": "Area 3 - Metroid Caverns/Transport to Factory Exterior North/"
+                    },
+                    {
+                        "name": "Area 3: Alpha+ Arena West",
+                        "ref": "Area 3 - Metroid Caverns/Alpha+ Arena West/Commit murder"
+                    },
+                    {
+                        "name": "Area 3: Gamma Arena Center",
+                        "ref": "Area 3 - Metroid Caverns/Gamma Arena Center/Commit murder"
+                    },
+                    {
+                        "name": "Area 3: Caverns Gamma Arena South - Tunnels",
+                        "ref": "Area 3 - Metroid Caverns/Caverns Gamma Arena South Tunnels/Caverns Gamma Arena South/Tunnels"
+                    },
+                    {
+                        "name": "Area 3: Caverns Gamma Arena South - Gamma Metroid",
+                        "ref": "Area 3 - Metroid Caverns/Caverns Gamma Arena South Gamma/Caverns Gamma Arena South/Commit murder"
+                    },
+                    {
+                        "name": "Area 3: Gravitt Garden",
+                        "ref": "Area 3 - Metroid Caverns/Gravitt Garden/"
+                    },
+                    {
+                        "name": "Area 3: Ascending Alleyway",
+                        "ref": "Area 3 - Metroid Caverns/Ascending Alleyway/"
+                    },
+                    {
+                        "name": "Area 3: Ramulken Rollway",
+                        "ref": "Area 3 - Metroid Caverns/Ramulken Rollway/"
+                    },
+                    {
+                        "name": "Area 3: Caverns Teleporter East",
+                        "ref": "Area 3 - Metroid Caverns/Caverns Teleporter East/"
+                    },
+                    {
+                        "name": "Area 3: Quarry Shaft",
+                        "ref": "Area 3 - Metroid Caverns/Quarry Shaft/"
+                    },
+                    {
+                        "name": "Area 3: Transport to Factory Interior South",
+                        "ref": "Area 3 - Metroid Caverns/Transport to Factory Interior South/"
+                    },
+                    {
+                        "name": "Area 3: Gamma+ Arena South",
+                        "ref": "Area 3 - Metroid Caverns/Gamma+ Arena South/Commit murder"
+                    },
+                    {
+                        "name": "Area 3: Gamma+ Arena North",
+                        "ref": "Area 3 - Metroid Caverns/Gamma+ Arena North/Commit murder"
+                    },
+                    {
+                        "name": "Area 3: Alpha+ Arena North",
+                        "ref": "Area 3 - Metroid Caverns/Alpha+ Arena North/Commit murder"
+                    }
+                ],
+                    "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 268,
+                        "y": 122,
+                        "size": 7
+                    }
+                ]
+            },
+            {
+                "name": "Area 3 - Factory Interior",
+                "sections": [
+                    {
+                        "name": "Area 3: Security Site",
+                        "ref": "Area 3 - Factory Interior/Security Site/"
+                    },
+                    {
+                        "name": "Area 3: Paraby Periphery",
+                        "ref": "Area 3 - Factory Interior/Paraby Periphery/"
+                    },
+                    {
+                        "name": "Area 3: Fan Control",
+                        "ref": "Area 3 - Factory Interior/Fan Control/"
+                    },
+                    {
+                        "name": "Area 3: Factory Intersection",
+                        "ref": "Area 3 - Factory Interior/Factory Intersection/"
+                    },
+                    {
+                        "name": "Area 3: Gamma Arena & Transport to Metroid Caverns East",
+                        "ref": "Area 3 - Factory Interior/Gamma Arena & Transport to Metroid Caverns East/Commit murder"
+                    },
+                    {
+                        "name": "Area 3: Alpha Arena - Lava",
+                        "ref": "Area 3 - Factory Interior/Alpha Arena Lava/Alpha Arena/Lava"
+                    },
+                    {
+                        "name": "Area 3: Alpha Arena - Alpha Metroid",
+                        "ref": "Area 3 - Factory Interior/Alpha Arena Alpha/Alpha Arena/Commit murder"
+                    },
+                    {
+                        "name": "Area 3: Factory Gamma Arena South",
+                        "ref": "Area 3 - Factory Interior/Factory Gamma Arena South/Commit murder"
+                    }
+                ],
+                    "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 283,
+                        "y": 111,
+                        "size": 7
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Area 4",
+        "children": [
+            {
+                "name": "Area 4 - Caves",
+                "sections": [
+                    {
+                        "name": "Area 4: Caves Intersection Terminal",
+                        "ref": "Area 4 - Caves/Caves Intersection Terminal/"
+                    },
+                    {
+                        "name": "Area 4: Spazer Beam Chamber",
+                        "ref": "Area 4 - Caves/Spazer Beam Chamber/"
+                    },
+                    {
+                        "name": "Area 4: Crumble Catwalk",
+                        "ref": "Area 4 - Caves/Crumble Catwalk/"
+                    },
+                    {
+                        "name": "Area 4: Transport to Area 3 and Crystal Mines",
+                        "ref": "Area 4 - Caves/Transport to Area 3 and Crystal Mines/"
+                    },
+                    {
+                        "name": "Area 4: Alpha+ Arena - Missile",
+                        "ref": "Area 4 - Caves/Alpha+ Arena Missile/Alpha+ Arena/Missile"
+                    },
+                    {
+                        "name": "Area 4: Alpha+ Arena - Evolved Alpha Metroid",
+                        "ref": "Area 4 - Caves/Alpha+ Arena Alpha/Alpha+ Arena/Commit murder"
+                    },
+                    {
+                        "name": "Area 4: Transit Tunnel",
+                        "ref": "Area 4 - Caves/Transit Tunnel/"
+                    },
+                    {
+                        "name": "Area 4: Fleech Swarm Cave",
+                        "ref": "Area 4 - Caves/Fleech Swarm Cave/"
+                    },
+                    {
+                        "name": "Area 4: Gamma Arena - Tunnel",
+                        "ref": "Area 4 - Caves/Gamma Arena Tunnel/Gamma Arena/Tunnel"
+                    },
+                    {
+                        "name": "Area 4: Gamma Arena - Gamma Metroid",
+                        "ref": "Area 4 - Caves/Gamma Arena Gamma/Gamma Arena/Commit murder"
+                    },
+                    {
+                        "name": "Area 4: Gamma Arena Access South",
+                        "ref": "Area 4 - Caves/Gamma Arena Access South/"
+                    },
+                    {
+                        "name": "Area 4: Amethyst Altars",
+                        "ref": "Area 4 - Caves/Amethyst Altars/"
+                    },
+                    {
+                        "name": "Area 4: Transport to Area 5",
+                        "ref": "Area 4 - Caves/Transport to Area 5/"
+                    }
+                ],
+                    "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 205,
+                        "y": 141,
+                        "size": 7
+                    }
+                ]
+            },
+            {
+                "name": "Area 4 - Crystal Mines",
+                "sections": [
+                    {
+                        "name": "Area 4: Mines Intersection Terminal - Top",
+                        "ref": "Area 4 - Crystal Mines/Mines Intersection Terminal Top/Mines Intersection Terminal/Top"
+                    },
+                    {
+                        "name": "Area 4: Mines Intersection Terminal - Bottom",
+                        "ref": "Area 4 - Crystal Mines/Mines Intersection Terminal Bottom/Mines Intersection Terminal/Bottom"
+                    },
+                    {
+                        "name": "Area 4: Super Missile Chamber",
+                        "ref": "Area 4 - Crystal Mines/Super Missile Chamber/"
+                    },
+                    {
+                        "name": "Area 4: Pink Crystal Preserve",
+                        "ref": "Area 4 - Crystal Mines/Pink Crystal Preserve/"
+                    },
+                    {
+                        "name": "Area 4: Lava Reservoir",
+                        "ref": "Area 4 - Crystal Mines/Lava Reservoir/"
+                    },
+                    {
+                        "name": "Area 4: Dual Pond Alcove",
+                        "ref": "Area 4 - Crystal Mines/Dual Pond Alcove/"
+                    },
+                    {
+                        "name": "Area 4: Zeta Arena",
+                        "ref": "Area 4 - Crystal Mines/Zeta Arena/Commit murder"
+                    },
+                    {
+                        "name": "Area 4: Gawron Groove",
+                        "ref": "Area 4 - Crystal Mines/Gawron Groove/"
+                    },
+                    {
+                        "name": "Area 4: Gemstone Gorge",
+                        "ref": "Area 4 - Crystal Mines/Gemstone Gorge/"
+                    },
+                    {
+                        "name": "Area 4: Gamma+ Arena",
+                        "ref": "Area 4 - Crystal Mines/Gamma+ Arena/Commit murder"
+                    },
+                    {
+                        "name": "Area 4: Space Jump Chamber",
+                        "ref": "Area 4 - Crystal Mines/Space Jump Chamber/"
+                    },
+                    {
+                        "name": "Area 4: Diggernaut Excavation Tunnels - Crystals",
+                        "ref": "Area 4 - Crystal Mines/Diggernaut Excavation Tunnels Crystals/Diggernaut Excavation Tunnels/Crystals"
+                    },
+                    {
+                        "name": "Area 4: Diggernaut Excavation Tunnels - Plants",
+                        "ref": "Area 4 - Crystal Mines/Diggernaut Excavation Tunnels Plants/Diggernaut Excavation Tunnels/Plants"
+                    },
+                    {
+                        "name": "Area 4: Diggernaut Excavation Tunnels - Puzzle",
+                        "ref": "Area 4 - Crystal Mines/Diggernaut Excavation Tunnels Puzzle/Diggernaut Excavation Tunnels/Puzzle"
+                    },
+                    {
+                        "name": "Area 4: Diggernaut Excavation Tunnels - Floor",
+                        "ref": "Area 4 - Crystal Mines/Diggernaut Excavation Tunnels Floor/Diggernaut Excavation Tunnels/Floor"
+                    }
+                ],
+                    "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 261,
+                        "y": 145,
+                        "size": 7
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Area 5",
+        "children": [
+            {
+                "name": "Area 5 - Tower Lobby",
+                "sections": [
+                    {
+                        "name": "Area 5: Transport to Areas 4 and 6 - Left",
+                        "ref": "Area 5 - Tower Lobby/Transport to Areas 4 and 6 Left/Transport to Areas 4 and 6/Left"
+                    },
+                    {
+                        "name": "Area 5: Transport to Areas 4 and 6 - Right",
+                        "ref": "Area 5 - Tower Lobby/Transport to Areas 4 and 6 Right/Transport to Areas 4 and 6/Right"
+                    },
+                    {
+                        "name": "Area 5: Lobby Teleporter West - Lower",
+                        "ref": "Area 5 - Tower Lobby/Lobby Teleporter West Lower/Lobby Teleporter West/Lower"
+                    },
+                    {
+                        "name": "Area 5: Lobby Teleporter West - Upper",
+                        "ref": "Area 5 - Tower Lobby/Lobby Teleporter West Upper/Lobby Teleporter West/Upper"
+                    },
+                    {
+                        "name": "Area 5: Lobby Teleporter East",
+                        "ref": "Area 5 - Tower Lobby/Lobby Teleporter East/"
+                    },
+                    {
+                        "name": "Area 5: Alpha+ Arena",
+                        "ref": "Area 5 - Tower Lobby/Alpha+ Arena/Commit murder"
+                    },
+                    {
+                        "name": "Area 5: Phase Drift Chamber - Artifact",
+                        "ref": "Area 5 - Tower Lobby/Phase Drift Chamber Artifact/Phase Drift Chamber/Artifact"
+                    },
+                    {
+                        "name": "Area 5: Phase Drift Chamber - Pitfall Blocks",
+                        "ref": "Area 5 - Tower Lobby/Phase Drift Chamber Pitfall Blocks/Phase Drift Chamber/Pitfall Blocks"
+                    },
+                    {
+                        "name": "Area 5: Meboid Millpond",
+                        "ref": "Area 5 - Tower Lobby/Meboid Millpond/"
+                    },
+                    {
+                        "name": "Area 5: Lobby Gamma+ Arena",
+                        "ref": "Area 5 - Tower Lobby/Lobby Gamma+ Arena/Commit murder"
+                    }
+                ],
+                    "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 192,
+                        "y": 170,
+                        "size": 7
+                    }
+                ]
+            },
+            {
+                "name": "Area 5 - Tower Exterior",
+                "sections": [
+                    {
+                        "name": "Area 5: Tower Exterior - Alcove",
+                        "ref": "Area 5 - Tower Exterior/Tower Exterior Alcove/Tower Exterior/Alcove"
+                    },
+                    {
+                        "name": "Area 5: Tower Exterior - Crevice",
+                        "ref": "Area 5 - Tower Exterior/Tower Exterior Crevice/Tower Exterior/Crevice"
+                    },
+                    {
+                        "name": "Area 5: Tower Exterior - Puzzle",
+                        "ref": "Area 5 - Tower Exterior/Tower Exterior Puzzle/Tower Exterior/Puzzle"
+                    },
+                    {
+                        "name": "Area 5: Tower Exterior - Ceiling",
+                        "ref": "Area 5 - Tower Exterior/Tower Exterior Ceiling/Tower Exterior/Ceiling"
+                    },
+                    {
+                        "name": "Area 5: Overgrown Maze - Right",
+                        "ref": "Area 5 - Tower Exterior/Overgrown Maze Right/Overgrown Maze/Right"
+                    },
+                    {
+                        "name": "Area 5: Overgrown Maze - Left",
+                        "ref": "Area 5 - Tower Exterior/Overgrown Maze Left/Overgrown Maze/Left"
+                    },
+                    {
+                        "name": "Area 5: Screw Attack Chamber",
+                        "ref": "Area 5 - Tower Exterior/Screw Attack Chamber/"
+                    },
+                    {
+                        "name": "Area 5: Red Plant Maze",
+                        "ref": "Area 5 - Tower Exterior/Red Plant Maze/"
+                    },
+                    {
+                        "name": "Area 5: Zeta Arena",
+                        "ref": "Area 5 - Tower Exterior/Zeta Arena/Commit murder"
+                    },
+                    {
+                        "name": "Area 5: Gamma+ Arena & Access",
+                        "ref": "Area 5 - Tower Exterior/Gamma+ Arena & Access/Commit murder"
+                    },
+                    {
+                        "name": "Area 5: Gamma Arena - Gamma Metroid",
+                        "ref": "Area 5 - Tower Exterior/Gamma Arena Gamma/Gamma Arena/Commit murder"
+                    },
+                    {
+                        "name": "Area 5: Gamma Arena - Maze",
+                        "ref": "Area 5 - Tower Exterior/Gamma Arena Maze/Gamma Arena/Maze"
+                    }
+                ],
+                    "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 162,
+                        "y": 138,
+                        "size": 7
+                    }
+                ]
+            },
+            {
+                "name": "Area 5 - Tower Interior",
+                "sections": [
+                    {
+                        "name": "Area 5: Interior Save Station",
+                        "ref": "Area 5 - Tower Interior/Interior Save Station/"
+                    },
+                    {
+                        "name": "Area 5: Plasma Beam Chamber",
+                        "ref": "Area 5 - Tower Interior/Plasma Beam Chamber/"
+                    },
+                    {
+                        "name": "Area 5: Grapple Shuffler",
+                        "ref": "Area 5 - Tower Interior/Grapple Shuffler/"
+                    },
+                    {
+                        "name": "Area 5: Gravity Suit Chamber",
+                        "ref": "Area 5 - Tower Interior/Gravity Suit Chamber/"
+                    },
+                    {
+                        "name": "Area 5: Phase Drift Trial Reward Room",
+                        "ref": "Area 5 - Tower Interior/Phase Drift Trial Reward Room/"
+                    },
+                    {
+                        "name": "Area 5: Phase Drift Trial West - Lower",
+                        "ref": "Area 5 - Tower Interior/Phase Drift Trial West Lower/Phase Drift Trial West/Lower"
+                    },
+                    {
+                        "name": "Area 5: Phase Drift Trial West - Upper",
+                        "ref": "Area 5 - Tower Interior/Phase Drift Trial West Upper/Phase Drift Trial West/Upper"
+                    },
+                    {
+                        "name": "Area 5: Zeta+ Arena Access",
+                        "ref": "Area 5 - Tower Interior/Zeta+ Arena Access/"
+                    },
+                    {
+                        "name": "Area 5: Gravity Suit Chamber Access",
+                        "ref": "Area 5 - Tower Interior/Gravity Suit Chamber Access/"
+                    },
+                    {
+                        "name": "Area 5: Tower Gamma+ Arena",
+                        "ref": "Area 5 - Tower Interior/Tower Gamma+ Arena/Commit murder"
+                    },
+                    {
+                        "name": "Area 5: Interior Teleporter",
+                        "ref": "Area 5 - Tower Interior/Interior Teleporter/"
+                    },
+                    {
+                        "name": "Area 5: Zeta+ Arena",
+                        "ref": "Area 5 - Tower Interior/Zeta+ Arena/Commit murder"
+                    }
+                ],
+                    "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 162,
+                        "y": 158,
+                        "size": 7
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Area 6",
+        "children": [
+            {
+                "name": "Area 6",
+                "sections": [
+                    {
+                        "name": "Area 6: Transport to Area 7",
+                        "ref": "Area 6/Transport to Area 7/"
+                    },
+                    {
+                        "name": "Area 6: Omega Arena",
+                        "ref": "Area 6/Omega Arena/Commit murder"
+                    },
+                    {
+                        "name": "Area 6: Hideout Sprawl - Right",
+                        "ref": "Area 6/Hideout Sprawl Right/Hideout Sprawl/Right"
+                    },
+                    {
+                        "name": "Area 6: Hideout Sprawl - Left",
+                        "ref": "Area 6/Hideout Sprawl Left/Hideout Sprawl/Left"
+                    },
+                    {
+                        "name": "Area 6: Crumbling Bridge - Pit",
+                        "ref": "Area 6/Crumbling Bridge Pit/Crumbling Bridge/Pit"
+                    },
+                    {
+                        "name": "Area 6: Crumbling Bridge - Tunnel",
+                        "ref": "Area 6/Crumbling Bridge Tunnel/Crumbling Bridge/Tunnel"
+                    },
+                    {
+                        "name": "Area 6: Crumbling Stairwell",
+                        "ref": "Area 6/Crumbling Stairwell/"
+                    },
+                    {
+                        "name": "Area 6: Diggernaut Arena",
+                        "ref": "Area 6/Diggernaut Arena/Commit murder"
+                    },
+                    {
+                        "name": "Area 6: Electric Escalade",
+                        "ref": "Area 6/Electric Escalade/"
+                    },
+                    {
+                        "name": "Area 6: Poisonous Tunnel",
+                        "ref": "Area 6/Poisonous Tunnel/"
+                    },
+                    {
+                        "name": "Area 6: Zeta Arena",
+                        "ref": "Area 6/Zeta Arena/Commit murder"
+                    },
+                    {
+                        "name": "Area 6: Chozo Seal East",
+                        "ref": "Area 6/Chozo Seal East/"
+                    },
+                    {
+                        "name": "Area 6: Chozo Seal West Intersection Terminal - Ceiling",
+                        "ref": "Area 6/Chozo Seal West Intersection Terminal Ceiling/Chozo Seal West Intersection Terminal/Ceiling"
+                    },
+                    {
+                        "name": "Area 6: Chozo Seal West Intersection Terminal - Tunnel",
+                        "ref": "Area 6/Chozo Seal West Intersection Terminal Tunnel/Chozo Seal West Intersection Terminal/Tunnel"
+                    },
+                    {
+                        "name": "Area 6: Chozo Seal West Intersection Terminal - Bottom",
+                        "ref": "Area 6/Chozo Seal West Intersection Terminal Bottom/Chozo Seal West Intersection Terminal/Bottom"
+                    }
+                ],
+                    "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 154,
+                        "y": 191,
+                        "size": 7
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Area 7",
+        "children": [
+            {
+                "name": "Area 7",
+                "sections": [
+                    {
+                        "name": "Area 7: Laboratory Teleporter West",
+                        "ref": "Area 7/Laboratory Teleporter West/"
+                    },
+                    {
+                        "name": "Area 7: Spider Boost Tunnel South",
+                        "ref": "Area 7/Spider Boost Tunnel South/"
+                    },
+                    {
+                        "name": "Area 7: Omega+ Arena",
+                        "ref": "Area 7/Omega+ Arena/Commit murder"
+                    },
+                    {
+                        "name": "Area 7: Robot Regime - Lower",
+                        "ref": "Area 7/Robot Regime Lower/Robot Regime/Lower"
+                    },
+                    {
+                        "name": "Area 7: Robot Regime - Upper",
+                        "ref": "Area 7/Robot Regime Upper/Robot Regime/Upper"
+                    },
+                    {
+                        "name": "Area 7: Transport to Area 6 - Crystals",
+                        "ref": "Area 7/Transport to Area 6 Crystals/Transport to Area 6/Crystals"
+                    },
+                    {
+                        "name": "Area 7: Transport to Area 6 - Alcove",
+                        "ref": "Area 7/Transport to Area 6 Alcove/Transport to Area 6/Alcove"
+                    },
+                    {
+                        "name": "Area 7: Transport to Area 6 - Pitfall Blocks",
+                        "ref": "Area 7/Transport to Area 6 Pitfall Blocks/Transport to Area 6/Pitfall Blocks"
+                    },
+                    {
+                        "name": "Area 7: Transport to Area 6 - Tunnel",
+                        "ref": "Area 7/Transport to Area 6 Tunnel/Transport to Area 6/Tunnel"
+                    },
+                    {
+                        "name": "Area 7: Omega Arena South Access",
+                        "ref": "Area 7/Omega Arena South Access/"
+                    },
+                    {
+                        "name": "Area 7: Omega Arena South",
+                        "ref": "Area 7/Omega Arena South/Commit murder"
+                    },
+                    {
+                        "name": "Area 7: Omega Arena North",
+                        "ref": "Area 7/Omega Arena North/Commit murder"
+                    },
+                    {
+                        "name": "Area 7: Omega Arena North Access",
+                        "ref": "Area 7/Omega Arena North Access/"
+                    },
+                    {
+                        "name": "Area 7: Wallfire Workstation",
+                        "ref": "Area 7/Wallfire Workstation/"
+                    },
+                    {
+                        "name": "Area 7: Grapple Puzzle Foyer",
+                        "ref": "Area 7/Grapple Puzzle Foyer/"
+                    },
+                    {
+                        "name": "Area 7: Spider Boost Tunnel North",
+                        "ref": "Area 7/Spider Boost Tunnel North/"
+                    }
+                ],
+                    "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 80,
+                        "y": 169,
+                        "size": 7
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Area 8",
+        "children": [
+            {
+                "name": "Area 8 Lower",
+                "sections": [
+                    {
+                        "name": "Area 8: Amphitheater - Spikes",
+                        "ref": "Area 8/Amphitheater Spikes/Amphitheater/Spikes"
+                    },
+                    {
+                        "name": "Area 8: Amphitheater - Upper Left",
+                        "ref": "Area 8/Amphitheater Upper Left/Amphitheater/Upper Left"
+                    },
+                    {
+                        "name": "Area 8: Amphitheater - Grapple Block",
+                        "ref": "Area 8/Amphitheater Grapple Block/Amphitheater/Grapple Block"
+                    },
+                    {
+                        "name": "Area 8: Amphitheater - Upper Right",
+                        "ref": "Area 8/Amphitheater Upper Right/Amphitheater/Upper Right"
+                    },
+                    {
+                        "name": "Area 8: Amphitheater - Maze",
+                        "ref": "Area 8/Amphitheater Maze/Amphitheater/Maze"
+                    },
+                    {
+                        "name": "Area 8: Nest Network - Crystals",
+                        "ref": "Area 8/Nest Network Crystals/Nest Network/Crystals"
+                    },
+                    {
+                        "name": "Area 8: Nest Network - Hallway",
+                        "ref": "Area 8/Nest Network Hallway/Nest Network/Hallway"
+                    },
+                    {
+                        "name": "Area 8: Entrance Teleporter",
+                        "ref": "Area 8/Entrance Teleporter/"
+                    },
+                    {
+                        "name": "Area 8: Nest Nodule - Tunnel",
+                        "ref": "Area 8/Nest Nodule Tunnel/Nest Nodule/Tunnel"
+                    },
+                    {
+                        "name": "Area 8: Nest Nodule - Crystals",
+                        "ref": "Area 8/Nest Nodule Crystals/Nest Nodule/Crystals"
+                    },
+                    {
+                        "name": "Area 8: Nest Vestibule",
+                        "ref": "Area 8/Nest Vestibule/"
+                    }
+                ],
+                    "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 31,
+                        "y": 125,
+                        "size": 7
+                    }
+                ]
+            },
+            {
+                "name": "Area 8 Upper",
+                "sections": [
+                    {
+                        "name": "Area 8: Transport to Surface - Left",
+                        "ref": "Area 8/Transport to Surface Left/Transport to Surface/Left"
+                    },
+                    {
+                        "name": "Area 8: Transport to Surface - Right",
+                        "ref": "Area 8/Transport to Surface Right/Transport to Surface/Right"
+                    },
+                    {
+                        "name": "Area 8: Metroid Nest Shaft West",
+                        "ref": "Area 8/Metroid Nest Shaft West/"
+                    },
+                    {
+                        "name": "Area 8: Hatchling Room",
+                        "ref": "Area 8/Hatchling Room/"
+                    }
+                ],
+                    "map_locations": [
+                    {
+                        "map": "overview",
+                        "x": 47,
+                        "y": 85,
+                        "size": 7
+                    }
+                ]
+            }
+        ]
+    }
+]
+
