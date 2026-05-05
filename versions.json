@@ -1,3 +1,10 @@
 {
-	"versions": []
+	"versions": [
+		{
+			"package_version": "0.2.0",
+			"download_url": "https://github.com/LuigiXRules/Metroid-Samus-Returns-Poptracker-Pack/releases/download/0.2.0/samus_returns_pack.zip",
+			"sha256": "969c9a58acf8db9d4de12f596f60c463ba4803c4024e5323a442dcb7c2324875",
+			"changelog": ["Overview map, Auto-update"]
+		}
+	]
 }
