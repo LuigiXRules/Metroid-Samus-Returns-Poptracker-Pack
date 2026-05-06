@@ -4474,7 +4474,7 @@
               {
                 "name": "Crystals",
                 "item_count": 1,
-                "access_rules": ["^$CanReach|NestNetworkTunnelsPickup"],
+                "access_rules": ["^$CanReach|NestNetworkTopPickup"],
                 "chest_unopened_img": "images/items/missile_tank.png",
                 "chest_opened_img": "images/items/missile_tank_obtained.png"
               }
@@ -4499,7 +4499,7 @@
               {
                 "name": "Hallway",
                 "item_count": 1,
-                "access_rules": ["^$CanReach|NestNetworkTopPickup"],
+                "access_rules": ["^$CanReach|NestNetworkTunnelsPickup"],
                 "chest_unopened_img": "images/items/missile_tank.png",
                 "chest_opened_img": "images/items/missile_tank_obtained.png"
               }
