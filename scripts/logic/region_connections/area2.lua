@@ -593,7 +593,7 @@ LightningArmorUpper:connect_one_way_entrance(DamExteriorEast) -- Elevator
 -- Some event for opening a door from the top?
 Area2TransportAccessUpper:connect_one_way_entrance(Area2EntrywayAlpha2Exit)
 Area2TransportAccessUpper:connect_one_way_entrance(LightningArmorUpper, function() 
-	return 
+	return
 	CanReach(LightningArmorTutorial)
 end,
 {LightningArmorTutorial}) -- Normal Door; involves events created earlier
