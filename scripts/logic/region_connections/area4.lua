@@ -443,10 +443,8 @@ DualPondAlcove:connect_one_way(DualPondAlcovePickup, function ()
 	return All(
 		CanSpiderBoost,
 		Any(
-			All(
-				KnowledgeSimple,
-				GravitySuit
-			),
+			KnowledgeSimple,
+			GravitySuit,
 			All(
 				Any(
 					GravitySuit,

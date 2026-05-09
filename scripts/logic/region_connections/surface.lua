@@ -190,17 +190,14 @@ end)
 SurfaceTransportArea8Hallway:connect_one_way(SurfaceTransportArea8HallwayPickup, function() 
 	return All(
 		MetroidHatchling,
-		MorphBall,
+		CanSpider,
 		Any(
-			SpaceJump,
+			CanSpiderBoost,
+			CanIBJVertical,
 			All(
-				CanHighJump,
-				Any(
-					LightningArmor,
-					CanSpider
-				)
-			),
-			CanIBJDiagonal
+				SpaceJump,
+				MovementSimple
+			)
 		)
 	)
 end)

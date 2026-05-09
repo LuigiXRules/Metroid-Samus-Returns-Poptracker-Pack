@@ -567,11 +567,11 @@ TransportAreas1And3Seal:connect_one_way(TransportAreas1And3SealPlantsPickup, fun
 	)
 end)
 TransportAreas1And3Seal:connect_one_way(TransportAreas1And3SealTunnelPickup, function()
-	return All(
-		MorphBall,
-		Any(
+	return Any(
+		CanPowerBomb,
+		All(
 			MetroidHatchling,
-			PowerBomb
+			CanBomb
 		)
 	)
 end)

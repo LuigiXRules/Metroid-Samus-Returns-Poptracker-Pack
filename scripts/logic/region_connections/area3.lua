@@ -373,15 +373,12 @@ end)
 Area3CavernsGammaSMazeJunctionAccess:connect_one_way(Area3CavernsGammaSMazeJunctionAccessPickup, function ()
 	return Any(
 		All(
-			CanAnyMissile,
-			GravitySuit
+			MetroidHatchling,
+			CanSpider
 		),
 		All(
-			MetroidHatchling,
-			Any(
-				CanSpider,
-				PhaseDrift
-			)
+			PhaseDrift,
+			CanAnyMissile
 		)
 	)
 end)
@@ -650,7 +647,8 @@ SecuirtySite:connect_one_way(SecuirtySitePickup, function ()
 			MetroidHatchling,
 			All(
 				CanBombBlock,
-				GrappleBeam
+				MorphBall,
+				LightningArmor
 			)
 		),
 		Any(
@@ -828,7 +826,8 @@ Area3InteriorAlpha:connect_one_way(Area3InteriorAlphaLava, function ()
 	return All(
 		VariaSuit,
 		GravitySuit,
-		GrappleBeam
+		GrappleBeam,
+		SuperMissile
 	)
 end)
 Area3InteriorGammaS:connect_one_way_entrance(Area3InteriorGammaSAccess, function ()

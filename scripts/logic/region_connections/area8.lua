@@ -115,6 +115,7 @@ AmphitheaterCrossway:connect_one_way(AmphitheaterCrosswayPickup, function ()
 		ScrewAttack,
 		Any(
 			HighJumpBoots,
+			SpaceJump,
 			WallJumpSimple
 		),
 		CanBombBlock

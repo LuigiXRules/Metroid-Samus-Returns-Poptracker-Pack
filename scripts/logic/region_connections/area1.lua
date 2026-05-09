@@ -5,9 +5,12 @@ TransportSurfaceArea2Surface:connect_one_way_entrance(TransportSurfaceArea2Area2
 	return All(
 		MorphBall,
 		Any(
-			MissileLauncher,
 			PowerBomb,
-			ScrewAttack
+			ScrewAttack,
+			All(
+				MissileLauncher,
+				CanBeamBlockThroughTunnel
+			)
 		)
 	)
 end)
@@ -138,7 +141,7 @@ TempleExteriorSoutheast:connect_one_way_entrance(InnerTempleEHallUpper) -- Norma
 TempleExteriorSoutheast:connect_one_way_entrance(Area1ExteriorAlpha, CanClimbWall) -- Normal Door
 TempleExteriorSoutheast:connect_one_way_entrance(SpiderBallDoorAccess, OpenMorphTunnelDoor)
 TempleExteriorSoutheast:connect_one_way_entrance(TempleExteriorCenter, CanClimbWall)
-TempleExteriorSoutheast:connect_one_way(TempleExteriorSoutheastPickup, CanHighLedge)
+TempleExteriorSoutheast:connect_one_way(TempleExteriorSoutheastPickup, CanClimbWall)
 TempleExteriorCenter:connect_one_way_entrance(TempleExteriorSoutheast)
 TempleExteriorCenter:connect_one_way_entrance(TempleExteriorTop, CanClimbWall)
 TempleExteriorCenter:connect_one_way_entrance(TempleExteriorSouthwest)

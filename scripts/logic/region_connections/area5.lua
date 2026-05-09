@@ -191,14 +191,11 @@ Area5LobbyTeleporterWLake:connect_one_way_entrance(JShapeTunnelBottom, function 
 end)
 Area5LobbyTeleporterWUpper:connect_one_way_entrance(Area5LobbyTeleporterWLower)
 Area5LobbyTeleporterWUpper:connect_one_way_entrance(Area5LobbyTeleporterWCave, function ()
-	return Any(
-		CanSpiderBoost,
-		All(
-			CanThorns,
-			Any(
-				MetroidHatchling,
-				CanPowerBomb
-			)
+	return All(
+		CanThorns,
+		Any(
+			MetroidHatchling,
+			CanPowerBomb
 		)
 	)
 end)
@@ -330,10 +327,16 @@ end)
 Area5LobbyGamma2:connect_one_way_entrance(Area5LobbyGamma2Access, function ()
 	return All(
 		OpenMorphTunnelDoor,
+		VariaSuit,
 		CanBombBlock
 	)
 end)
-Area5LobbyGamma2:connect_one_way(Area5LobbyGamma2Gamma, CanDamageMetroid)
+Area5LobbyGamma2:connect_one_way(Area5LobbyGamma2Gamma, function ()
+	return All(
+		VariaSuit,
+		CanDamageMetroid
+	)
+end)
 Area5LobbyPassagewayUpper:connect_one_way_entrance(TransportAreas4And6Upper)
 Area5LobbyPassagewayUpper:connect_one_way_entrance(Area5LobbyPassagewayLower)
 Area5LobbyPassagewayLower:connect_one_way_entrance(Area5LobbyTeleporterELower)

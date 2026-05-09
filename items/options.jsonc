@@ -14,7 +14,7 @@
     "max_quantity": 39,
     "initial_quantity": 39,
     "img": "images/settings/dna_available.png",
-    "codes": "dna, metroid_dna, dnaavailable"
+    "codes": "dna, metroid_dna, dnaavailable, dna_available"
   },
   {
     "codes": "WallJump, wall_jump",

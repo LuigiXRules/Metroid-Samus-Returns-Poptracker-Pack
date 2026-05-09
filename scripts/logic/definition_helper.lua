@@ -68,7 +68,8 @@ SlotDataTable = {
 	{"knowledge", "progressive"},
 	{"damage_boost", "progressive"},
 	{"infinite_bomb_jump", "progressive"},
-	{"dna_required", "consumable"}
+	{"dna_required", "consumable"},
+	{"dna_available", "consumable"}
 }
 
 
