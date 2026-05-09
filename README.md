@@ -8,7 +8,6 @@ Some of the maps are kinda big, but you can zoom in using the scroll wheel on yo
 
 ## Known Issues
 
-- Autotracking DNA Available doesn't work yet.
 - My division of Surface East/West is different than the division the game uses; as such, the pack will not autotab to Surface West when climbing the cliff to the west of the ship. I am unsure on what I will do about this.
 - Area 8 is considered one region in game, so despite there being two tabs for it, only the Lower tab will be autotabbed to.
 
