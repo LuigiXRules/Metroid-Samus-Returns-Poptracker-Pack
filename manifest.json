@@ -1,7 +1,7 @@
 {
   "name": "Metroid: Samus Returns Poptracker Pack",
   "game_name": "Metroid: Samus Returns",
-  "package_version": "0.2.1",
+  "package_version": "0.2.2",
   "package_uid": "samus_returns_pack",
   "platform": "3ds",
   "author": "LuigiXRules",
@@ -9,7 +9,13 @@
   "target_poptracker_version": "0.35.1",
   "variants": {
     "standard": {
-      "display_name": "Map Tracker",
+      "display_name": "Map Tracker - Default",
+      "flags": [
+        "ap"
+      ]
+    },
+    "v_bigger_maps": {
+      "display_name": "Map Tracker - More Autotab Compatible",
       "flags": [
         "ap"
       ]

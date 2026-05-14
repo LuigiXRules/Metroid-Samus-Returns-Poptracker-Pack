@@ -1,0 +1,4658 @@
+[
+  {
+    "name": "Surface East",
+    "children": [
+        {
+        "name": "Proteus Ridley",
+        "sections": [
+          {
+            "name": "Commit one final murder",
+            "item_count": 1,
+            "access_rules": ["^$CanReach|ProteusRidley"],
+            "chest_unopened_img": "images/items/baby.png",
+            "chest_opened_img": "images/items/baby_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "surfaceeast",
+            "x": 487,
+            "y": 391,
+            "size": 21
+          }
+        ]
+      },
+      {
+        "name": "Twisty Tunnel",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|TwistyTunnelPickup"],
+            "chest_unopened_img": "images/items/missile_tank.png",
+            "chest_opened_img": "images/items/missile_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "surfaceeast",
+            "x": 973,
+            "y": 584,
+            "size": 17
+          }
+        ]
+      },
+      {
+        "name": "Morph Ball Chamber",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|MorphBallUpper"],
+            "chest_unopened_img": "images/items/morph_ball.png",
+            "chest_opened_img": "images/items/morph_ball_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "surfaceeast",
+            "x": 1078,
+            "y": 571,
+            "size": 17
+          }
+        ]
+      },
+      {
+        "name": "Chozo Seal",
+        "sections": [
+          {
+            "name": "It's actually way below the seal",
+            "item_count": 1,
+            "access_rules": ["^$CanReach|ChozoSealTunnel"],
+            "chest_unopened_img": "images/items/missile_tank.png",
+            "chest_opened_img": "images/items/missile_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "surfaceeast",
+            "x": 911,
+            "y": 702,
+            "size": 17
+          }
+        ]
+      },
+      {
+        "name": "Transport to Area 1",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|TransportArea1Pickup"],
+            "chest_unopened_img": "images/items/missile_tank.png",
+            "chest_opened_img": "images/items/missile_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "surfaceeast",
+            "x": 1049,
+            "y": 741,
+            "size": 17
+          }
+        ]
+      },
+      {
+        "name": "Chozo Cache East",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|ChozoCacheE"],
+            "chest_unopened_img": "images/items/missile_tank.png",
+            "chest_opened_img": "images/items/missile_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "surfaceeast",
+            "x": 809,
+            "y": 719,
+            "size": 17
+          }
+        ]
+      },
+      {
+        "name": "Charge Beam Chamber",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|ChargeBeamChamber"],
+            "chest_unopened_img": "images/items/charge_beam.png",
+            "chest_opened_img": "images/items/charge_beam_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "surfaceeast",
+            "x": 835,
+            "y": 765,
+            "size": 17
+          }
+        ]
+      },
+      {
+        "name": "Alpha Arena Pickup",
+        "children": [
+          { 
+            "name": "Alpha Arena",
+            "sections": [
+              {
+                "name": "Missile",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|SurfaceEastAlphaPickup"],
+                "chest_unopened_img": "images/items/missile_tank.png",
+                "chest_opened_img": "images/items/missile_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "surfaceeast",
+                "x": 595,
+                "y": 756,
+                "size": 17
+              }
+            ]
+          }  
+        ]
+      }, 
+      {
+        "name": "Alpha Arena Alpha Metroid",
+        "children":[
+          {
+            "name": "Alpha Arena",
+            "sections": [
+              {
+                "name": "Commit murder",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|SurfaceEastAlphaArenaAlpha"],
+                "chest_unopened_img": "images/items/dna.png",
+                "chest_opened_img": "images/items/dna_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "surfaceeast",
+                "x": 670,
+                "y": 765,
+                "size": 17
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Scan Pulse Chamber",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|ScanPulseRight"],
+            "chest_unopened_img": "images/items/scan_pulse.png",
+            "chest_opened_img": "images/items/scan_pulse_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "surfaceeast",
+            "x": 779,
+            "y": 619,
+            "size": 17
+          }
+        ]
+      },
+      {
+        "name": "Chozo Cache West",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|ChozoCacheW"],
+            "chest_unopened_img": "images/items/super_missile_tank.png",
+            "chest_opened_img": "images/items/super_missile_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "surfaceeast",
+            "x": 632,
+            "y": 659,
+            "size": 17
+          }
+        ]
+      },
+      {
+        "name": "Charge Beam Chamber Access",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|ChargeBeamAccessPickup"],
+            "chest_unopened_img": "images/items/energy_tank.png",
+            "chest_opened_img": "images/items/energy_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "surfaceeast",
+            "x": 776,
+            "y": 773,
+            "size": 17
+          }
+        ]
+      },
+      {
+        "name": "Surface Stash",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|SurfaceStashPickup"],
+            "chest_unopened_img": "images/items/aeion_tank.png",
+            "chest_opened_img": "images/items/aeion_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "surfacewest",
+            "x": 759,
+            "y": 278,
+            "size": 12
+          },
+          {
+            "map": "surfaceeast",
+            "x": 262,
+            "y": 271,
+            "size": 17
+          }
+        ]
+      },
+      {
+        "name": "Surface Crumble Block Challenge",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|SurfaceCrumbleChallenge"],
+            "chest_unopened_img": "images/items/super_missile_tank.png",
+            "chest_opened_img": "images/items/super_missile_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "surfacewest",
+            "x": 560,
+            "y": 210,
+            "size": 12
+          },
+          {
+            "map": "surfaceeast",
+            "x": 62,
+            "y": 203,
+            "size": 17
+          }
+        ]
+      },
+      {
+        "name": "Transport Cache",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|SurfaceTransportCache"],
+            "chest_unopened_img": "images/items/power_bomb_tank.png",
+            "chest_opened_img": "images/items/power_bomb_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "surfaceeast",
+            "x": 933,
+            "y": 737,
+            "size": 17
+          }
+        ]
+      },
+      {
+        "name": "Cavern Alcove",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|CavernAlcovePickup"],
+            "chest_unopened_img": "images/items/missile_tank.png",
+            "chest_opened_img": "images/items/missile_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "surfaceeast",
+            "x": 707,
+            "y": 594,
+            "size": 17
+          }
+        ]
+      },
+      {
+        "name": "Energy Recharge Station Shaft",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|EnergyRechargeShaftUpperPickup"],
+            "chest_unopened_img": "images/items/missile_tank.png",
+            "chest_opened_img": "images/items/missile_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "surfaceeast",
+            "x": 734,
+            "y": 689,
+            "size": 17
+          }
+        ]
+      },
+      {
+        "name": "Transport to Area 8 Left",
+        "children":[
+          {
+            "name": "Transport to Area 8",
+            "sections": [
+              {
+                "name": "Left",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|SurfaceTransportArea8LeftShaftPickup"],
+                "chest_unopened_img": "images/items/super_missile_tank.png",
+                "chest_opened_img": "images/items/super_missile_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "surfacewest",
+                "x": 70,
+                "y": 392,
+                "size": 12
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Transport to Area 8 Right",
+        "children": [
+          {
+            "name": "Transport to Area 8",
+            "sections": [
+              {
+                "name": "Right",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|SurfaceTransportArea8HallwayPickup"],
+                "chest_unopened_img": "images/items/missile_tank.png",
+                "chest_opened_img": "images/items/missile_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "surfacewest",
+                "x": 315,
+                "y": 439,
+                "size": 12
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Area 1",
+    "children": [
+      {
+        "name": "Bomb Chamber Missile",
+        "children": [
+          {
+            "name": "Bomb Chamber",
+            "sections": [
+              {
+                "name": "Missile",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|BombTunnelPickup"],
+                "chest_unopened_img": "images/items/missile_tank.png",
+                "chest_opened_img": "images/items/missile_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area1",
+                "x": 612,
+                "y": 292,
+                "size": 12
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Bomb Chamber Statue",
+        "children": [
+          {
+            "name": "Bomb Chamber",
+            "sections": [
+              {
+                "name": "Statue",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|BombChamber"],
+                "chest_unopened_img": "images/items/bomb.png",
+                "chest_opened_img": "images/items/bomb_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area1",
+                "x": 610,
+                "y": 272,
+                "size": 12
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Destroyed Armory",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|DestroyedArmoryPickup"],
+            "chest_unopened_img": "images/items/aeion_tank.png",
+            "chest_opened_img": "images/items/aeion_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area1",
+            "x": 1004,
+            "y": 270,
+            "size": 12
+          }
+        ]
+      },
+      {
+        "name": "Spider Ball Chamber Tunnel",
+        "children": [
+          {
+            "name": "Spider Ball Chamber",
+            "sections": [
+              {
+                "name": "Tunnel",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|SpiderBallTunnelPickup"],
+                "chest_unopened_img": "images/items/missile_tank.png",
+                "chest_opened_img": "images/items/missile_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area1",
+                "x": 1083,
+                "y": 291,
+                "size": 12
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Spider Ball Chamber Buried Item",
+        "children": [
+          {
+            "name": "Spider Ball Chamber",
+            "sections": [
+              {
+                "name": "Buried Item",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|SpiderBallChamberPickup"],
+                "chest_unopened_img": "images/items/spider_ball.png",
+                "chest_opened_img": "images/items/spider_ball_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area1",
+                "x": 1083,
+                "y": 297,
+                "size": 12
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Exterior Alpha Arena Above Arena",
+        "children": [
+          {
+            "name": "Exterior Alpha Arena",
+            "sections": [
+              {
+                "name": "Above arena",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|Area1ExteriorAlphaPickup"],
+                "chest_unopened_img": "images/items/energy_tank.png",
+                "chest_opened_img": "images/items/energy_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area1",
+                "x": 1122,
+                "y": 106,
+                "size": 12
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Exterior Alpha Arena Alpha",
+        "children": [
+          {
+            "name": "Exterior Alpha Arena",
+            "sections": [
+              {
+                "name": "Commit murder",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|Area1ExteriorAlphaAlpha"],
+                "chest_unopened_img": "images/items/dna.png",
+                "chest_opened_img": "images/items/dna_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area1",
+                "x": 1087,
+                "y": 141,
+                "size": 12
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Temple Exterior Crevice",
+        "children": [
+          {
+            "name": "Temple Exterior",
+            "sections": [
+              {
+                "name": "Crevice",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|TempleExteriorSoutheastPickup"],
+                "chest_unopened_img": "images/items/missile_tank.png",
+                "chest_opened_img": "images/items/missile_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area1",
+                "x": 1026,
+                "y": 152,
+                "size": 12
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Temple Exterior Ceiling",
+        "children": [
+          {
+            "name": "Temple Exterior",
+            "sections": [
+              {
+                "name": "Ceiling",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|TempleExteriorTopPickup"],
+                "chest_unopened_img": "images/items/missile_tank.png",
+                "chest_opened_img": "images/items/missile_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area1",
+                "x": 797,
+                "y": 17,
+                "size": 12
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Temple Exterior Hidden",
+        "children": [
+          {
+            "name": "Temple Exterior",
+            "sections": [
+              {
+                "name": "Hidden",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|TempleExteriorCenterPickup"],
+                "chest_unopened_img": "images/items/missile_tank.png",
+                "chest_opened_img": "images/items/missile_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area1",
+                "x": 822,
+                "y": 96,
+                "size": 12
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Metroid Caverns Alpha Arena Southeast",
+        "sections": [
+          {
+            "name": "Commit murder",
+            "item_count": 1,
+            "access_rules": ["^$CanReach|Area1CavernsAlphaSeAlpha"],
+            "chest_unopened_img": "images/items/dna.png",
+            "chest_opened_img": "images/items/dna_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area1",
+            "x": 747,
+            "y": 425,
+            "size": 12
+          }
+        ]
+      },
+      {
+        "name": "Metroid Caverns Alpha Arena Northeast",
+        "sections": [
+          {
+            "name": "Commit murder",
+            "item_count": 1,
+            "access_rules": ["^$CanReach|Area1CavernsAlphaNeAlpha"],
+            "chest_unopened_img": "images/items/dna.png",
+            "chest_opened_img": "images/items/dna_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area1",
+            "x": 938,
+            "y": 374,
+            "size": 12
+          }
+        ]
+      },
+      {
+        "name": "Water Maze",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|WaterMazePickup"],
+            "chest_unopened_img": "images/items/aeion_tank.png",
+            "chest_opened_img": "images/items/aeion_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area1",
+            "x": 537,
+            "y": 353,
+            "size": 12
+          }
+        ]
+      },
+      {
+        "name": "Ice Beam Chamber Statue",
+        "children": [
+          {
+            "name": "Ice Beam Chamber",
+            "sections": [
+              {
+                "name": "Statue",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|IceBeamChamber"],
+                "chest_unopened_img": "images/items/ice_beam.png",
+                "chest_opened_img": "images/items/ice_beam_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area1",
+                "x": 795,
+                "y": 324,
+                "size": 12
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ice Beam Chamber Crystals",
+        "children": [
+          {
+            "name": "Ice Beam Chamber",
+            "sections": [
+              {
+                "name": "Crystals",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|IceBeamCrystalsPickup"],
+                "chest_unopened_img": "images/items/super_missile_tank.png",
+                "chest_opened_img": "images/items/super_missile_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area1",
+                "x": 791,
+                "y": 345,
+                "size": 12
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Magma Pool Alcove",
+        "children": [
+          {
+            "name": "Magma Pool",
+            "sections": [
+              {
+                "name": "Alcove",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|Area1MagmaPoolLeftAlcovePickup"],
+                "chest_unopened_img": "images/items/missile_tank.png",
+                "chest_opened_img": "images/items/missile_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area1",
+                "x": 410,
+                "y": 322,
+                "size": 12
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Magma Pool Magma",
+        "children": [
+          {
+            "name": "Magma Pool",
+            "sections": [
+              {
+                "name": "Magma",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|Area1MagmaPoolLeftMagmaPickup"],
+                "chest_unopened_img": "images/items/super_missile_tank.png",
+                "chest_opened_img": "images/items/super_missile_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area1",
+                "x": 430,
+                "y": 363,
+                "size": 12
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Metroid Caverns Save Station",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|Area1CavernsSaveStationPickupTunnel"],
+            "chest_unopened_img": "images/items/missile_tank.png",
+            "chest_opened_img": "images/items/missile_tank_obtained.png"
+          }
+        ],  
+        "map_locations": [
+          {
+            "map": "area1",
+            "x": 694,
+            "y": 342,
+            "size": 12
+          }
+        ]
+      },
+      {
+        "name": "Inner Temple Ventilation Shaft",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|InnerTempleVentShaftShaftPickup"],
+            "chest_unopened_img": "images/items/missile_tank.png",
+            "chest_opened_img": "images/items/missile_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area1",
+            "x": 801,
+            "y": 158,
+            "size": 12
+          }
+        ]
+      },
+      {
+        "name": "Transport Cache",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|Area1TransportCachePickup"],
+            "chest_unopened_img": "images/items/missile_tank.png",
+            "chest_opened_img": "images/items/missile_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area1",
+            "x": 323,
+            "y": 490,
+            "size": 12
+          }
+        ]
+      },
+      {
+        "name": "Metroid Caverns Alpha Arena Southwest",
+        "sections": [
+          {
+            "name": "Commit murder",
+            "item_count": 1,
+            "access_rules": ["^$CanReach|Area1CavernsAlphaSwAlpha"],
+            "chest_unopened_img": "images/items/dna.png",
+            "chest_opened_img": "images/items/dna_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area1",
+            "x": 508,
+            "y": 427,
+            "size": 12
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Area 2 - Dam Exterior",
+    "children": [
+      {
+        "name": "Dam Exterior",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|DamExteriorEastPickup"],
+            "chest_unopened_img": "images/items/missile_tank.png",
+            "chest_opened_img": "images/items/missile_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area2exterior",
+            "x": 1045,
+            "y": 51,
+            "size": 12
+          }
+        ]
+      },
+      {
+        "name": "Arachnus Arena",
+        "sections": [
+          {
+            "name": "Commit murder",
+            "item_count": 1,
+            "access_rules": ["^$CanReach|Arachnus"],
+            "chest_unopened_img": "images/items/spring_ball.png",
+            "chest_opened_img": "images/items/spring_ball_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area2exterior",
+            "x": 750,
+            "y": 135,
+            "size": 12
+          }
+        ]
+      },
+      {
+        "name": "Critter Playground",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|CritterPlaygroundPickup"],
+            "chest_unopened_img": "images/items/missile_tank.png",
+            "chest_opened_img": "images/items/missile_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area2exterior",
+            "x": 843,
+            "y": 205,
+            "size": 12
+          }
+        ]
+      },
+      {
+        "name": "Metroid Caverns Entrance",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|Area2ExteriorCavernsEntrancePickup"],
+            "chest_unopened_img": "images/items/super_missile_tank.png",
+            "chest_opened_img": "images/items/super_missile_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area2exterior",
+            "x": 416,
+            "y": 360,
+            "size": 12
+          }
+        ]
+      },
+      {
+        "name": "Spike Ravine",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|SpikeRavinePickupPickup"],
+            "chest_unopened_img": "images/items/aeion_tank.png",
+            "chest_opened_img": "images/items/aeion_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area2exterior",
+            "x": 331,
+            "y": 383,
+            "size": 12
+          }
+        ]
+      },
+      {
+        "name": "Metroid Caverns Maze",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|Area2ExteriorCavernsMazePickup"],
+            "chest_unopened_img": "images/items/missile_tank.png",
+            "chest_opened_img": "images/items/missile_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area2exterior",
+            "x": 492,
+            "y": 416,
+            "size": 12
+          }
+        ]
+      },
+      {
+        "name": "Metroid Caverns Alpha Arena Northwest",
+        "sections": [
+          {
+            "name": "Commit murder",
+            "item_count": 1,
+            "access_rules": ["^$CanReach|Area2ExteriorCavernsAlphaNwAlpha"],
+            "chest_unopened_img": "images/items/dna.png",
+            "chest_opened_img": "images/items/dna_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area2exterior",
+            "x": 333,
+            "y": 475,
+            "size": 12
+          }
+        ]
+      },
+      {
+        "name": "Metroid Caverns Alpha Arena Southwest",
+        "sections": [
+          {
+            "name": "Commit murder",
+            "item_count": 1,
+            "access_rules": ["^$CanReach|Area2ExteriorCavernsAlphaSwAlpha"],
+            "chest_unopened_img": "images/items/dna.png",
+            "chest_opened_img": "images/items/dna_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area2exterior",
+            "x": 88,
+            "y": 535,
+            "size": 12
+          }
+        ]
+      },
+      {
+        "name": "Metroid Caverns Teleporter",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|Area2ExteriorCavernsTeleporterLeftPickup"],
+            "chest_unopened_img": "images/items/missile_tank.png",
+            "chest_opened_img": "images/items/missile_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area2exterior",
+            "x": 370,
+            "y": 522,
+            "size": 12
+          }
+        ]
+      },
+      {
+        "name": "Exterior Alpha+ Arena",
+        "sections": [
+          {
+            "name": "Commit murder",
+            "item_count": 1,
+            "access_rules": ["^$CanReach|Area2ExteriorAlpha2Alpha"],
+            "chest_unopened_img": "images/items/dna.png",
+            "chest_opened_img": "images/items/dna_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area2exterior",
+            "x": 517,
+            "y": 99,
+            "size": 12
+          }
+        ]
+      },
+      {
+        "name": "Serene Shelter",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|SereneShelterPickup"],
+            "chest_unopened_img": "images/items/super_missile_tank.png",
+            "chest_opened_img": "images/items/super_missile_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area2exterior",
+            "x": 394,
+            "y": 77,
+            "size": 12
+          }
+        ]
+      },
+      {
+        "name": "Metroid Caverns Alpha+ Arena",
+        "sections": [
+          {
+            "name": "Commit murder",
+            "item_count": 1,
+            "access_rules": ["^$CanReach|Area2ExteriorCavernsAlpha2Alpha"],
+            "chest_unopened_img": "images/items/dna.png",
+            "chest_opened_img": "images/items/dna_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area2exterior",
+            "x": 637,
+            "y": 529,
+            "size": 12
+          }
+        ]
+      },
+      {
+        "name": "Inner Alpha Arena",
+        "sections": [
+          {
+            "name": "Commit murder",
+            "item_count": 1,
+            "access_rules": ["^$CanReach|Area2ExteriorInnerAlphaAlpha"],
+            "chest_unopened_img": "images/items/dna.png",
+            "chest_opened_img": "images/items/dna_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area2exterior",
+            "x": 730,
+            "y": 175,
+            "size": 12
+          }
+        ]
+      },
+      {
+        "name": "Metroid Caverns Alpha Arena East",
+        "sections": [
+          {
+            "name": "Commit murder",
+            "item_count": 1,
+            "access_rules": ["^$CanReach|Area2ExteriorCavernsAlphaEAlpha"],
+            "chest_unopened_img": "images/items/dna.png",
+            "chest_opened_img": "images/items/dna_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area2exterior",
+            "x": 634,
+            "y": 480,
+            "size": 12
+          }
+        ]
+      }
+    ]
+  },
+  {  
+    "name": "Area 2 - Dam Interior",
+    "children": [
+      {
+        "name": "Wave Beam & Transport to Dam Exterior West",
+        "sections": [
+          {
+            "name": "Wave Beam Chamber",
+            "item_count": 1,
+            "access_rules": ["^$CanReach|WaveBeamChamber"],
+            "chest_unopened_img": "images/items/wave_beam.png",
+            "chest_opened_img": "images/items/wave_beam_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area2interior",
+            "x": 239,
+            "y": 52,
+            "size": 8
+          }
+        ]
+      },
+      {
+        "name": "Lava Generator",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|LavaGeneratorPickup"],
+            "chest_unopened_img": "images/items/missile_tank.png",
+            "chest_opened_img": "images/items/missile_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area2interior",
+            "x": 87,
+            "y": 144,
+            "size": 8
+          }
+        ]
+      },
+      {
+        "name": "Crumble Cavern",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|CrumbleCavernPickup"],
+            "chest_unopened_img": "images/items/power_bomb_tank.png",
+            "chest_opened_img": "images/items/power_bomb_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area2interior",
+            "x": 305,
+            "y": 175,
+            "size": 8
+          }
+        ]
+      },
+      {
+        "name": "Dam Basement Lower",
+        "children": [
+          {
+            "name": "Dam Basement",
+            "sections": [
+              {
+                "name": "Lower",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|DamBasementLower"],
+                "chest_unopened_img": "images/items/energy_tank.png",
+                "chest_opened_img": "images/items/energy_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area2interior",
+                "x": 414,
+                "y": 328,
+                "size": 8
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Dam Basement Upper",
+        "children": [
+          {
+            "name": "Dam Basement",
+            "sections": [
+              {
+                "name": "Upper",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|DamBasementUpper"],
+                "chest_unopened_img": "images/items/missile_tank.png",
+                "chest_opened_img": "images/items/missile_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area2interior",
+                "x": 374,
+                "y": 315,
+                "size": 8
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "High Jump Boots Chamber",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|HighJumpBootsUpper"],
+            "chest_unopened_img": "images/items/high_jump_boots.png",
+            "chest_opened_img": "images/items/high_jump_boots_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area2interior",
+            "x": 502,
+            "y": 324,
+            "size": 8
+          }
+        ]
+      },
+      {
+        "name": "Teleporter Storage",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|Area2InteriorTeleporterStoragePickup"],
+            "chest_unopened_img": "images/items/aeion_tank.png",
+            "chest_opened_img": "images/items/aeion_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area2interior",
+            "x": 421,
+            "y": 294,
+            "size": 8
+          }
+        ]
+      },
+      {
+        "name": "Gamma Arena",
+        "sections": [
+          {
+            "name": "Commit murder",
+            "item_count": 1,
+            "access_rules": ["^$CanReach|Area2InteriorGammaGamma"],
+            "chest_unopened_img": "images/items/dna.png",
+            "chest_opened_img": "images/items/dna_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area2interior",
+            "x": 293,
+            "y": 223,
+            "size": 8
+          }
+        ]
+      },
+      {
+        "name": "Interior Intersection Terminal Statue",
+        "children": [
+          {
+            "name": "Interior Intersection Terminal",
+            "sections": [
+              {
+                "name": "Statue",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|Area2InteriorIntersectionSouthChamber"],
+                "chest_unopened_img": "images/items/varia_suit.png",
+                "chest_opened_img": "images/items/varia_suit_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area2interior",
+                "x": 352,
+                "y": 106,
+                "size": 8
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Interior Intersection Terminal Tunnel",
+        "children": [
+          {
+            "name": "Interior Intersection Terminal",
+            "sections": [
+              {
+                "name": "Tunnel",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|Area2InteriorIntersectionSouthChamberTunnelPickup"],
+                "chest_unopened_img": "images/items/super_missile_tank.png",
+                "chest_opened_img": "images/items/super_missile_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area2interior",
+                "x": 341,
+                "y": 130,
+                "size": 8
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Area 2 - Dam Entryway",
+    "children": [
+      {
+        "name": "Transport to Areas 1 and 3 Plants",
+        "children": [
+          {
+            "name": "Transport to Areas 1 and 3",
+            "sections": [
+              {
+                "name": "Plants",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|TransportAreas1And3SealPlantsPickup"],
+                "chest_unopened_img": "images/items/missile_tank.png",
+                "chest_opened_img": "images/items/missile_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area2entrance",
+                "x": 644,
+                "y": 252,
+                "size": 8
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Transport to Areas 1 and 3 Tunnel",
+        "children": [
+          {
+            "name": "Transport to Areas 1 and 3",
+            "sections": [
+              {
+                "name": "Tunnel",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|TransportAreas1And3SealTunnelPickup"],
+                "chest_unopened_img": "images/items/power_bomb_tank.png",
+                "chest_opened_img": "images/items/power_bomb_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area2entrance",
+                "x": 524,
+                "y": 218,
+                "size": 8
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Entryway Teleporter",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|Area2EntrywayTeleporterUpperPickup"],
+            "chest_unopened_img": "images/items/missile_tank.png",
+            "chest_opened_img": "images/items/missile_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area2entrance",
+            "x": 436,
+            "y": 124,
+            "size": 8
+          }
+        ]
+      },
+      {
+        "name": "Lightning Armor & Transport to Dam Exterior East Tutorial",
+        "children": [
+          {
+            "name": "Lightning Armor & Transport to Dam Exterior East",
+            "sections": [
+              {
+                "name": "Tutorial",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|LightningArmorTutorialPickup"],
+                "chest_unopened_img": "images/items/missile_tank.png",
+                "chest_opened_img": "images/items/missile_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area2entrance",
+                "x": 97,
+                "y": 35,
+                "size": 8
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Lightning Armor & Transport to Dam Exterior East Artifact",
+        "children": [
+          {
+            "name": "Lightning Armor & Transport to Dam Exterior East",
+            "sections": [
+              {
+                "name": "Artifact",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|LightningArmorLowerPickup"],
+                "chest_unopened_img": "images/items/lightning_armor.png",
+                "chest_opened_img": "images/items/lightning_armor_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area2entrance",
+                "x": 94,
+                "y": 107,
+                "size": 8
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Fleech Swarm Floodway",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|FleechSwarmFloodwayPickup"],
+            "chest_unopened_img": "images/items/missile_tank.png",
+            "chest_opened_img": "images/items/missile_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area2entrance",
+            "x": 326,
+            "y": 126,
+            "size": 8
+          }
+        ]
+      },
+      {
+        "name": "Alpha+ Arena",
+        "sections": [
+          {
+            "name": "Commit murder",
+            "item_count": 1,
+            "access_rules": ["^$CanReach|Area2EntrywayAlpha2ArenaAlpha"],
+            "chest_unopened_img": "images/items/dna.png",
+            "chest_opened_img": "images/items/dna_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area2entrance",
+            "x": 271,
+            "y": 67,
+            "size": 8
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Area 3 - Factory Exterior",
+    "children": [
+      {
+        "name": "Exterior Maze",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|Area3ExteriorMazePickup"],
+            "chest_unopened_img": "images/items/power_bomb_tank.png",
+            "chest_opened_img": "images/items/power_bomb_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area3exterior",
+            "x": 1085,
+            "y": 247,
+            "size": 14
+          }
+        ]
+      },
+      {
+        "name": "Grapple Beam Chamber",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|GrappleBeamPickup"],
+            "chest_unopened_img": "images/items/grapple_beam.png",
+            "chest_opened_img": "images/items/grapple_beam_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area3exterior",
+            "x": 851,
+            "y": 260,
+            "size": 14
+          }
+        ]
+      },
+      {
+        "name": "Factory Exterior Ceiling",
+        "children": [
+          {
+            "name": "Factory Exterior",
+            "sections": [
+              {
+                "name": "Ceiling",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|FactoryExtEntrancePickup"],
+                "chest_unopened_img": "images/items/missile_tank.png",
+                "chest_opened_img": "images/items/missile_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area3exterior",
+                "x": 689,
+                "y": 94,
+                "size": 14
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Factory Exterior Shaft",
+        "children": [
+          {
+            "name": "Factory Exterior",
+            "sections": [
+              {
+                "name": "Shaft",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|FactoryExtShaftMiddle"],
+                "chest_unopened_img": "images/items/missile_tank.png",
+                "chest_opened_img": "images/items/missile_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area3exterior",
+                "x": 1147,
+                "y": 251,
+                "size": 14
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Transport to Metroid Caverns West",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|Area3ExteriorTransportCavernsWPickup"],
+            "chest_unopened_img": "images/items/missile_tank.png",
+            "chest_opened_img": "images/items/missile_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area3exterior",
+            "x": 294,
+            "y": 521,
+            "size": 14
+          }
+        ]
+      },
+      {
+        "name": "Transport to Area 4",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|TransportArea4MiddlePickup"],
+            "chest_unopened_img": "images/items/missile_tank.png",
+            "chest_opened_img": "images/items/missile_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area3exterior",
+            "x": 34,
+            "y": 568,
+            "size": 14
+          }
+        ]
+      },
+      {
+        "name": "Entrance Maze",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|Area3ExteriorEntranceMazePickup"],
+            "chest_unopened_img": "images/items/missile_tank.png",
+            "chest_opened_img": "images/items/missile_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area3exterior",
+            "x": 285,
+            "y": 597,
+            "size": 14
+          }
+        ]
+      },
+      {
+        "name": "Beam Burst Chamber & Tsumuri Station",
+        "sections": [
+          {
+            "name": "Beam Burst Chamber",
+            "item_count": 1,
+            "access_rules": ["^$CanReach|BeamBurstPickupPickup"],
+            "chest_unopened_img": "images/items/beam_burst.png",
+            "chest_opened_img": "images/items/beam_burst_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area3exterior",
+            "x": 270,
+            "y": 329,
+            "size": 14
+          }
+        ]
+      },
+      {
+        "name": "Halzyn Hangout Top",
+        "children": [
+          {
+            "name": "Halzyn Hangout",
+            "sections": [
+              {
+                "name": "Top",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|HalzynHangoutUpperPickup"],
+                "chest_unopened_img": "images/items/missile_tank.png",
+                "chest_opened_img": "images/items/missile_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area3exterior",
+                "x": 1214,
+                "y": 172,
+                "size": 14
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Halzyn Hangout Bottom",
+        "children": [
+          {
+            "name": "Halzyn Hangout",
+            "sections": [
+              {
+                "name": "Bottom",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|HalzynHangoutLowerPickup"],
+                "chest_unopened_img": "images/items/power_bomb_tank.png",
+                "chest_opened_img": "images/items/power_bomb_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area3exterior",
+                "x": 1236,
+                "y": 386,
+                "size": 14
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Exterior Gamma Arena",
+        "sections": [
+          {
+            "name": "Commit murder",
+            "item_count": 1,
+            "access_rules": ["^$CanReach|Area3ExteriorGammaUpperArenaGamma"],
+            "chest_unopened_img": "images/items/dna.png",
+            "chest_opened_img": "images/items/dna_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area3exterior",
+            "x": 1233,
+            "y": 105,
+            "size": 14
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Area 3 - Metroid Caverns",
+    "children": [
+      {
+        "name": "Transport to Factory Exterior North",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|TransportFactoryExtNLowerPickup"],
+            "chest_unopened_img": "images/items/missile_tank.png",
+            "chest_opened_img": "images/items/missile_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area3caverns",
+            "x": 230,
+            "y": 308,
+            "size": 15
+          }
+        ]
+      },
+      {
+        "name": "Alpha+ Arena West",
+        "sections": [
+          {
+            "name": "Commit murder",
+            "item_count": 1,
+            "access_rules": ["^$CanReach|Area3CavernsAlpha2WAlpha"],
+            "chest_unopened_img": "images/items/dna.png",
+            "chest_opened_img": "images/items/dna_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area3caverns",
+            "x": 133,
+            "y": 190,
+            "size": 15
+          }
+        ]
+      },
+      {
+        "name": "Gamma Arena Center",
+        "sections": [
+          {
+            "name": "Commit murder",
+            "item_count": 1,
+            "access_rules": ["^$CanReach|Area3CavernsGammaCArenaGamma"],
+            "chest_unopened_img": "images/items/dna.png",
+            "chest_opened_img": "images/items/dna_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area3caverns",
+            "x": 343,
+            "y": 243,
+            "size": 15
+          }
+        ]
+      },
+      {
+        "name": "Caverns Gamma Arena South Tunnels",
+        "children": [
+          {
+            "name": "Caverns Gamma Arena South",
+            "sections": [
+              {
+                "name": "Tunnels",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|Area3CavernsGammaSMazeJunctionAccessPickup"],
+                "chest_unopened_img": "images/items/super_missile_tank.png",
+                "chest_opened_img": "images/items/super_missile_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area3caverns",
+                "x": 345,
+                "y": 440,
+                "size": 15
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Caverns Gamma Arena South Gamma",
+        "children": [
+          {
+            "name": "Caverns Gamma Arena South",
+            "sections": [
+              {
+                "name": "Commit murder",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|Area3CavernsGammaSArenaGamma"],
+                "chest_unopened_img": "images/items/dna.png",
+                "chest_opened_img": "images/items/dna_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area3caverns",
+                "x": 428,
+                "y": 385,
+                "size": 15
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Gravitt Garden",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|GravittGardenLower"],
+            "chest_unopened_img": "images/items/missile_tank.png",
+            "chest_opened_img": "images/items/missile_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area3caverns",
+            "x": 428,
+            "y": 344,
+            "size": 15
+          }
+        ]
+      },
+      {
+        "name": "Ascending Alleyway",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|AscendingAlleywayPickup"],
+            "chest_unopened_img": "images/items/missile_tank.png",
+            "chest_opened_img": "images/items/missile_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area3caverns",
+            "x": 600,
+            "y": 299,
+            "size": 15
+          }
+        ]
+      },
+      {
+        "name": "Ramulken Rollway",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|RamulkenRollwayLowerPickup"],
+            "chest_unopened_img": "images/items/missile_tank.png",
+            "chest_opened_img": "images/items/missile_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area3caverns",
+            "x": 566,
+            "y": 596,
+            "size": 15
+          }
+        ]
+      },
+      {
+        "name": "Caverns Teleporter East",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|Area3CavernsTeleporterEUpperPickup"],
+            "chest_unopened_img": "images/items/missile_tank.png",
+            "chest_opened_img": "images/items/missile_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area3caverns",
+            "x": 611,
+            "y": 418,
+            "size": 15
+          }
+        ]
+      },
+      {
+        "name": "Quarry Shaft",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|QuarryShaftPickup"],
+            "chest_unopened_img": "images/items/aeion_tank.png",
+            "chest_opened_img": "images/items/aeion_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area3caverns",
+            "x": 698,
+            "y": 464,
+            "size": 15
+          }
+        ]
+      },
+      {
+        "name": "Transport to Factory Interior South",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|TransportFactoryIntSRightPickup"],
+            "chest_unopened_img": "images/items/super_missile_tank.png",
+            "chest_opened_img": "images/items/super_missile_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area3caverns",
+            "x": 855,
+            "y": 223,
+            "size": 15
+          }
+        ]
+      },
+      {
+        "name": "Gamma+ Arena South",
+        "sections": [
+          {
+            "name": "Commit murder",
+            "item_count": 1,
+            "access_rules": ["^$CanReach|Area3CavernsGamma2SGamma"],
+            "chest_unopened_img": "images/items/dna.png",
+            "chest_opened_img": "images/items/dna_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area3caverns",
+            "x": 498,
+            "y": 768,
+            "size": 15
+          }
+        ]
+      },
+      {
+        "name": "Gamma+ Arena North",
+        "sections": [
+          {
+            "name": "Commit murder",
+            "item_count": 1,
+            "access_rules": ["^$CanReach|Area3CavernsGamma2NGamma"],
+            "chest_unopened_img": "images/items/dna.png",
+            "chest_opened_img": "images/items/dna_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area3caverns",
+            "x": 663,
+            "y": 54,
+            "size": 15
+          }
+        ]
+      },
+      {
+        "name": "Alpha+ Arena North",
+        "sections": [
+          {
+            "name": "Commit murder",
+            "item_count": 1,
+            "access_rules": ["^$CanReach|Area3CavernsAlpha2NArenaAlpha"],
+            "chest_unopened_img": "images/items/dna.png",
+            "chest_opened_img": "images/items/dna_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area3caverns",
+            "x": 506,
+            "y": 69,
+            "size": 15
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Area 3 - Factory Interior",
+    "children": [
+      {
+        "name": "Security Site",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|SecuirtySitePickup"],
+            "chest_unopened_img": "images/items/power_bomb_tank.png",
+            "chest_opened_img": "images/items/power_bomb_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area3interior",
+            "x": 19,
+            "y": 459,
+            "size": 11
+          }
+        ]
+      },
+      {
+        "name": "Paraby Periphery",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|ParabyPeripheryRightPickup"],
+            "chest_unopened_img": "images/items/energy_tank.png",
+            "chest_opened_img": "images/items/energy_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area3interior",
+            "x": 632,
+            "y": 458,
+            "size": 11
+          }
+        ]
+      },
+      {
+        "name": "Fan Control",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|FanControlPickup"],
+            "chest_unopened_img": "images/items/super_missile_tank.png",
+            "chest_opened_img": "images/items/super_missile_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area3interior",
+            "x": 363,
+            "y": 196,
+            "size": 11
+          }
+        ]
+      },
+      {
+        "name": "Factory Intersection",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|FactoryIntersectionPickup"],
+            "chest_unopened_img": "images/items/aeion_tank.png",
+            "chest_opened_img": "images/items/aeion_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area3interior",
+            "x": 353,
+            "y": 108,
+            "size": 11
+          }
+        ]
+      },
+      {
+        "name": "Gamma Arena & Transport to Metroid Caverns East",
+        "sections": [
+          {
+            "name": "Commit murder",
+            "item_count": 1,
+            "access_rules": ["^$CanReach|Area3InteriorGammaTransportCavernsEArenaGamma"],
+            "chest_unopened_img": "images/items/dna.png",
+            "chest_opened_img": "images/items/dna_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area3interior",
+            "x": 404,
+            "y": 370,
+            "size": 11
+          }
+        ]
+      },
+      {
+        "name": "Alpha Arena Lava",
+        "children": [
+          {
+            "name": "Alpha Arena",
+            "sections": [
+              {
+                "name": "Lava",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|Area3InteriorAlphaLava"],
+                "chest_unopened_img": "images/items/super_missile_tank.png",
+                "chest_opened_img": "images/items/super_missile_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area3interior",
+                "x": 530,
+                "y": 369,
+                "size": 11
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Alpha Arena Alpha",
+        "children": [
+          {
+            "name": "Alpha Arena",
+            "sections": [
+              {
+                "name": "Commit murder",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|Area3InteriorAlphaAlpha"],
+                "chest_unopened_img": "images/items/dna.png",
+                "chest_opened_img": "images/items/dna_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area3interior",
+                "x": 659,
+                "y": 375,
+                "size": 11
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Factory Gamma Arena South",
+        "sections": [
+          {
+            "name": "Commit murder",
+            "item_count": 1,
+            "access_rules": ["^$CanReach|Area3InteriorGammaSGamma"],
+            "chest_unopened_img": "images/items/dna.png",
+            "chest_opened_img": "images/items/dna_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area3interior",
+            "x": 155,
+            "y": 435,
+            "size": 11
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Area 4 - Caves",
+    "children": [
+      {
+        "name": "Caves Intersection Terminal",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|Area4CavesIntersectionTerminalPickupPickup"],
+            "chest_unopened_img": "images/items/missile_tank.png",
+            "chest_opened_img": "images/items/missile_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area4caves",
+            "x": 541,
+            "y": 232,
+            "size": 11
+          }
+        ]
+      },
+      {
+        "name": "Spazer Beam Chamber",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|SpazerBeamChamber"],
+            "chest_unopened_img": "images/items/spazer_crab.png",
+            "chest_opened_img": "images/items/spazer_crab_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area4caves",
+            "x": 102,
+            "y": 320,
+            "size": 11
+          }
+        ]
+      },
+      {
+        "name": "Crumble Catwalk",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|CrumbleCatwalkPickup"],
+            "chest_unopened_img": "images/items/super_missile_tank.png",
+            "chest_opened_img": "images/items/super_missile_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area4caves",
+            "x": 606,
+            "y": 60,
+            "size": 11
+          }
+        ]
+      },
+      {
+        "name": "Transport to Area 3 and Crystal Mines",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|TransportArea3MinesLeftSealPickup"],
+            "chest_unopened_img": "images/items/energy_tank.png",
+            "chest_opened_img": "images/items/energy_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area4caves",
+            "x": 815,
+            "y": 375,
+            "size": 11
+          }
+        ]
+      },
+      {
+        "name": "Alpha+ Arena Missile",
+        "children": [
+          {
+            "name": "Alpha+ Arena",
+            "sections": [
+              {
+                "name": "Missile",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|Area4CavesAlpha2Pickup"],
+                "chest_unopened_img": "images/items/missile_tank.png",
+                "chest_opened_img": "images/items/missile_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area4caves",
+                "x": 320,
+                "y": 398,
+                "size": 11
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Alpha+ Arena Alpha",
+        "children": [
+          {
+            "name": "Alpha+ Arena",
+            "sections": [
+              {
+                "name": "Commit murder",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|Area4CavesAlpha2Alpha"],
+                "chest_unopened_img": "images/items/dna.png",
+                "chest_opened_img": "images/items/dna_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area4caves",
+                "x": 399,
+                "y": 396,
+                "size": 11
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Transit Tunnel",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|TransitTunnelMiddlePickup"],
+            "chest_unopened_img": "images/items/missile_tank.png",
+            "chest_opened_img": "images/items/missile_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area4caves",
+            "x": 536,
+            "y": 362,
+            "size": 11
+          }
+        ]
+      },
+      {
+        "name": "Fleech Swarm Cave",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|FleechSwarmCavePickup"],
+            "chest_unopened_img": "images/items/aeion_tank.png",
+            "chest_opened_img": "images/items/aeion_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area4caves",
+            "x": 439,
+            "y": 96,
+            "size": 11
+          }
+        ]
+      },
+      {
+        "name": "Gamma Arena Tunnel",
+        "children": [
+          {
+            "name": "Gamma Arena",
+            "sections": [
+              {
+                "name": "Tunnel",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|Area4CavesGammaLowerPickup"],
+                "chest_unopened_img": "images/items/missile_tank.png",
+                "chest_opened_img": "images/items/missile_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area4caves",
+                "x": 282,
+                "y": 130,
+                "size": 11
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Gamma Arena Gamma",
+        "children": [
+          {
+            "name": "Gamma Arena",
+            "sections": [
+              {
+                "name": "Commit murder",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|Area4CavesGammaArenaGamma"],
+                "chest_unopened_img": "images/items/dna.png",
+                "chest_opened_img": "images/items/dna_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area4caves",
+                "x": 336,
+                "y": 68,
+                "size": 11
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Gamma Arena Access South",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|Area4CavesGammaAccessSRightPickup"],
+            "chest_unopened_img": "images/items/aeion_tank.png",
+            "chest_opened_img": "images/items/aeion_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area4caves",
+            "x": 251,
+            "y": 196,
+            "size": 11
+          }
+        ]
+      },
+      {
+        "name": "Amethyst Altars",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|AmethystAltarsPickup"],
+            "chest_unopened_img": "images/items/missile_tank.png",
+            "chest_opened_img": "images/items/missile_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area4caves",
+            "x": 289,
+            "y": 305,
+            "size": 11
+          }
+        ]
+      },
+      {
+        "name": "Transport to Area 5",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|TransportArea5UpperPickup"],
+            "chest_unopened_img": "images/items/super_missile_tank.png",
+            "chest_opened_img": "images/items/super_missile_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area4caves",
+            "x": 638,
+            "y": 443,
+            "size": 11
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Area 4 - Crystal Mines",
+    "children": [
+      {
+        "name": "Mines Intersection Terminal Top",
+        "children": [
+          {
+            "name": "Mines Intersection Terminal",
+            "sections": [
+              {
+                "name": "Top",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|MinesIntersectionTerminalTopPickup"],
+                "chest_unopened_img": "images/items/super_missile_tank.png",
+                "chest_opened_img": "images/items/super_missile_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area4mines",
+                "x": 414,
+                "y": 135,
+                "size": 14
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Mines Intersection Terminal Bottom",
+        "children": [
+          {
+            "name": "Mines Intersection Terminal",
+            "sections": [
+              {
+                "name": "Bottom",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|MinesIntersectionTerminalBottomPickup"],
+                "chest_unopened_img": "images/items/super_missile_tank.png",
+                "chest_opened_img": "images/items/super_missile_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area4mines",
+                "x": 535,
+                "y": 461,
+                "size": 14
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Super Missile Chamber",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|SuperMissilePickup"],
+            "chest_unopened_img": "images/items/super_missile.png",
+            "chest_opened_img": "images/items/super_missile_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area4mines",
+            "x": 545,
+            "y": 207,
+            "size": 14
+          }
+        ]
+      },
+      {
+        "name": "Pink Crystal Preserve",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|PinkCrystalPreservePickupPickup"],
+            "chest_unopened_img": "images/items/missile_tank.png",
+            "chest_opened_img": "images/items/missile_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area4mines",
+            "x": 180,
+            "y": 186,
+            "size": 14
+          }
+        ]
+      },
+      {
+        "name": "Lava Reservoir",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|LavaReservoirLeft"],
+            "chest_unopened_img": "images/items/missile_tank.png",
+            "chest_opened_img": "images/items/missile_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area4mines",
+            "x": 344,
+            "y": 207,
+            "size": 14
+          }
+        ]
+      },
+      {
+        "name": "Dual Pond Alcove",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|DualPondAlcovePickup"],
+            "chest_unopened_img": "images/items/power_bomb_tank.png",
+            "chest_opened_img": "images/items/power_bomb_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area4mines",
+            "x": 512,
+            "y": 294,
+            "size": 14
+          }
+        ]
+      },
+      {
+        "name": "Zeta Arena",
+        "sections": [
+          {
+            "name": "Commit murder",
+            "item_count": 1,
+            "access_rules": ["^$CanReach|Area4MinesZetaZeta"],
+            "chest_unopened_img": "images/items/dna.png",
+            "chest_opened_img": "images/items/dna_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area4mines",
+            "x": 113,
+            "y": 264,
+            "size": 14
+          }
+        ]
+      },
+      {
+        "name": "Gawron Groove",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|GawronGrooveTopPickup"],
+            "chest_unopened_img": "images/items/super_missile_tank.png",
+            "chest_opened_img": "images/items/super_missile_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area4mines",
+            "x": 739,
+            "y": 101,
+            "size": 14
+          }
+        ]
+      },
+      {
+        "name": "Gemstone Gorge",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|GemstoneGorgeBottomPickup"],
+            "chest_unopened_img": "images/items/energy_tank.png",
+            "chest_opened_img": "images/items/energy_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area4mines",
+            "x": 305,
+            "y": 248,
+            "size": 14
+          }
+        ]
+      },
+      {
+        "name": "Gamma+ Arena",
+        "sections": [
+          {
+            "name": "Commit murder",
+            "item_count": 1,
+            "access_rules": ["^$CanReach|Area4MinesGamma2Gamma"],
+            "chest_unopened_img": "images/items/dna.png",
+            "chest_opened_img": "images/items/dna_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area4mines",
+            "x": 870,
+            "y": 102,
+            "size": 14
+          }
+        ]
+      },
+      {
+        "name": "Space Jump Chamber",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|SpaceJumpPickup"],
+            "chest_unopened_img": "images/items/space_jump.png",
+            "chest_opened_img": "images/items/space_jump_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area4mines",
+            "x": 812,
+            "y": 650,
+            "size": 14
+          }
+        ]
+      },
+      {
+        "name": "Diggernaut Excavation Tunnels Crystals",
+        "children": [
+          {
+            "name": "Diggernaut Excavation Tunnels",
+            "sections": [
+              {
+                "name": "Crystals",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|DiggernautExcavationTunnelsSublevel1Pickup"],
+                "chest_unopened_img": "images/items/missile_tank.png",
+                "chest_opened_img": "images/items/missile_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area4mines",
+                "x": 521,
+                "y": 559,
+                "size": 14
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Diggernaut Excavation Tunnels Plants",
+        "children": [
+          {
+            "name": "Diggernaut Excavation Tunnels",
+            "sections": [
+              {
+                "name": "Plants",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|DiggernautExcavationTunnelsSublevel2PickupPlants"],
+                "chest_unopened_img": "images/items/aeion_tank.png",
+                "chest_opened_img": "images/items/aeion_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area4mines",
+                "x": 620,
+                "y": 609,
+                "size": 14
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Diggernaut Excavation Tunnels Puzzle",
+        "children": [
+          {
+            "name": "Diggernaut Excavation Tunnels",
+            "sections": [
+              {
+                "name": "Puzzle",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|DiggernautExcavationTunnelsSublevel2PickupPuzzle"],
+                "chest_unopened_img": "images/items/missile_tank.png",
+                "chest_opened_img": "images/items/missile_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area4mines",
+                "x": 370,
+                "y": 610,
+                "size": 14
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Diggernaut Excavation Tunnels Floor",
+        "children": [
+          {
+            "name": "Diggernaut Excavation Tunnels",
+            "sections": [
+              {
+                "name": "Floor",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|DiggernautExcavationTunnelsSublevel3Pickup"],
+                "chest_unopened_img": "images/items/missile_tank.png",
+                "chest_opened_img": "images/items/missile_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area4mines",
+                "x": 559,
+                "y": 664,
+                "size": 14
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Area 5 - Tower Lobby",
+    "children": [
+      {
+        "name": "Transport to Areas 4 and 6 Left",
+        "children": [
+          {
+            "name": "Transport to Areas 4 and 6",
+            "sections": [
+              {
+                "name": "Left",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|TransportAreas4And6PickupLeft"],
+                "chest_unopened_img": "images/items/super_missile_tank.png",
+                "chest_opened_img": "images/items/super_missile_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area5lobby",
+                "x": 1111,
+                "y": 348,
+                "size": 14
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Transport to Areas 4 and 6 Right",
+        "children": [
+          {
+            "name": "Transport to Areas 4 and 6",
+            "sections": [
+              {
+                "name": "Right",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|TransportAreas4And6PickupRight"],
+                "chest_unopened_img": "images/items/power_bomb_tank.png",
+                "chest_opened_img": "images/items/power_bomb_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area5lobby",
+                "x": 1263,
+                "y": 300,
+                "size": 14
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Lobby Teleporter West Lower",
+        "children": [
+          {
+            "name": "Lobby Teleporter West",
+            "sections": [
+              {
+                "name": "Lower",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|Area5LobbyTeleporterWLake"],
+                "chest_unopened_img": "images/items/aeion_tank.png",
+                "chest_opened_img": "images/items/aeion_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area5lobby",
+                "x": 489,
+                "y": 208,
+                "size": 14
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Lobby Teleporter West Upper",
+        "children": [
+          {
+            "name": "Lobby Teleporter West",
+            "sections": [
+              {
+                "name": "Upper",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|Area5LobbyTeleporterWCave"],
+                "chest_unopened_img": "images/items/power_bomb_tank.png",
+                "chest_opened_img": "images/items/power_bomb_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area5lobby",
+                "x": 549,
+                "y": 60,
+                "size": 14
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Lobby Teleporter East",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|Area5LobbyTeleporterEPickup"],
+            "chest_unopened_img": "images/items/missile_tank.png",
+            "chest_opened_img": "images/items/missile_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area5lobby",
+            "x": 1012,
+            "y": 276,
+            "size": 14
+          }
+        ]
+      },
+      {
+        "name": "Alpha+ Arena",
+        "sections": [
+          {
+            "name": "Commit murder",
+            "item_count": 1,
+            "access_rules": ["^$CanReach|Area5LobbyAlpha2Alpha"],
+            "chest_unopened_img": "images/items/dna.png",
+            "chest_opened_img": "images/items/dna_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area5lobby",
+            "x": 898,
+            "y": 194,
+            "size": 14
+          }
+        ]
+      },
+      {
+        "name": "Phase Drift Chamber Artifact",
+        "children": [
+          {
+            "name": "Phase Drift Chamber",
+            "sections": [
+              {
+                "name": "Artifact",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|PhaseDriftPickupArtifact"],
+                "chest_unopened_img": "images/items/phase_drift.png",
+                "chest_opened_img": "images/items/phase_drift_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area5lobby",
+                "x": 641,
+                "y": 228,
+                "size": 14
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Phase Drift Chamber Pitfall Blocks",
+        "children": [
+          {
+            "name": "Phase Drift Chamber",
+            "sections": [
+              {
+                "name": "Pitfall Blocks",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|PhaseDriftPickupPitfallBlocks"],
+                "chest_unopened_img": "images/items/super_missile_tank.png",
+                "chest_opened_img": "images/items/super_missile_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area5lobby",
+                "x": 706,
+                "y": 231,
+                "size": 14
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Meboid Millpond",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|MeboidMillpondLakePickup"],
+            "chest_unopened_img": "images/items/missile_tank.png",
+            "chest_opened_img": "images/items/missile_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area5lobby",
+            "x": 820,
+            "y": 251,
+            "size": 14
+          }
+        ]
+      },
+      {
+        "name": "Lobby Gamma+ Arena",
+        "sections": [
+          {
+            "name": "Commit murder",
+            "item_count": 1,
+            "access_rules": ["^$CanReach|Area5LobbyGamma2Gamma"],
+            "chest_unopened_img": "images/items/dna.png",
+            "chest_opened_img": "images/items/dna_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area5lobby",
+            "x": 82,
+            "y": 110,
+            "size": 14
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Area 5 - Tower Exterior",
+    "children": [
+      {
+        "name": "Tower Exterior Alcove",
+        "children": [
+          {
+            "name": "Tower Exterior",
+            "sections": [
+              {
+                "name": "Alcove",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|TowerExtSouthwestPickupAlcove"],
+                "chest_unopened_img": "images/items/missile_tank.png",
+                "chest_opened_img": "images/items/missile_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area5exterior",
+                "x": 155,
+                "y": 328,
+                "size": 14
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Tower Exterior Crevice",
+        "children": [
+          {
+            "name": "Tower Exterior",
+            "sections": [
+              {
+                "name": "Crevice",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|TowerExtSouthwestPickupCrevice"],
+                "chest_unopened_img": "images/items/missile_tank.png",
+                "chest_opened_img": "images/items/missile_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area5exterior",
+                "x": 157,
+                "y": 87,
+                "size": 14
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Tower Exterior Puzzle",
+        "children": [
+          {
+            "name": "Tower Exterior",
+            "sections": [
+              {
+                "name": "Puzzle",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|TowerExtSouthwestPickupPuzzle"],
+                "chest_unopened_img": "images/items/super_missile_tank.png",
+                "chest_opened_img": "images/items/super_missile_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area5exterior",
+                "x": 128,
+                "y": 491,
+                "size": 14
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Tower Exterior Ceiling",
+        "children": [
+          {
+            "name": "Tower Exterior",
+            "sections": [
+              {
+                "name": "Ceiling",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|TowerExtTopPickup"],
+                "chest_unopened_img": "images/items/super_missile_tank.png",
+                "chest_opened_img": "images/items/super_missile_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area5exterior",
+                "x": 352,
+                "y": 28,
+                "size": 14
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Overgrown Maze Right",
+        "children": [
+          {
+            "name": "Overgrown Maze",
+            "sections": [
+              {
+                "name": "Right",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|OvergrownMazeMainPickup"],
+                "chest_unopened_img": "images/items/energy_tank.png",
+                "chest_opened_img": "images/items/energy_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area5exterior",
+                "x": 317,
+                "y": 215,
+                "size": 14
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Overgrown Maze Left",
+        "children": [
+          {
+            "name": "Overgrown Maze",
+            "sections": [
+              {
+                "name": "Left",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|OvergrownMazeExit"],
+                "chest_unopened_img": "images/items/power_bomb_tank.png",
+                "chest_opened_img": "images/items/power_bomb_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area5exterior",
+                "x": 218,
+                "y": 214,
+                "size": 14
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Screw Attack Chamber",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|ScrewAttackChamber"],
+            "chest_unopened_img": "images/items/screw_attack.png",
+            "chest_opened_img": "images/items/screw_attack_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area5exterior",
+            "x": 424,
+            "y": 249,
+            "size": 14
+          }
+        ]
+      },
+      {
+        "name": "Red Plant Maze",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|RedPlantMazePickup"],
+            "chest_unopened_img": "images/items/aeion_tank.png",
+            "chest_opened_img": "images/items/aeion_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area5exterior",
+            "x": 690,
+            "y": 319,
+            "size": 14
+          }
+        ]
+      },
+      {
+        "name": "Zeta Arena",
+        "sections": [
+          {
+            "name": "Commit murder",
+            "item_count": 1,
+            "access_rules": ["^$CanReach|Area5ExteriorZetaZeta"],
+            "chest_unopened_img": "images/items/dna.png",
+            "chest_opened_img": "images/items/dna_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area5exterior",
+            "x": 247,
+            "y": 337,
+            "size": 14
+          }
+        ]
+      },
+      {
+        "name": "Gamma+ Arena & Access",
+        "sections": [
+          {
+            "name": "Commit murder",
+            "item_count": 1,
+            "access_rules": ["^$CanReach|Area5ExteriorGamma2ArenaGamma"],
+            "chest_unopened_img": "images/items/dna.png",
+            "chest_opened_img": "images/items/dna_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area5exterior",
+            "x": 739,
+            "y": 97,
+            "size": 14
+          }
+        ]
+      },
+      {
+        "name": "Gamma Arena Gamma",
+        "children":[
+          {
+            "name": "Gamma Arena",
+            "sections": [
+              {
+                "name": "Commit murder",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|Area5ExteriorGammaGamma"],
+                "chest_unopened_img": "images/items/dna.png",
+                "chest_opened_img": "images/items/dna_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area5exterior",
+                "x": 557,
+                "y": 449,
+                "size": 14
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Gamma Arena Maze",
+        "children":[
+          {
+            "name": "Gamma Arena",
+            "sections": [
+              {
+                "name": "Maze",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|Area5ExteriorGammaPickup"],
+                "chest_unopened_img": "images/items/missile_tank.png",
+                "chest_opened_img": "images/items/missile_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area5exterior",
+                "x": 653,
+                "y": 572,
+                "size": 14
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Area 5 - Tower Interior",
+    "children": [
+      {
+        "name": "Interior Save Station",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|Area5InteriorSaveStationWaterPickup"],
+            "chest_unopened_img": "images/items/missile_tank.png",
+            "chest_opened_img": "images/items/missile_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area5interior",
+            "x": 389,
+            "y": 264,
+            "size": 14
+          }
+        ]
+      },
+      {
+        "name": "Plasma Beam Chamber",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|PlasmaBeamChamber"],
+            "chest_unopened_img": "images/items/plasma_beam.png",
+            "chest_opened_img": "images/items/plasma_beam_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area5interior",
+            "x": 662,
+            "y": 308,
+            "size": 14
+          }
+        ]
+      },
+      {
+        "name": "Grapple Shuffler",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|GrappleShufflerPuzzleTopPickup"],
+            "chest_unopened_img": "images/items/missile_tank.png",
+            "chest_opened_img": "images/items/missile_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area5interior",
+            "x": 773,
+            "y": 317,
+            "size": 14
+          }
+        ]
+      },
+      {
+        "name": "Gravity Suit Chamber",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|GravitySuitStatue"],
+            "chest_unopened_img": "images/items/gravity_suit.png",
+            "chest_opened_img": "images/items/gravity_suit_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area5interior",
+            "x": 662,
+            "y": 160,
+            "size": 14
+          }
+        ]
+      },
+      {
+        "name": "Phase Drift Trial Reward Room",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|PhaseDriftTrialReward"],
+            "chest_unopened_img": "images/items/power_bomb_tank.png",
+            "chest_opened_img": "images/items/power_bomb_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area5interior",
+            "x": 614,
+            "y": 30,
+            "size": 14
+          }
+        ]
+      },
+      {
+        "name": "Phase Drift Trial West Lower",
+        "children": [
+          {
+            "name": "Phase Drift Trial West",
+            "sections": [
+              {
+                "name": "Lower",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|PhaseDriftTrialWPickupLower"],
+                "chest_unopened_img": "images/items/missile_tank.png",
+                "chest_opened_img": "images/items/missile_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area5interior",
+                "x": 669,
+                "y": 65,
+                "size": 14
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Phase Drift Trial West Upper",
+        "children": [
+          {
+            "name": "Phase Drift Trial West",
+            "sections": [
+              {
+                "name": "Upper",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|PhaseDriftTrialWPickupUpper"],
+                "chest_unopened_img": "images/items/super_missile_tank.png",
+                "chest_opened_img": "images/items/super_missile_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area5interior",
+                "x": 640,
+                "y": 30,
+                "size": 14
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Zeta+ Arena Access",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|Area5InteriorZeta2AccessRightPickup"],
+            "chest_unopened_img": "images/items/missile_tank.png",
+            "chest_opened_img": "images/items/missile_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area5interior",
+            "x": 1175,
+            "y": 225,
+            "size": 14
+          }
+        ]
+      },
+      {
+        "name": "Gravity Suit Chamber Access",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|GravitySuitAccessLakePickup"],
+            "chest_unopened_img": "images/items/missile_tank.png",
+            "chest_opened_img": "images/items/missile_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area5interior",
+            "x": 803,
+            "y": 209,
+            "size": 14
+          }
+        ]
+      },
+      {
+        "name": "Tower Gamma+ Arena",
+        "sections": [
+          {
+            "name": "Commit murder",
+            "item_count": 1,
+            "access_rules": ["^$CanReach|Area5InteriorGamma2Gamma"],
+            "chest_unopened_img": "images/items/dna.png",
+            "chest_opened_img": "images/items/dna_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area5interior",
+            "x": 93,
+            "y": 239,
+            "size": 14
+          }
+        ]
+      },
+      {
+        "name": "Interior Teleporter",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|Area5InteriorTeleporterPickup"],
+            "chest_unopened_img": "images/items/missile_tank.png",
+            "chest_opened_img": "images/items/missile_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area5interior",
+            "x": 665,
+            "y": 263,
+            "size": 14
+          }
+        ]
+      },
+      {
+        "name": "Zeta+ Arena",
+        "sections": [
+          {
+            "name": "Commit murder",
+            "item_count": 1,
+            "access_rules": ["^$CanReach|Area5InteriorZeta2Zeta"],
+            "chest_unopened_img": "images/items/dna.png",
+            "chest_opened_img": "images/items/dna_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area5interior",
+            "x": 1366,
+            "y": 340,
+            "size": 14
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Area 6",
+    "children": [
+      {
+        "name": "Transport to Area 7",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|Area6TransportArea7Pickup"],
+            "chest_unopened_img": "images/items/aeion_tank.png",
+            "chest_opened_img": "images/items/aeion_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area6",
+            "x": 273,
+            "y": 706,
+            "size": 16
+          }
+        ]
+      },
+      {
+        "name": "Omega Arena",
+        "sections": [
+          {
+            "name": "Commit murder",
+            "item_count": 1,
+            "access_rules": ["^$CanReach|Area6OmegaOmega"],
+            "chest_unopened_img": "images/items/dna.png",
+            "chest_opened_img": "images/items/dna_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area6",
+            "x": 688,
+            "y": 144,
+            "size": 16
+          }
+        ]
+      },
+      {
+        "name": "Hideout Sprawl Right",
+        "children": [
+          {
+            "name": "Hideout Sprawl",
+            "sections": [
+              {
+                "name": "Right",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|HideoutSprawlTunnelsPickup"],
+                "chest_unopened_img": "images/items/power_bomb_tank.png",
+                "chest_opened_img": "images/items/power_bomb_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area6",
+                "x": 529,
+                "y": 106,
+                "size": 16
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Hideout Sprawl Left",
+        "children": [
+          {
+            "name": "Hideout Sprawl",
+            "sections": [
+              {
+                "name": "Left",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|HideoutSprawlMainPickup"],
+                "chest_unopened_img": "images/items/super_missile_tank.png",
+                "chest_opened_img": "images/items/super_missile_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area6",
+                "x": 416,
+                "y": 124,
+                "size": 16
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Crumbling Bridge Pit",
+        "children": [
+          {
+            "name": "Crumbling Bridge",
+            "sections": [
+              {
+                "name": "Pit",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|CrumblingBridgeLeftPickupPit"],
+                "chest_unopened_img": "images/items/energy_tank.png",
+                "chest_opened_img": "images/items/energy_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area6",
+                "x": 922,
+                "y": 224,
+                "size": 16
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Crumbling Bridge Tunnel",
+        "children": [
+          {
+            "name": "Crumbling Bridge",
+            "sections": [
+              {
+                "name": "Tunnel",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|CrumblingBridgeLeftPickupTunnel"],
+                "chest_unopened_img": "images/items/missile_tank.png",
+                "chest_opened_img": "images/items/missile_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area6",
+                "x": 915,
+                "y": 200,
+                "size": 16
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Crumbling Stairwell",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|CrumblingStairwellPickup"],
+            "chest_unopened_img": "images/items/missile_tank.png",
+            "chest_opened_img": "images/items/missile_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area6",
+            "x": 456,
+            "y": 640,
+            "size": 16
+          }
+        ]
+      },
+      {
+        "name": "Diggernaut Arena",
+        "sections": [
+          {
+            "name": "Commit murder",
+            "item_count": 1,
+            "access_rules": ["^$CanReach|DiggernautPickup"],
+            "chest_unopened_img": "images/items/power_bomb.png",
+            "chest_opened_img": "images/items/power_bomb_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area6",
+            "x": 93,
+            "y": 616,
+            "size": 16
+          }
+        ]
+      },
+      {
+        "name": "Electric Escalade",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|ElectricEscaladePickup"],
+            "chest_unopened_img": "images/items/power_bomb_tank.png",
+            "chest_opened_img": "images/items/power_bomb_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area6",
+            "x": 35,
+            "y": 503,
+            "size": 16
+          }
+        ]
+      },
+      {
+        "name": "Poisonous Tunnel",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|PoisonousTunnelPickup"],
+            "chest_unopened_img": "images/items/missile_tank.png",
+            "chest_opened_img": "images/items/missile_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area6",
+            "x": 591,
+            "y": 207,
+            "size": 16
+          }
+        ]
+      },
+      {
+        "name": "Zeta Arena",
+        "sections": [
+          {
+            "name": "Commit murder",
+            "item_count": 1,
+            "access_rules": ["^$CanReach|Area6ZetaZeta"],
+            "chest_unopened_img": "images/items/dna.png",
+            "chest_opened_img": "images/items/dna_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area6",
+            "x": 847,
+            "y": 146,
+            "size": 16
+          }
+        ]
+      },
+      {
+        "name": "Chozo Seal East",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|Area6ChozoSealEUpperPickup"],
+            "chest_unopened_img": "images/items/super_missile_tank.png",
+            "chest_opened_img": "images/items/super_missile_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area6",
+            "x": 1011,
+            "y": 292,
+            "size": 16
+          }
+        ]
+      },
+      {
+        "name": "Chozo Seal West Intersection Terminal Ceiling",
+        "children": [
+          {
+            "name": "Chozo Seal West Intersection Terminal",
+            "sections": [
+              {
+                "name": "Ceiling",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|Area6ChozoSealWMainPickupCeiling"],
+                "chest_unopened_img": "images/items/missile_tank.png",
+                "chest_opened_img": "images/items/missile_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area6",
+                "x": 641,
+                "y": 606,
+                "size": 16
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Chozo Seal West Intersection Terminal Tunnel",
+        "children": [
+          {
+            "name": "Chozo Seal West Intersection Terminal",
+            "sections": [
+              {
+                "name": "Tunnel",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|Area6ChozoSealWMainPickupTunnel"],
+                "chest_unopened_img": "images/items/missile_tank.png",
+                "chest_opened_img": "images/items/missile_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area6",
+                "x": 462,
+                "y": 544,
+                "size": 16
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Chozo Seal West Intersection Terminal Bottom",
+        "children": [
+          {
+            "name": "Chozo Seal West Intersection Terminal",
+            "sections": [
+              {
+                "name": "Bottom",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|Area6ChozoSealWMainPickupBottom"],
+                "chest_unopened_img": "images/items/super_missile_tank.png",
+                "chest_opened_img": "images/items/super_missile_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area6",
+                "x": 671,
+                "y": 688,
+                "size": 16
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Area 7",
+    "children": [
+      {
+        "name": "Laboratory Teleporter West",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|LabTeleporterWPickup"],
+            "chest_unopened_img": "images/items/power_bomb_tank.png",
+            "chest_opened_img": "images/items/power_bomb_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area7",
+            "x": 513,
+            "y": 466,
+            "size": 16
+          }
+        ]
+      },
+      {
+        "name": "Spider Boost Tunnel South",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|SpiderBoostTunnelSSouthwestPickup"],
+            "chest_unopened_img": "images/items/energy_tank.png",
+            "chest_opened_img": "images/items/energy_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area7",
+            "x": 510,
+            "y": 223,
+            "size": 16
+          }
+        ]
+      },
+      {
+        "name": "Omega+ Arena",
+        "sections": [
+          {
+            "name": "Commit murder",
+            "item_count": 1,
+            "access_rules": ["^$CanReach|Area7Omega2Omega"],
+            "chest_unopened_img": "images/items/dna.png",
+            "chest_opened_img": "images/items/dna_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area7",
+            "x": 1027,
+            "y": 403,
+            "size": 16
+          }
+        ]
+      },
+      {
+        "name": "Robot Regime Lower",
+        "children": [
+          {
+            "name": "Robot Regime",
+            "sections": [
+              {
+                "name": "Lower",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|RobotRegimeTunnels"],
+                "chest_unopened_img": "images/items/aeion_tank.png",
+                "chest_opened_img": "images/items/aeion_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area7",
+                "x": 801,
+                "y": 190,
+                "size": 16
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Robot Regime Upper",
+        "children": [
+          {
+            "name": "Robot Regime",
+            "sections": [
+              {
+                "name": "Upper",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|RobotRegimeUpperPickup"],
+                "chest_unopened_img": "images/items/missile_tank.png",
+                "chest_opened_img": "images/items/missile_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area7",
+                "x": 765,
+                "y": 44,
+                "size": 16
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Transport to Area 6 Crystals",
+        "children": [
+          {
+            "name": "Transport to Area 6",
+            "sections": [
+              {
+                "name": "Crystals",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|TransportArea6LeftPickup"],
+                "chest_unopened_img": "images/items/missile_tank.png",
+                "chest_opened_img": "images/items/missile_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area7",
+                "x": 597,
+                "y": 680,
+                "size": 16
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Transport to Area 6 Alcove",
+        "children": [
+          {
+            "name": "Transport to Area 6",
+            "sections": [
+              {
+                "name": "Alcove",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|TransportArea6TopPickup"],
+                "chest_unopened_img": "images/items/missile_tank.png",
+                "chest_opened_img": "images/items/missile_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area7",
+                "x": 769,
+                "y": 481,
+                "size": 16
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Transport to Area 6 Pitfall Blocks",
+        "children": [
+          {
+            "name": "Transport to Area 6",
+            "sections": [
+              {
+                "name": "Pitfall Blocks",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|TransportArea6BottomPickup"],
+                "chest_unopened_img": "images/items/missile_tank.png",
+                "chest_opened_img": "images/items/missile_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area7",
+                "x": 491,
+                "y": 642,
+                "size": 16
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Transport to Area 6 Tunnel",
+        "children": [
+          {
+            "name": "Transport to Area 6",
+            "sections": [
+              {
+                "name": "Tunnel",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|TransportArea6TunnelsPickup"],
+                "chest_unopened_img": "images/items/super_missile_tank.png",
+                "chest_opened_img": "images/items/super_missile_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area7",
+                "x": 771,
+                "y": 571,
+                "size": 16
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Omega Arena South Access",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|Area7OmegaSAccessCenterPickup"],
+            "chest_unopened_img": "images/items/missile_tank.png",
+            "chest_opened_img": "images/items/missile_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area7",
+            "x": 595,
+            "y": 416,
+            "size": 16
+          }
+        ]
+      },
+      {
+        "name": "Omega Arena South",
+        "sections": [
+          {
+            "name": "Commit murder",
+            "item_count": 1,
+            "access_rules": ["^$CanReach|Area7OmegaSOmega"],
+            "chest_unopened_img": "images/items/dna.png",
+            "chest_opened_img": "images/items/dna_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area7",
+            "x": 617,
+            "y": 351,
+            "size": 16
+          }
+        ]
+      },
+      {
+        "name": "Omega Arena North",
+        "sections": [
+          {
+            "name": "Commit murder",
+            "item_count": 1,
+            "access_rules": ["^$CanReach|Area7OmegaNOmega"],
+            "chest_unopened_img": "images/items/dna.png",
+            "chest_opened_img": "images/items/dna_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area7",
+            "x": 186,
+            "y": 91,
+            "size": 16
+          }
+        ]
+      },
+      {
+        "name": "Omega Arena North Access",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|Area7OmegaNAccessLeftPickup"],
+            "chest_unopened_img": "images/items/missile_tank.png",
+            "chest_opened_img": "images/items/missile_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area7",
+            "x": 393,
+            "y": 106,
+            "size": 16
+          }
+        ]
+      },
+      {
+        "name": "Wallfire Workstation",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|WallfireWorkstationClimbPickup"],
+            "chest_unopened_img": "images/items/missile_tank.png",
+            "chest_opened_img": "images/items/missile_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area7",
+            "x": 838,
+            "y": 368,
+            "size": 16
+          }
+        ]
+      },
+      {
+        "name": "Grapple Puzzle Foyer",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|GrapplePuzzleFoyerPrize"],
+            "chest_unopened_img": "images/items/aeion_tank.png",
+            "chest_opened_img": "images/items/aeion_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area7",
+            "x": 291,
+            "y": 700,
+            "size": 16
+          }
+        ]
+      },
+      {
+        "name": "Spider Boost Tunnel North",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|SpiderBoostTunnelNPuzzlePickup"],
+            "chest_unopened_img": "images/items/super_missile_tank.png",
+            "chest_opened_img": "images/items/super_missile_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area7",
+            "x": 627,
+            "y": 81,
+            "size": 16
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Area 8",
+    "children": [
+      {
+        "name": "Transport to Surface Left",
+        "children": [
+          {
+            "name": "Transport to Surface",
+            "sections": [
+              {
+                "name": "Left",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|TransportSurfaceThornsPickup"],
+                "chest_unopened_img": "images/items/missile_tank.png",
+                "chest_opened_img": "images/items/missile_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area8",
+                "x": 193,
+                "y": 311,
+                "size": 28
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Transport to Surface Right",
+        "children": [
+          {
+            "name": "Transport to Surface",
+            "sections": [
+              {
+                "name": "Right",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|TransportSurfaceBridgePickup"],
+                "chest_unopened_img": "images/items/super_missile_tank.png",
+                "chest_opened_img": "images/items/super_missile_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area8",
+                "x": 486,
+                "y": 218,
+                "size": 28
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Amphitheater Spikes",
+        "children": [
+          {
+            "name": "Amphitheater",
+            "sections": [
+              {
+                "name": "Spikes",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|AmphitheaterOverhangTunnelPickup"],
+                "chest_unopened_img": "images/items/missile_tank.png",
+                "chest_opened_img": "images/items/missile_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area8",
+                "x": 344,
+                "y": 788,
+                "size": 28
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Amphitheater Upper Left",
+        "children": [
+          {
+            "name": "Amphitheater",
+            "sections": [
+              {
+                "name": "Upper Left",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|AmphitheaterBottomPickupUpperLeft"],
+                "chest_unopened_img": "images/items/missile_tank.png",
+                "chest_opened_img": "images/items/missile_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area8",
+                "x": 320,
+                "y": 761,
+                "size": 28
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Amphitheater Grapple Block",
+        "children": [
+          {
+            "name": "Amphitheater",
+            "sections": [
+              {
+                "name": "Grapple Block",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|AmphitheaterTopPickup"],
+                "chest_unopened_img": "images/items/missile_tank.png",
+                "chest_opened_img": "images/items/missile_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area8",
+                "x": 365,
+                "y": 710,
+                "size": 28
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Amphitheater Upper Right",
+        "children": [
+          {
+            "name": "Amphitheater",
+            "sections": [
+              {
+                "name": "Upper Right",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|AmphitheaterBottomPickupUpperRight"],
+                "chest_unopened_img": "images/items/power_bomb_tank.png",
+                "chest_opened_img": "images/items/power_bomb_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area8",
+                "x": 439,
+                "y": 657,
+                "size": 28
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Amphitheater Maze",
+        "children": [
+          {
+            "name": "Amphitheater",
+            "sections": [
+              {
+                "name": "Maze",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|AmphitheaterCrosswayPickup"],
+                "chest_unopened_img": "images/items/super_missile_tank.png",
+                "chest_opened_img": "images/items/super_missile_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area8",
+                "x": 403,
+                "y": 803,
+                "size": 28
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Nest Network Crystals",
+        "children": [
+          {
+            "name": "Nest Network",
+            "sections": [
+              {
+                "name": "Crystals",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|NestNetworkTopPickup"],
+                "chest_unopened_img": "images/items/missile_tank.png",
+                "chest_opened_img": "images/items/missile_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area8",
+                "x": 293,
+                "y": 947,
+                "size": 28
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Nest Network Hallway",
+        "children": [
+          {
+            "name": "Nest Network",
+            "sections": [
+              {
+                "name": "Hallway",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|NestNetworkTunnelsPickup"],
+                "chest_unopened_img": "images/items/missile_tank.png",
+                "chest_opened_img": "images/items/missile_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area8",
+                "x": 401,
+                "y": 1070,
+                "size": 28
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Entrance Teleporter",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|Area8EntranceTeleporterLowerPickup"],
+            "chest_unopened_img": "images/items/missile_tank.png",
+            "chest_opened_img": "images/items/missile_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area8",
+            "x": 253,
+            "y": 1201,
+            "size": 28
+          }
+        ]
+      },
+      {
+        "name": "Nest Nodule Tunnel",
+        "children": [
+          {
+            "name": "Nest Nodule",
+            "sections": [
+              {
+                "name": "Tunnel",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|NestNodulePickupPickup"],
+                "chest_unopened_img": "images/items/missile_tank.png",
+                "chest_opened_img": "images/items/missile_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area8",
+                "x": 451,
+                "y": 1078,
+                "size": 28
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Nest Nodule Crystals",
+        "children": [
+          {
+            "name": "Nest Nodule",
+            "sections": [
+              {
+                "name": "Crystals",
+                "item_count": 1,
+                "access_rules": ["^$CanReach|NestNoduleTopPickup"],
+                "chest_unopened_img": "images/items/super_missile_tank.png",
+                "chest_opened_img": "images/items/super_missile_tank_obtained.png"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "area8",
+                "x": 454,
+                "y": 1012,
+                "size": 28
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Metroid Nest Shaft West",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|NestShaftWPickup"],
+            "chest_unopened_img": "images/items/missile_tank.png",
+            "chest_opened_img": "images/items/missile_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area8",
+            "x": 208,
+            "y": 458,
+            "size": 28
+          }
+        ]
+      },
+      {
+        "name": "Hatchling Room",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|HatchlingChamberPickup"],
+            "chest_unopened_img": "images/items/baby.png",
+            "chest_opened_img": "images/items/baby_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area8",
+            "x": 280,
+            "y": 551,
+            "size": 28
+          }
+        ]
+      },
+      {
+        "name": "Nest Vestibule",
+        "sections": [
+          {
+            "item_count": 1,
+            "access_rules": ["^$CanReach|NestVestibulePickup"],
+            "chest_unopened_img": "images/items/energy_tank.png",
+            "chest_opened_img": "images/items/energy_tank_obtained.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "area8",
+            "x": 384,
+            "y": 1150,
+            "size": 28
+          }
+        ]
+      }
+    ]
+  }
+]
