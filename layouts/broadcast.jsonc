@@ -1,63 +1,6 @@
 {
-    "items_grid": {
-        "type": "array",
-        "orientation": "vertical",
-        "margin": "0,0",
-        "content": [
-            {
-                "type": "array",
-                "orientation": "horizontal",
-                "margin": "0,0",
-                "content": [
-                    {
-                        "type": "itemgrid",
-                        "item_margin": "2, 2",
-                        "h_alignment": "left",
-                        "rows": [
-                            [
-                                "missile",
-                                "super_missile",
-                                "power_bomb",
-                                "cbeam",
-                                "ibeam",
-                                "wbeam",
-                                "sbeam",
-                                "pbeam"
-                            ],
-                            [
-                                "mtank",
-                                "stank",
-                                "ptank",
-                                "atank",
-                                "pulse",
-                                "armor",
-                                "burst",
-                                "phase"
-                            ],
-                            [
-                                "gbeam",
-                                "hijump",
-                                "spajump",
-                                "jumpattack",
-                                "ball",
-                                "spiball",
-                                "bomb",
-                                "sprball"
-                            ],
-                            [
-                                "mtankres",
-                                "atankres",
-                                "etankres",
-                                "etank",
-                                "vsuit",
-                                "gsuit",
-                                "baby",
-                                "dna"
-                            ]
-                        ]
-                    }
-                ]
-            }
-        ]
+    "tracker_broadcast": {
+        "type": "layout",
+        "key": "items_grid"
     }
 }
