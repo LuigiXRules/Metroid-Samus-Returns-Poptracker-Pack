@@ -762,16 +762,23 @@ Area3InteriorGammaTransportCavernsEArena:connect_one_way_entrance(Area3InteriorG
 		CanGrappleTunnel
 	)
 end)
-Area3InteriorGammaTransportCavernsEArena:connect_two_ways_entrance(Area3InteriorGammaTransportCavernsECenter, function ()
+Area3InteriorGammaTransportCavernsEArena:connect_one_way_entrance(Area3InteriorGammaTransportCavernsECenter, function ()
 	return All(
 		OpenMorphTunnelDoor,
 		CanEscapeGammaArenaCavernsTransport
 	)
 end)
-Area3InteriorGammaTransportCavernsEArena:connect_one_way(Area3InteriorGammaTransportCavernsEArenaGamma, function ()
+Area3InteriorGammaTransportCavernsEArena:connect_one_way_entrance(Area3InteriorGammaTransportCavernsEArenaGamma, function ()
 	return All(
 		CanReach(Area3InteriorGammaCAccessHidingSpot),
 		CanDamageMetroid
+	)
+end,
+{Area3InteriorGammaCAccessHidingSpot})
+Area3InteriorGammaTransportCavernsECenter:connect_one_way_entrance(Area3InteriorGammaTransportCavernsEArena, function ()
+	return All(
+		OpenMorphTunnelDoor,
+		CanEscapeGammaArenaCavernsTransport
 	)
 end)
 Area3InteriorGammaTransportCavernsECenter:connect_one_way_entrance(Area3InteriorGammaCAccessLower, function ()
