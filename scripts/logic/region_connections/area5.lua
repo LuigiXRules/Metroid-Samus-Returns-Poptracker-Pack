@@ -650,7 +650,7 @@ PhaseDriftTrialW:connect_two_ways_entrance(PhaseDriftTrialE, function ()
 end)
 PhaseDriftTrialW:connect_one_way_entrance(PhaseDriftTrialReward, function ()
 	return All(
-		OpenSuperDoor,
+		OpenPowerBombDoor,
 		Any(
 			CanSpider,
 			PhaseDrift
