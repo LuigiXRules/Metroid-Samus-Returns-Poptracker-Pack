@@ -156,17 +156,8 @@ ElectricEscalade:connect_one_way(ElectricEscaladePickup, function ()
 end)
 PoisonousTunnelUpper:connect_one_way_entrance(Area6Omega) -- Normal Door
 PoisonousTunnelUpper:connect_one_way_entrance(Area6TeleporterNAccess, OpenChargeDoor)
-PoisonousTunnelUpper:connect_two_ways_entrance(PoisonousTunnelPickup, function ()
-	return All(
-		OpenMorphTunnelDoor,
-		CanBombBlock,
-		Any(
-			LightningArmor,
-			CanSpider
-		)
-	)
-end)
-PoisonousTunnelUpper:connect_one_way_entrance(Area6TeleporterNAccess, function ()
+PoisonousTunnelUpper:connect_two_ways_entrance(PoisonousTunnelPickup, CanTraversePoisonousTunnel)
+PoisonousTunnelPickup:connect_one_way_entrance(Area6TeleporterNAccess, function ()
 	return All(
 		OpenMorphTunnelDoor,
 		GrappleBeam
@@ -237,7 +228,7 @@ Area6ChozoSealEUpper:connect_one_way(Area6ChozoSealEUpperPickup, function ()
 end)
 Area6OmegaAccess:connect_one_way_entrance(HideoutSprawlMain, CanHighJump) -- Normal Door
 Area6OmegaAccess:connect_one_way_entrance(HideoutSprawlTunnels, OpenPowerBombDoor)
-Area6OmegaAccess:connect_one_way_entrance(Area6Omega, CanHighJump)
+Area6OmegaAccess:connect_one_way_entrance(Area6Omega, CanEscapeOmegaArena)
 Area6ChozoSealWMain:connect_one_way_entrance(Area6TransportArea5) -- Normal Door
 Area6ChozoSealWMain:connect_two_ways_entrance(Area6ChozoSealWPassageway, function ()
 	return All(
@@ -268,15 +259,11 @@ Area6ChozoSealWMain:connect_one_way(Area6ChozoSealWMainPickupBottom, function ()
 		GrappleBeam,
 		ScrewAttack,
 		CanAnyMissile,
+		CanHighLedge,
 		Any(
 			SpaceJump,
-			All(
-				CanFlyVertical,
-				Any(
-					HighJumpBoots,
-					WallJumpSimple
-				)
-			)
+			HighJumpBoots,
+			WallJumpSimple
 		)
 	)
 end)

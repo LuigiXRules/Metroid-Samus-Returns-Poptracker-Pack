@@ -324,15 +324,7 @@ TransportFactoryExtNLower:connect_one_way_entrance(TransportFactoryExtNBottom, f
 	)
 end)
 TransportFactoryExtNLower:connect_one_way(TransportFactoryExtNLowerPickup, CanBombBlock)
-TransportFactoryExtNBottom:connect_one_way_entrance(TransportFactoryExtNLower, function ()
-	return All(
-		OpenMorphTunnelDoor,
-		Any(
-			GravitySuit,
-			CanSpider
-		)
-	)
-end)
+TransportFactoryExtNBottom:connect_one_way_entrance(TransportFactoryExtNLower, OpenMorphTunnelDoor)
 TransportFactoryExtNBottom:connect_one_way_entrance(Area3CavernsGammaSMazeEntrance, function ()
 	return All(
 		OpenMorphTunnelDoor,
@@ -759,7 +751,7 @@ end)
 Area3InteriorGammaTransportCavernsEArena:connect_one_way_entrance(Area3InteriorGammaCAccessUpper, function ()
 	return All(
 		OpenMorphTunnelDoor,
-		CanGrappleTunnel
+		CanEscapeGammaArena
 	)
 end)
 Area3InteriorGammaTransportCavernsEArena:connect_one_way_entrance(Area3InteriorGammaTransportCavernsECenter, function ()
@@ -784,22 +776,16 @@ end)
 Area3InteriorGammaTransportCavernsECenter:connect_one_way_entrance(Area3InteriorGammaCAccessLower, function ()
 	return All(
 		OpenMorphTunnelDoor,
-		CanEscapeGammaArenaEntrance
+		CanHighLedge
 	)
 end)
-Area3InteriorGammaTransportCavernsECenter:connect_one_way_entrance(Area3InteriorGammaTransportCavernsESouthwest, OpenMorphTunnelDoor)
+Area3InteriorGammaTransportCavernsECenter:connect_two_ways_entrance(Area3InteriorGammaTransportCavernsESouthwest, OpenMorphTunnelDoor)
 Area3InteriorGammaTransportCavernsESouthwest:connect_one_way_entrance(Area3InteriorGammaSAccess, OpenTaramargaDoor)
 Area3InteriorGammaTransportCavernsESouthwest:connect_one_way_entrance(Area3InteriorGammaTransportCavernsESoutheast, function ()
 	return Any(
 		CanSpiderBoost,
 		GravitySuit,
 		GrappleBeam
-	)
-end)
-Area3InteriorGammaTransportCavernsESouthwest:connect_one_way_entrance(Area3InteriorGammaCAccessLower, function ()
-	return All(
-		OpenMorphTunnelDoor,
-		CanHighLedge
 	)
 end)
 Area3InteriorGammaTransportCavernsESoutheast:connect_one_way_entrance(ParabyPeripheryLeft) -- Normal Door
@@ -856,7 +842,7 @@ Area3InteriorGammaCAccessUpper:connect_one_way_entrance(WallfireWatchMain) -- No
 Area3InteriorGammaCAccessUpper:connect_one_way_entrance(Area3InteriorGammaTransportCavernsEArena, function ()
 	return All(
 		OpenMorphTunnelDoor,
-		CanEscapeGammaArenaEntrance
+		CanEscapeGammaArena
 	)
 end)
 Area3InteriorGammaCAccessUpper:connect_one_way_entrance(Area3InteriorGammaCAccessHidingSpot, function ()

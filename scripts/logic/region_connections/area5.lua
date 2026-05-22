@@ -92,7 +92,13 @@ TransportAreas4And6Southwest:connect_one_way_entrance(TransportAreas4And6Upper, 
 TransportAreas4And6Southwest:connect_one_way_entrance(TransportAreas4And6PickupLeft, function ()
 	return All(
 		ScrewAttack,
-		CanClimbWall
+		Any(
+			CanClimbWall,
+			All(
+				HighJumpBoots,
+				WallJumpSimple
+			)
+		)
 	)
 end)
 TransportAreas4And6Southeast:connect_one_way_entrance(TransportAreas4And6Upper, OpenMorphTunnelDoor)
@@ -101,6 +107,7 @@ TransportAreas4And6Southeast:connect_one_way_entrance(TransportAreas4And6Chamber
 		ScrewAttack,
 		Any(
 			SpaceJump,
+			HighJumpBoots,
 			All(
 				WallJumpSimple,
 				MovementSimple
@@ -114,7 +121,15 @@ TransportAreas4And6Southeast:connect_one_way_entrance(TransportAreas4And6Southwe
 		GrappleBeam
 	)
 end)
-TransportAreas4And6Southeast:connect_two_ways_entrance(TransportAreas4And6Bottom, OpenMorphTunnelDoor)
+TransportAreas4And6Southeast:connect_one_way_entrance(TransportAreas4And6Bottom, function ()
+	return All(
+		OpenMorphTunnelDoor,
+		Any(
+			CanHighLedge,
+			CanBombBlock
+		)
+	)
+end)
 TransportAreas4And6Bottom:connect_one_way_entrance(Area6TransportArea5) -- Elevator
 TransportAreas4And6PickupRight:connect_one_way_entrance(TransportAreas4And6Upper, function ()
 	return All(
@@ -191,11 +206,17 @@ Area5LobbyTeleporterWLake:connect_one_way_entrance(JShapeTunnelBottom, function 
 end)
 Area5LobbyTeleporterWUpper:connect_one_way_entrance(Area5LobbyTeleporterWLower)
 Area5LobbyTeleporterWUpper:connect_one_way_entrance(Area5LobbyTeleporterWCave, function ()
-	return All(
-		CanThorns,
-		Any(
+	return Any(
+		All(
+			CanPowerBomb,
+			CanThorns
+		),
+		All(
 			MetroidHatchling,
-			CanPowerBomb
+			Any(
+				CanThorns,
+				CanSpiderBoost
+			)
 		)
 	)
 end)
@@ -267,7 +288,7 @@ Area5LobbyTeleporterEUpper:connect_one_way_entrance(Area5LobbyTeleporterEPickup,
 		)
 	)
 end)
-Area5LobbyTeleporterEUpper:connect_two_ways_entrance(Area5LobbyAlpha2) -- Normal Door
+Area5LobbyTeleporterEUpper:connect_two_ways_entrance(Area5LobbyAlpha2, CanHighLedge) -- Normal Door
 Area5LobbyTeleporterEPickup:connect_one_way_entrance(Area5LobbyTeleporterEUpper, function ()
 	return All(
 		OpenMorphTunnelDoor,
@@ -437,12 +458,7 @@ OvergrownMazeMain:connect_one_way(OvergrownMazeMainPickup, function ()
 end)
 OvergrownMazeExit:connect_one_way_entrance(TowerExtSouthwest, OpenMorphTunnelDoor)
 -- ScrewAttackChamber:connect_one_way_entrance(ScrewAttackAccess) - locked door
-ScrewAttackChamber:connect_one_way_entrance(ScrewAttackAccess, function ()
-	return All(
-		ScrewAttack,
-		CanClimbShaft
-	)
-end)
+ScrewAttackChamber:connect_one_way_entrance(ScrewAttackAccess, CanEscapeScrewAttackChamber)
 Area5ExteriorZetaAccessRight:connect_one_way_entrance(TowerExtIntersection, OpenGryncoreDoor)
 Area5ExteriorZetaAccessRight:connect_two_ways_entrance(Area5ExteriorZetaAccessLeft, function () return Has(ScrewAttack) end)
 Area5ExteriorZetaAccessRight:connect_one_way_entrance(ParabyParlor, function ()
@@ -525,13 +541,15 @@ ScrewAttackAccess:connect_one_way_entrance(ParabyParlor) -- Normal Door
 ScrewAttackAccess:connect_one_way_entrance(ScrewAttackChamber, function ()
 	return All(
 		OpenMissileDoor,
-		CanFlyVerticalUnderwater
+		CanFlyVerticalUnderwater,
+		CanEscapeScrewAttackChamber
 	)
 end)
 ScrewAttackAccess:connect_one_way_entrance(ScrewAttackChamber, function ()
 	return All(
 		ScrewAttack,
-		CanFlyVerticalUnderwater
+		CanFlyVerticalUnderwater,
+		CanEscapeScrewAttackChamber
 	)
 end)
 
@@ -543,7 +561,7 @@ TransportTowerLobbyETop:connect_one_way_entrance(TransportTowerExtEBottom) -- No
 Area5InteriorSaveStationSoutheast:connect_one_way_entrance(Area5InteriorSaveStationSaveStation, function ()
 	return All(
 		OpenMorphTunnelDoor,
-		CanShortShaft
+		CanClimbShaft
 	)
 end)
 Area5InteriorSaveStationSouthwest:connect_one_way_entrance(TransportTowerLobbyW, OpenGryncoreDoor)
@@ -569,7 +587,11 @@ end)
 Area5InteriorSaveStationExit:connect_one_way_entrance(Area5InteriorGamma2Access, function ()
 	return All(
 		OpenMorphTunnelDoor,
-		GrappleBeam,
+		Any(
+			GrappleBeam,
+			CanSpiderBoostThroughPitfalls,
+			CanWallJumptoInteriorGammaAccess
+		),
 		CanEscapeInteriorSaveStationWater
 	)
 end)
@@ -584,6 +606,10 @@ Area5InteriorSaveStationExit:connect_one_way_entrance(Area5InteriorSaveStationSa
 		All(
 			CanSpiderBoost,
 			MovementSimple
+		),
+		All(
+			HighJumpBoots,
+			DamageBoostStatic
 		)
 	)
 end)
@@ -758,6 +784,7 @@ Area5InteriorGamma2:connect_one_way_entrance(Area5InteriorGamma2Access, function
 Area5InteriorGamma2:connect_one_way(Area5InteriorGamma2Gamma, function ()
 	return All(
 		SpaceJump,
+		VariaSuit,
 		CanDamageMetroid
 	)
 end)
@@ -771,7 +798,10 @@ Area5InteriorGamma2Access:connect_one_way_entrance(Area5InteriorSaveStationWater
 	return All(
 		OpenMorphTunnelDoor,
 		CanCrossInteriorGammaAccess,
-		CanEscapeInteriorSaveStationWater
+		Any(
+			CanEscapeInteriorSaveStationWater,
+			CanWallJumptoInteriorGammaAccess
+		)
 	)
 end)
 Area5InteriorGamma2Access:connect_one_way_entrance(Area5InteriorGamma2, function ()

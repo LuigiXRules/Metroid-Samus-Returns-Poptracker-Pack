@@ -290,12 +290,7 @@ Area2ExteriorCavernsTeleporterRight:connect_one_way_entrance(Area2ExteriorCavern
 end)
 Area2ExteriorCavernsTeleporterRight:connect_one_way_entrance(Area2ExteriorCavernsAlpha2) -- Normal Door
 Area2ExteriorAlpha2:connect_one_way_entrance(DamExteriorAlphaLedge) -- Normal Door
-Area2ExteriorAlpha2:connect_one_way_entrance(SereneShelter, function()
-	return All(
-		OpenSuperDoor,
-		CanHighLedge
-	)
-end)
+Area2ExteriorAlpha2:connect_one_way_entrance(SereneShelter, OpenSuperDoor)
 Area2ExteriorAlpha2:connect_one_way(Area2ExteriorAlpha2Alpha, CanDamageMetroid)
 SereneShelter:connect_one_way_entrance(Area2ExteriorAlpha2, OpenSuperDoor)
 SereneShelter:connect_one_way(SereneShelterPickup, function()

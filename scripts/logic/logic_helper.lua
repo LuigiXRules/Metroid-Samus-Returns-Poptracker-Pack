@@ -94,13 +94,16 @@ function CanSpiderBoostUnderwater()
 	)
 end
 
+function CanSpiderBoostThroughPitfalls()
+	return All(
+		KnowledgeSimple,
+		CanSpiderBoost
+	)
+end
 function CanCrossPitfallBridge()
 	return Any(
 		PhaseDrift,
-		All(
-			KnowledgeSimple,
-			CanSpiderBoost
-		)
+		CanSpiderBoostThroughPitfalls
 	)
 end
 function CanFlyVertical()
@@ -361,7 +364,10 @@ function CanEscapeIceChamberAccess()
 	)
 end
 function CanEscapeInnerTempleWestHall()
-	return CanClimbWall()
+	return Any(
+		CanClimbWall,
+		CanBombBlock
+	)
 end
 
 -- Area 2
@@ -474,12 +480,12 @@ function CanEscapeRamulkenResidence()
 end
 function CanEscapeGammaArenaCavernsTransport()
 	return All(
-		CanGrappleTunnel,
+		CanEscapeGammaArena,
 		CanClimbWall
 	)
 end
-function CanEscapeGammaArenaEntrance()
-	return CanHighLedge()
+function CanEscapeGammaArena()
+	return CanGrappleTunnel()
 end
 
 -- Area 4
@@ -573,6 +579,20 @@ function CanEscapeDiggernautTunnelsBottom()
 	)
 end
 
+function CanEscapeBasaltBasin()
+	return All(
+		Any(
+			SpaceJump,
+			CanIBJVertical,
+			All(
+				CanSpiderBoost,
+				MovementSimple
+			)
+		),
+		CanBombBlock
+	)
+end
+
 -- Area 5
 function CanCrossInteriorGammaAccess()
 	return Any(
@@ -581,7 +601,19 @@ function CanCrossInteriorGammaAccess()
 		CanThorns
 	)
 end
-
+function CanWallJumptoInteriorGammaAccess()
+	return All(
+		HighJumpBoots,
+		Any(
+			All(
+				PhaseDrift,
+				WallJumpSimple
+			),
+			WallJumpIntermediate
+		)
+	)
+end
+-- function CanGripJumptoInteriorGammaAccess(?)
 function CanEscapeLobbyTeleporterEastPickupLeft()
 	return All(
 		Any(
@@ -620,6 +652,12 @@ function CanEscapeGravityChamber()
 		HighJumpBoots,
 		GravitySuit,
 		CanSpiderBoostUnderwater
+	)
+end
+function CanEscapeScrewAttackChamber()
+	return All(
+		ScrewAttack,
+		CanClimbShaft
 	)
 end
 
@@ -678,6 +716,15 @@ function CanCrossSwarmSquare()
 		)
 	)
 end
+function CanTraversePoisonousTunnel()
+	return All(
+		CanBombBlock,
+		Any(
+			LightningArmor,
+			CanSpider
+		)
+	)
+end
 
 function CanEscapeChozoSealWBottom()
 	return CanHighLedge()
@@ -688,6 +735,16 @@ function CanEscapeChozoSealE()
 		All(
 			HighJumpBoots,
 			WallJumpSimple
+		)
+	)
+end
+function CanEscapeOmegaArena()
+	return Any(
+		OpenChargeDoor,
+		All(
+			CanTraversePoisonousTunnel,
+			GrappleBeam,
+			MorphBall
 		)
 	)
 end

@@ -468,14 +468,17 @@ Area4MinesZeta:connect_one_way(Area4MinesZetaZeta, CanDamageMetroid)
 GawronGrooveLeft:connect_one_way_entrance(GawronGrooveTop, function ()
 	return All(
 		VariaSuit,
-		CanHighLedge
+		Any(
+			IceBeam,
+			CanHighLedge
+		)
 	)
 end)
 GawronGrooveLeft:connect_one_way_entrance(GawronGrooveArenaLeft, function ()
 	return All(
 		SuperMissile,
 		VariaSuit,
-		CanBombBlock
+		CanEscapeBasaltBasin
 	)
 end)
 GawronGrooveTop:connect_one_way_entrance(GawronGrooveLeft, function () return Has(VariaSuit) end)
@@ -521,8 +524,7 @@ end)
 GawronGrooveArenaLeft:connect_one_way_entrance(GawronGrooveLeft, function ()
 	return All(
 		OpenMorphTunnelDoor,
-		CanFlyVertical,
-		CanBombBlock,
+		CanEscapeBasaltBasin,
 		SuperMissile,
 		VariaSuit
 	)
@@ -587,12 +589,14 @@ end)
 BasaltBasinTop:connect_one_way_entrance(BasaltBasinSeal, function ()
 	return All(
 		OpenMorphTunnelDoor,
-		CanBombBlock
+		VariaSuit,
+		CanEscapeBasaltBasin
 	)
 end)
 BasaltBasinTop:connect_one_way_entrance(GawronGrooveLeft, function ()
 	return All(
 		OpenMorphTunnelDoor,
+		VariaSuit,
 		CanBombBlock
 	)
 end)
@@ -600,6 +604,7 @@ BasaltBasinTop:connect_one_way_entrance(GawronGrooveRight, function ()
 	return All(
 		OpenMorphTunnelDoor,
 		SuperMissile,
+		VariaSuit,
 		CanBombBlock,
 		CanHighLedge
 	)
@@ -607,7 +612,8 @@ end)
 BasaltBasinSeal:connect_one_way_entrance(GawronGrooveArenaRight, function ()
 	return All(
 		OpenMorphTunnelDoor,
-		CanHighBombBlock
+		VariaSuit,
+		CanBombBlock
 	)
 end)
 BasaltBasinSeal:connect_one_way_entrance(GawronGrooveArenaRight, function ()
@@ -619,8 +625,8 @@ end)
 BasaltBasinSeal:connect_one_way_entrance(BasaltBasinTop, function ()
 	return All(
 		OpenMorphTunnelDoor,
-		CanFlyVertical,
-		CanBombBlock
+		VariaSuit,
+		CanEscapeBasaltBasin
 	)
 end)
 SpaceJumpChamber:connect_one_way_entrance(MinesIntersectionTerminalBottom, CanEscapeSJChamberTop) -- Normal Door

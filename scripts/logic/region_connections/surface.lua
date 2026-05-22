@@ -87,7 +87,12 @@ MoheekMarket:connect_one_way_entrance(SurfaceEastAlphaLobby, OpenMorphTunnelDoor
 MoheekMarket:connect_one_way_entrance(SurfaceEastAlphaPickup, OpenMorphTunnelDoor)
 CavernCavity:connect_one_way_entrance(ScanPulseLeft, CanEscapeCavernCavity)
 CavernCavity:connect_one_way_entrance(EnergyRechargeShaftUpper) -- Normal Door
-CavernCavity:connect_one_way_entrance(CavernAlcove, OpenMorphTunnelDoor)
+CavernCavity:connect_one_way_entrance(CavernAlcove, function()
+	return All(
+		OpenMorphTunnelDoor,
+		CanClimbShaft
+	)
+end)
 ChargeBeamAccess:connect_one_way_entrance(ScanPulseLeft, OpenChargeDoor)
 ChargeBeamAccess:connect_one_way_entrance(ChozoCacheE, OpenMorphTunnelDoor)
 ChargeBeamAccess:connect_one_way_entrance(ChargeBeamChamber, function()

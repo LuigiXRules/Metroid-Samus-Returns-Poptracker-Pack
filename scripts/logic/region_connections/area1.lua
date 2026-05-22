@@ -346,11 +346,15 @@ InnerTempleVentShaftTunnel:connect_one_way_entrance(TempleExteriorSouthwest, fun
 	)
 end)
 InnerTempleVentShaftShaft:connect_one_way_entrance(InnerTempleUpperHallway, OpenGigadoraDoor)
--- This technically connects to InnerTempleTeleporterAccess, but we're ignoring this connection's logical implications
+InnerTempleVentShaftShaft:connect_one_way_entrance(InnerTempleTeleporterAccess, CanEscapeInnerTempleWestHall)
 InnerTempleVentShaftShaft:connect_one_way_entrance(InnerTempleVentShaftShaftPickup, function()
 	return Any(
 		SpaceJump,
-		CanSpider
+		CanSpider,
+		All(
+			HighJumpBoots,
+			WallJumpIntermediate
+		)
 	)
 end)
 Area1CavernsHub:connect_one_way_entrance(Area1CavernsSaveStationMain)
