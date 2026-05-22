@@ -10,11 +10,13 @@ Some of the maps are kinda big, but you can zoom in using the scroll wheel on yo
 
 - My division of Surface East/West is different than the division the game uses; as such, the pack will not autotab to Surface West when climbing the cliff to the west of the ship. I am unsure on what I will do about this.
 - Area 8 is considered one region in game, so despite there being two tabs for it, only the Lower tab will be autotabbed to.
+-- Both of these have been fixed by adding a new variant in the next version.
 
 ## Next Steps
 
 - Fine-tune some of the location placements
 - Make locations you could obtain with higher trick levels appear yellow
+- Add hint locations to the seal statue things (maybe)
 - Make locations you can see but not obtain appear blue
 - Create the framework for blast shield/elevator rando (if I have time)
 
