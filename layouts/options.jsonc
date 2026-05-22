@@ -28,10 +28,12 @@
               "item_h_alignment": "center",
               "item_size": "300, 40",
               "rows": [
-                [ "wall_jump" ],
-                [ "infinite_bomb_jump" ],
-                [ "damage_boost" ],
                 [ "knowledge" ],
+                [ "wall_jump" ],
+                [ "super_jump" ],
+                [ "infinite_bomb_jump" ],
+                [ "morph_extends" ],
+                [ "damage_boost" ],
                 [ "movement" ]
               ]
             }

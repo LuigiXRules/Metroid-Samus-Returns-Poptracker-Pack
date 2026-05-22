@@ -121,5 +121,53 @@
         "codes": "movement, movement_intermediate"
       }
     ]
+  },
+  {
+    "codes": "SuperJump, super_jump",
+    "type": "progressive",
+    "initial_stage_idx": 0,
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/settings/super_jump_disabled.png",
+        "img_mods": "@disabled",
+        "codes": "super_jump, super_jump_disabled"
+      },
+      {
+        "img": "images/settings/super_jump_beginner.png",
+        "codes": "super_jump, super_jump_beginner"
+      },
+      {
+        "img": "images/settings/super_jump_easy.png",
+        "codes": "super_jump, super_jump_easy"
+      },
+      {
+        "img": "images/settings/super_jump_medium.png",
+        "codes": "super_jump, super_jump_medium"
+      }
+    ]
+  },
+  {
+    "codes": "MorphExtends, morph_extends",
+    "type": "progressive",
+    "initial_stage_idx": 0,
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/settings/morph_extends_disabled.png",
+        "img_mods": "@disabled",
+        "codes": "morph_extends, morph_extends_disabled"
+      },
+      {
+        "img": "images/settings/morph_extends_easy.png",
+        "codes": "morph_extends, morph_extends_easy"
+      },
+      {
+        "img": "images/settings/morph_extends_medium.png",
+        "codes": "morph_extends, morph_extends_medium"
+      }
+    ]
   }
 ]

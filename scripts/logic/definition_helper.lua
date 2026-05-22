@@ -47,6 +47,13 @@ KnowledgeSimple = "knowledge_simple"
 MovementDisabled = "movement_disabled"
 MovementSimple = "movement_simple"
 MovementIntermediate = "movement_intermediate"
+SuperJumpDisabled = "super_jump_disabled"
+SuperJumpBeginner = "super_jump_beginner"
+SuperJumpEasy = "super_jump_easy"
+SuperJumpMedium = "super_jump_medium"
+MorphExtendsDisabled = "morph_extends_disabled"
+MorphExtendsEasy = "morph_extends_easy"
+MorphExtendsMedium = "morph_extends_medium"
 
 -- DNA stuff
 DNARequired = "dnarequired"
@@ -69,7 +76,9 @@ SlotDataTable = {
 	{"damage_boost", "progressive"},
 	{"infinite_bomb_jump", "progressive"},
 	{"dna_required", "consumable"},
-	{"dna_available", "consumable"}
+	{"dna_available", "consumable"},
+	{"super_jump", "progressive"},
+	{"morph_extends", "progressive"}
 }
 
 
