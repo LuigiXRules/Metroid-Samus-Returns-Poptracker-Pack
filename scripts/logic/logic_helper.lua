@@ -46,6 +46,13 @@ function CanIBJDiagonal()
 	)
 end
 
+function CanSuperJumpMorphExtend()
+	return All(
+		SuperJumpMedium,
+		MorphExtendsMedium
+	)
+end
+
 function CanBeamBurst()
 	return All(
 		BeamBurst,
@@ -144,11 +151,17 @@ function CanClimbWallUnderwater()
 	)
 end
 
-function CanHighJump()
+function CanHighJumpNoGrip()
 	return Any(
 		HighJumpBoots,
 		CanFlyVertical,
 		CanIBJDouble
+	)
+end
+function CanHighJump()
+	return Any(
+		CanHighJumpNoGrip,
+		CanSuperJumpMorphExtend
 	)
 end
 function CanHighLedge()
@@ -166,15 +179,96 @@ function CanHighUnderwaterLedge()
 		)	
 	)
 end
-function CanUnderwaterHighJump()
+
+function CanAlmostHighJump()
+	return Any(
+		CanHighJump,
+		SuperJumpBeginner
+	)
+end
+function CanAlmostHighLedge()
+	return Any(
+		CanAlmostHighJump,
+		CanSpider
+	)
+end
+function CanAlmostHighJumpGap()
+	return Any(
+		CanHighJump,
+		SuperJumpEasy
+	)
+end
+function CanUnderwaterAlmostHighJump()
 	return Any(
 		All(
 			GravitySuit,
-			CanHighJump
+			CanAlmostHighJump
 		),
 		CanSpiderBoostUnderwater
 	)
 end
+function CanUnderwaterAlmostHighLedge()
+	return Any(
+		All(
+			GravitySuit,
+			CanAlmostHighJump
+		),
+		CanSpider
+	)
+end
+function CanJumpUnderwater()
+	return Any(
+		HighJumpBoots,
+		GravitySuit,
+		SuperJumpEasy
+	)
+end
+
+function CanHighSuperJump()
+	return All(
+		SuperJumpBeginner,
+		HighJumpBoots
+	)
+end
+function CanHighSuperJumporClimb()
+	return Any(
+		CanHighSuperJump,
+		CanSpider
+	)
+end
+function CanAlmostHigherJump()
+	return Any(
+		CanHighSuperJump,
+		CanFlyVertical,
+		All(
+			HighJumpBoots,
+			CanIBJDouble
+		)
+	)
+end
+function CanAlmostHigherLedge()
+	return Any(
+		CanAlmostHigherJump,
+		CanSpider
+	)
+end
+function CanHigherJump()
+	return Any(
+		SuperJumpEasy,
+		CanFlyVertical,
+		All(
+			HighJumpBoots,
+			CanIBJDouble
+		)
+	)
+end
+function CanHigherLedge()
+	return Any(
+		CanHigherJump,
+		CanSpider
+	)
+end
+
 function CanHighBombBlock()
 	return Any(
 		All(
@@ -197,6 +291,12 @@ function CanBombBlockNearCeiling()
 	)
 end
 
+function CanShorterShaft()
+	return Any(
+		WallJumpSimple,
+		CanAlmostHighLedge
+	)
+end
 function CanShortShaft()
 	return Any(
 		CanHighLedge,
@@ -209,6 +309,19 @@ function CanClimbShaft()
 		WallJumpSimple
 	)
 end
+function CanClimbElevatedShaft()
+	return Any(
+		CanSpider,
+		All(
+			CanClimbShaft,
+			Any(
+				CanHighJumpNoGrip,
+				SuperJumpEasy
+			)
+		)
+	)
+end
+
 function CanAnyMissile()
 	return Any(
 		MissileLauncher,
@@ -306,15 +419,18 @@ end
 -- Region specific
 -- Surface
 function CanEscapeCavernCavity()
-	return CanClimbShaft()
+	return Any(
+		CanClimbShaft,
+		CanAlmostHighLedge
+	)
 end
 function CanEscapeEnergyRechargeShaft()
-	return CanHighLedge()
+	return CanAlmostHighLedge()
 end
 function CanEscapeChargeChamber()
 	return Any(
 		All(
-			CanHighLedge,
+			CanAlmostHighLedge,
 			OpenMissileDoor
 		),
 		OpenChargeDoor
@@ -360,12 +476,12 @@ ScriptHost:AddWatchForCode("DNANeeded", "dnaavailable", CheckDNARequired)
 function CanEscapeIceChamberAccess()
 	return Any(
 		IceBeam,
-		CanHighJump
+		CanAlmostHighJump
 	)
 end
 function CanEscapeInnerTempleWestHall()
 	return Any(
-		CanClimbWall,
+		CanAlmostHigherLedge,
 		CanBombBlock
 	)
 end
@@ -387,15 +503,21 @@ function CanEscapeArachnusLoop()
 	)
 end
 function CanEscapeCavernsAlphaEast()
-	return All(
-		CanHighLedge,
-		CanBombBlock
+	return Any(
+		All(
+			Any(
+				CanHighJumpNoGrip,
+				CanSpider
+			),
+			CanBomb
+		),
+		CanPowerBomb
 	)
 end
 
-function CanEscapeWaveChamber()
+function CanEscapeDamExteriorWest()
 	return Any(
-		CanHighJump,
+		CanAlmostHighJump,
 		CanSpiderBoost
 	)
 end
@@ -406,7 +528,7 @@ function CanEscapeInteriorTeleporter()
 	return CanShortShaft()
 end
 function CanEscapeHiJumpAccess()
-	return CanClimbWall()
+	return CanAlmostHigherLedge()
 end
 function CanEscapeFleechFireContainment()
 	return All(
@@ -421,35 +543,20 @@ function CanEscapeInteriorGammaArenatoIntersectionTerminal()
 		CanSpider
 	)
 end
-
+function CanEscapeWhimsicalWaterwheels()
+	return CanAlmostHighLedge()
+end
 function CanEscapeTransportAccess()
 	return Any(
 		CanSpider,
 		All(
-			CanShortShaft,
+			CanShorterShaft,
 			CanThorns
 		)
 	)
 end
 
 -- Area 3
-function CanClimbAscendingAlleyway()
-	return All(
-		CanAnyMissile,
-		Any(
-			GrappleBeam,
-			CanFlyVertical
-		),
-		MorphBall
-	)
-end
-function CanGrappleTunnel()
-	return Any(
-		GrappleBeam,
-		CanFlyVertical
-	)
-end
-
 function CanEscapeFactoryExteriorAccess()
 	return Any(
 		GrappleBeam,
@@ -466,6 +573,18 @@ function CanEscapeEvolvedAlphaNorthtoGamma()
 	return All(
 		CanClimbWall,
 		CanBombBlock
+	)
+end
+function CanEscapeInteriorGammaSouth()
+	return Any(
+		GrappleBeam,
+		All(
+			HighJumpBoots,
+			Any(
+				CanSuperJumpMorphExtend,
+				CanIBJDouble
+			)
+		)
 	)
 end
 
@@ -485,7 +604,11 @@ function CanEscapeGammaArenaCavernsTransport()
 	)
 end
 function CanEscapeGammaArena()
-	return CanGrappleTunnel()
+	return Any(
+		GrappleBeam,
+		CanAlmostHighJump,
+		CanFlyVertical
+	)
 end
 
 -- Area 4
@@ -504,7 +627,7 @@ function CanTraverseTransitTunnel()
 end
 function CanEscapeEvolvedAlpha()
 	return Any(
-		CanHighJump,
+		CanAlmostHighJump,
 		GravitySuit
 	)
 end
@@ -519,7 +642,7 @@ end
 function CanEscapeSpazerChamber()
 	return All(
 		OpenGigadoraDoor,
-		CanHighLedge
+		CanAlmostHighLedge
 	)
 end
 function CanEscapePinkCrystals()
@@ -536,7 +659,7 @@ function CanEscapePinkCrystals()
 	)
 end
 function CanEscapeEvolvedGamma()
-	return CanHighLedge()
+	return CanAlmostHighLedge()
 end
 
 function CanEscapeSJChamberTop()
@@ -614,6 +737,20 @@ function CanWallJumptoInteriorGammaAccess()
 	)
 end
 -- function CanGripJumptoInteriorGammaAccess(?)
+function CanCrossTowerExteriorBlobthrower()
+	return Any(
+		CanBlobthrower,
+		CanHighJump,
+		All(
+			SuperJumpEasy,
+			Any(
+				MovementSimple,
+				DamageBoostStatic
+			)
+		)
+	)
+end
+
 function CanEscapeLobbyTeleporterEastPickupLeft()
 	return All(
 		Any(
@@ -638,19 +775,17 @@ function CanEscapePhaseDriftChamber()
 end
 
 function CanEscapeExteriorZetaArena()
-	return CanHighJump()
+	return CanAlmostHighJump()
 end
 function CanEscapeGravityChamberAccess()
 	return Any(
-		HighJumpBoots,
-		GravitySuit,
+		CanJumpUnderwater,
 		CanSpider
 	)
 end
 function CanEscapeGravityChamber()
 	return Any(
-		HighJumpBoots,
-		GravitySuit,
+		CanJumpUnderwater,
 		CanSpiderBoostUnderwater
 	)
 end
@@ -662,16 +797,20 @@ function CanEscapeScrewAttackChamber()
 end
 
 function CanEscapeInteriorSaveStationWater()
-	return Any(
-		CanSpider,
-		All(
-			GravitySuit,
-			CanHighLedge
-		)
-	)
+	return CanHighUnderwaterLedge()
 end
 function CanEscapeEvolvedZetaArena()
-	return CanHighJump()
+	return CanAlmostHighJump()
+end
+
+-- Area 6
+function CanCrossTransporttoArea5()
+	return Any(
+		HighJumpBoots,
+		SpaceJump,
+		CanSpider,
+		DamageBoostStatic
+	)
 end
 function CanCrossCrumblingBridge()
 	return Any(
@@ -733,8 +872,12 @@ function CanEscapeChozoSealE()
 	return Any(
 		CanClimbWall,
 		All(
-			HighJumpBoots,
-			WallJumpSimple
+			WallJumpSimple,
+			Any(
+				HighJumpBoots,
+				SuperJumpBeginner,
+				MorphExtendsEasy
+			)
 		)
 	)
 end
@@ -784,6 +927,19 @@ function CanCrossWallfireWorkstationTop()
 		CanBlobthrower
 	)
 end
+function CanJumpUpWallfireWorkstation()
+	return All(
+		Any(
+			PhaseDrift,
+			LightningArmor
+		),
+		Any(
+			HighJumpBoots,
+			SpaceJump,
+			SuperJumpEasy
+		)
+	)
+end
 
 function CanEscapeTransporttoArea6Bottom()
 	return CanClimbWall()
@@ -812,8 +968,7 @@ function CanEscapeRobotRegimeBottom()
 end
 function CanEscapeSpiderBoostTunnelSWater()
 	return Any(
-		HighJumpBoots,
-		GravitySuit,
+		CanJumpUnderwater,
 		CanSpider
 	)
 end
@@ -857,19 +1012,30 @@ function CanCombatQueen()
 end
 
 function CanClimbNestNetwork()
-	return CanClimbWall()
+	return Any(
+		CanClimbWall,
+		All(
+			HighJumpBoots,
+			WallJumpSimple,
+			Any(
+				SuperJumpBeginner,
+				MorphExtendsEasy
+			)
+		)
+	)
 end
 function CanClimbNestNetworkTunnels()
 	return All(
 		ScrewAttack,
 		Any(
 			HighJumpBoots,
-			WallJumpSimple
+			WallJumpSimple,
+			SuperJumpEasy
 		)
 	)
 end
 function CanClimbNestNodule()
-	return CanShortShaft()
+	return CanShorterShaft()
 end
 function CanNavigateMetroidNestShaftWest()
 	return All(
