@@ -1,6 +1,13 @@
 {
 	"versions": [
 		{
+			"package_version": "0.3.0",
+			"download_url": "https://github.com/LuigiXRules/Metroid-Samus-Returns-Poptracker-Pack/releases/download/0.3.0/samus_returns_pack.zip",
+			"sha256": "a9743433db5b4abdbce46cfbf62b1c28fb4d26739a234ebd9ef5051c9e7b07db",
+			"changelog": ["Apworld 0.2.0 logic parity, More Autotab Compatible variant"]
+		},
+	"versions": [
+		{
 			"package_version": "0.2.1",
 			"download_url": "https://github.com/LuigiXRules/Metroid-Samus-Returns-Poptracker-Pack/releases/download/0.2.1/samus_returns_pack.zip",
 			"sha256": "a270ef0bdac70284940a2b31188fd74d86db8a906e122a803fefbb6e43c5155d",
