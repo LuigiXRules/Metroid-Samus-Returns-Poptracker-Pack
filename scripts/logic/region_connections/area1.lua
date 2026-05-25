@@ -41,7 +41,7 @@ TransportSurfaceArea2Area2:connect_one_way_entrance(Area1TransportCache, functio
 			ScrewAttack,
 			MorphBall
 		),
-		CanHighJump,
+		CanAlmostHighJump,
 		CanBeamBlockThroughTunnel
 	)
 end)
@@ -80,6 +80,12 @@ InnerTempleEHallUpper:connect_one_way_entrance(InnerTempleUpperHallway, function
 		All(
 			HighJumpBoots,
 			CanClimbShaft
+		),
+		CanSuperJumpMorphExtend,
+		All(
+			SuperJumpBeginner,
+			WallJumpSimple,
+			MorphExtendsEasy
 		)
 	)
 end) -- Normal Door
@@ -88,7 +94,7 @@ InnerTempleEHallUpper:connect_one_way_entrance(InnerTempleEHallLower)
 InnerTempleEHallLower:connect_one_way_entrance(InnerTempleEHallUpper, function()
 	return Any(
 		IceBeam,
-		CanClimbWall
+		CanHigherJump
 	)
 end)
 InnerTempleEHallLower:connect_two_ways_entrance(DestroyedArmory, OpenChargeDoor)
@@ -133,7 +139,7 @@ Area1ExteriorAlpha:connect_one_way(Area1ExteriorAlphaAlpha, CanDamageMetroid)
 Area1ExteriorAlpha:connect_one_way(Area1ExteriorAlphaPickup, function()
 	return All(
 		CanBombBlock,
-		CanHighLedge
+		CanAlmostHighLedge
 	)
 end)
 TempleExteriorSoutheast:connect_one_way_entrance(InnerTempleEHallUpper) -- Normal Door
@@ -141,7 +147,7 @@ TempleExteriorSoutheast:connect_one_way_entrance(InnerTempleEHallUpper) -- Norma
 TempleExteriorSoutheast:connect_one_way_entrance(Area1ExteriorAlpha, CanClimbWall) -- Normal Door
 TempleExteriorSoutheast:connect_one_way_entrance(SpiderBallDoorAccess, OpenMorphTunnelDoor)
 TempleExteriorSoutheast:connect_one_way_entrance(TempleExteriorCenter, CanClimbWall)
-TempleExteriorSoutheast:connect_one_way(TempleExteriorSoutheastPickup, CanClimbWall)
+TempleExteriorSoutheast:connect_one_way(TempleExteriorSoutheastPickup, CanAlmostHighLedge)
 TempleExteriorCenter:connect_one_way_entrance(TempleExteriorSoutheast)
 TempleExteriorCenter:connect_one_way_entrance(TempleExteriorTop, CanClimbWall)
 TempleExteriorCenter:connect_one_way_entrance(TempleExteriorSouthwest)
@@ -168,7 +174,7 @@ Area1CavernsLobby:connect_one_way_entrance(Area1CavernsHub, CanBombBlock)
 Area1CavernsLobby:connect_one_way_entrance(Area1CavernsEnergyRecharge, function()
 	return All(
 		Any(
-			CanHighLedge,
+			CanAlmostHighLedge,
 			MovementSimple
 		),
 		CanBombBlock
@@ -179,7 +185,7 @@ Area1CavernsLobby:connect_one_way_entrance(Area1CavernsAlphaSe) -- Normal Door
 Area1CavernsAlphaSwAccess:connect_one_way_entrance(Area1CavernsAlphaSw, function()
 	return All(
 		Any(
-			CanHighLedge,
+			CanAlmostHighLedge,
 			IceBeam
 		),
 		CanAnyMissile,
@@ -206,7 +212,7 @@ WaterMazeMaze:connect_one_way_entrance(WaterMazePickup, function()
 				PhaseDrift,
 				Any(
 					GravitySuit,
-					CanSpider
+					CanHighSuperJumporClimb
 				)
 			),
 			All(
@@ -276,20 +282,8 @@ Area1MagmaPoolLeft:connect_one_way(Area1MagmaPoolLeftMagmaPickup, function()
 		SuperMissile,
 		MorphBall,
 		Any(
-			CanFlyVertical,
-			All(
-				CanHighJump,
-				Any(
-					CanSpider,
-					All(
-						CanClimbShaft,
-						Any(
-							HighJumpBoots,
-							MovementSimple
-						)
-					)
-				)
-			)
+			CanAlmostHigherJump,
+			CanClimbElevatedShaft
 		)
 	)
 end)

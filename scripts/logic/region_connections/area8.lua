@@ -25,18 +25,9 @@ TransportSurfaceThorns:connect_one_way(TransportSurfaceThornsPickup, function ()
 end)
 TransportSurfaceBridge:connect_two_ways_entrance(TransportSurfaceElevator, function () return Has(MetroidHatchling) end)
 TransportSurfaceBridge:connect_one_way(TransportSurfaceBridgePickup, function ()
-	return All(
-		MorphBall,
-		Any(
-			PhaseDrift,
-			All(
-				CanSpiderBoost,
-				Any(
-					CanHighLedge,
-					MovementIntermediate
-				)
-			)
-		)
+	return Any(
+		PhaseDrift,
+		CanSpiderBoost
 	)
 end)
 TransportSurfaceElevator:connect_one_way_entrance(SurfaceTransportArea8Elevator) -- Elevator
@@ -131,8 +122,8 @@ AmphitheaterCenter:connect_one_way_entrance(AmphitheaterTop, function ()
 	return Any(
 		CanClimbWall,
 		All(
-			CanHighLedge,
-			MovementIntermediate
+			CanAlmostHighLedge,
+			MorphExtendsEasy
 		)
 	)
 end)
@@ -142,7 +133,7 @@ AmphitheaterTop:connect_one_way(AmphitheaterTopPickup, function ()
 	return All(
 		GrappleBeam,
 		MorphBall,
-		CanHighLedge
+		CanAlmostHighLedge
 	)
 end)
 
@@ -183,13 +174,14 @@ Area8EntranceTeleporterLower:connect_one_way_entrance(NestVestibule) -- Normal D
 Area8EntranceTeleporterLower:connect_one_way_entrance(Area8EntranceTeleporterUpper, function ()
 	return All(
 		ScrewAttack,
-		CanHighLedge
+		CanShortShaft,
+		CanAlmostHighLedge
 	)
 end)
 Area8EntranceTeleporterLower:connect_one_way(Area8EntranceTeleporterLowerPickup, function ()
 	return All(
 		MorphBall,
-		CanShortShaft,
+		CanShorterShaft,
 		CanAnyMissile,
 		Any(
 			LightningArmor,
@@ -319,6 +311,6 @@ NestTeleporter:connect_one_way_entrance(AmphitheaterTop) -- Normal Door
 NestTeleporter:connect_one_way_entrance(NestHallwaySLeft, function ()
 	return All(
 		OpenMorphTunnelDoor,
-		CanHighLedge
+		CanAlmostHighLedge
 	)
 end)

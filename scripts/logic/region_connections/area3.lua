@@ -3,7 +3,7 @@ TransportArea2Upper:connect_one_way_entrance(TransportAreas1And3Area3) -- Elevat
 TransportArea2Upper:connect_one_way_entrance(TransportArea2MiddleLeft)
 TransportArea2Upper:connect_one_way_entrance(BeamBurstMain) -- Normal Door
 TransportArea2Upper:connect_one_way_entrance(TransportArea4Upper) -- Normal Door
-TransportArea2MiddleLeft:connect_one_way_entrance(TransportArea2Upper, CanShortShaft)
+TransportArea2MiddleLeft:connect_one_way_entrance(TransportArea2Upper, CanShorterShaft)
 TransportArea2MiddleLeft:connect_one_way_entrance(TransportArea2MiddleRight, function()
 	return All(
 		OpenMorphTunnelDoor,
@@ -68,7 +68,7 @@ GrappleBeamChamber:connect_one_way(GrappleBeamPickup, function ()
 end)
 -- FactoryExtTeleporter:connect_one_way_entrance() - not logically relevant?
 FactoryExtEntrance:connect_one_way_entrance(FactoryExtAccessExit) -- Normal Door
-FactoryExtEntrance:connect_one_way_entrance(FactoryExtPlatform, CanHighLedge)
+FactoryExtEntrance:connect_one_way_entrance(FactoryExtPlatform, CanAlmostHighLedge)
 -- FactoryExtEntrance:connect_one_way_entrance(FactoryExtTeleporter)
 FactoryExtEntrance:connect_one_way(FactoryExtEntrancePickup, function ()
 	return Any(
@@ -99,7 +99,7 @@ FactoryExtCrevice:connect_one_way_entrance(FactoryExtTop, function ()
 		OpenMorphTunnelDoor,
 		Any(
 			KnowledgeSimple,
-			CanHighLedge
+			CanAlmostHighLedge
 		),
 		GrappleBeam,
 		CanSpider
@@ -113,7 +113,7 @@ FactoryExtShaftMiddle:connect_one_way_entrance(Area3ExteriorMaze, OpenMorphTunne
 FactoryExtShaftMiddle:connect_one_way_entrance(FactoryExtShaftBottom)
 FactoryExtShaftBottom:connect_one_way_entrance(FactoryExtShaftMiddle, function ()
 	return Any(
-		CanHighLedge,
+		CanAlmostHighLedge,
 		CanClimbShaft
 	)
 end)
@@ -228,9 +228,9 @@ HalzynHangoutLower:connect_one_way(HalzynHangoutLowerPickup, function ()
 end)
 HalzynHangoutUpper:connect_one_way_entrance(HalzynHangoutLower)
 HalzynHangoutUpper:connect_one_way_entrance(Area3ExteriorGammaEntrance, function ()
-	return All(
+	return Any(
 		GrappleBeam,
-		CanClimbWall
+		CanHigherJump
 	)
 end) -- Normal Door
 HalzynHangoutUpper:connect_one_way(HalzynHangoutUpperPickup, function ()
@@ -269,7 +269,8 @@ FactoryExtAccessLower:connect_one_way_entrance(BeamBurstPickup, function ()
 				MorphBall,
 				LightningArmor
 			),
-			WallJumpIntermediate
+			WallJumpIntermediate,
+			CanAlmostHigherJump
 		)
 	)
 end)
@@ -279,7 +280,7 @@ FactoryExtAccessLower:connect_one_way_entrance(FactoryExtAccessUpper, function (
 			CanClimbWall,
 			All(
 				Any(
-					CanHighLedge,
+					CanAlmostHighLedge,
 					WallJumpIntermediate
 				),
 				CanDamageToughEnemy
@@ -320,7 +321,17 @@ TransportFactoryExtNLower:connect_one_way_entrance(Area3CavernsGammaCArena) -- N
 TransportFactoryExtNLower:connect_one_way_entrance(TransportFactoryExtNBottom, function ()
 	return All(
 		OpenMorphTunnelDoor,
-		CanUnderwaterHighJump
+		Any(
+			All(
+				GravitySuit,
+				CanAlmostHighJump
+			),
+			All(
+				HighJumpBoots,
+				CanSuperJumpMorphExtend
+			),
+			CanSpiderBoostUnderwater
+		)
 	)
 end)
 TransportFactoryExtNLower:connect_one_way(TransportFactoryExtNLowerPickup, CanBombBlock)
@@ -352,7 +363,13 @@ end)
 Area3CavernsGammaSMazeEntrance:connect_one_way_entrance(Area3CavernsGammaSMazeJunctionAccess, function ()
 	return All(
 		OpenMorphTunnelDoor,
-		CanUnderwaterHighJump
+		Any(
+			All(
+				GravitySuit,
+				CanHighJump
+			),
+			CanSpiderBoostUnderwater
+		)
 	)
 end)
 Area3CavernsGammaSMazeJunctionAccess:connect_one_way_entrance(Area3CavernsGammaSMazeEntrance, OpenMorphTunnelDoor)
@@ -418,7 +435,7 @@ end)
 GravittGardenLower:connect_one_way_entrance(GravittGardenMiddle, function ()
 	return Any(
 		GrappleBeam,
-		CanFlyVertical
+		CanAlmostHigherJump
 	)
 end)
 GravittGardenMiddle:connect_one_way_entrance(GravittGardenLower)
@@ -435,11 +452,20 @@ end)
 AscendingAlleyway:connect_one_way_entrance(QuarryShaftGrappleBlock, function ()
 	return All(
 		OpenMorphTunnelDoor,
-		CanClimbAscendingAlleyway,
+		CanAnyMissile,
 		GrappleBeam
 	)
 end)
-AscendingAlleyway:connect_one_way(AscendingAlleywayPickup, CanClimbAscendingAlleyway)
+AscendingAlleyway:connect_one_way(AscendingAlleywayPickup, function()
+	return All(
+		CanAnyMissile,
+		Any(
+			GrappleBeam,
+			CanAlmostHigherJump
+		),
+		MorphBall
+	)
+end)
 RamulkenRollwayLower:connect_one_way_entrance(Area3CavernsTeleporterEUpper, function ()
 	return All(
 		OpenChargeDoor,
@@ -462,11 +488,12 @@ RamulkenRollwayLower:connect_one_way_entrance(RamulkenRollwayUpper, function ()
 	return Any(
 		CanFlyVertical,
 		All(
+			GrappleBeam,
 			Any(
 				KnowledgeSimple,
-				CanClimbWall
-			),
-			GrappleBeam
+				CanClimbWall,
+				CanAlmostHigherJump
+			)
 		)
 	)
 end)
@@ -483,11 +510,17 @@ RamulkenRollwayLower:connect_one_way(RamulkenRollwayLowerPickup, function ()
 			CanAnyMissile,
 			CanBombBlock,
 			Any(
+				GravitySuit,
+				CanSpiderBoostUnderwater,
+				CanHighSuperJump
+			),
+			Any(
+				CanSpider,
+				MovementSimple,
 				All(
 					GravitySuit,
 					SpaceJump
-				),
-				CanSpiderBoostUnderwater
+				)
 			)
 		)
 	)
@@ -518,7 +551,7 @@ Area3CavernsTeleporterEUpper:connect_one_way(Area3CavernsTeleporterEUpperPickup,
 		MorphBall,
 		Any(
 			GrappleBeam,
-			CanFlyVertical
+			CanHigherJump
 		),
 		Any(
 			All(
@@ -541,7 +574,13 @@ QuarryShaftLower:connect_one_way_entrance(QuarryShaftUpper, CanShortShaft)
 QuarryShaftLower:connect_one_way_entrance(LonelyLoopBottom, function ()
 	return All(
 		OpenMorphTunnelDoor,
-		CanClimbWall
+		Any(
+			CanClimbWall,
+			All(
+				HighJumpBoots,
+				WallJumpIntermediate
+			)
+		)
 	)
 end)
 QuarryShaftUpper:connect_one_way_entrance(QuarryShaftLower)
@@ -561,7 +600,8 @@ LonelyLoopBottom:connect_one_way_entrance(LonelyLoopTop, function()
 		OpenMorphTunnelDoor,
 		Any(
 			GrappleBeam,
-			SpaceJump
+			SpaceJump,
+			CanHighSuperJump
 		)
 	)
 end)
@@ -661,7 +701,7 @@ Area3InteriorGammaSAccess:connect_one_way_entrance(Area3InteriorGammaTransportCa
 Area3InteriorGammaSAccess:connect_one_way_entrance(Area3InteriorGammaS, function ()
 	return All(
 		OpenMorphTunnelDoor,
-		CanGrappleTunnel
+		CanEscapeInteriorGammaArenaSouth
 	)
 end)
 ParabyPeripheryLeft:connect_one_way_entrance(Area3InteriorGammaTransportCavernsESoutheast) -- Normal Door
@@ -681,7 +721,7 @@ end)
 GrappleCircuitMain:connect_one_way_entrance(TransportFactoryExtE, function ()
 	return All(
 		OpenMorphTunnelDoor,
-		CanShortShaft
+		CanShorterShaft
 	)
 end)
 -- GrappleCircuitMain:connect_one_way_entrance(GrappleCircuitUpperBlock, function() return Has(GrappleBeam) end)
@@ -776,7 +816,7 @@ end)
 Area3InteriorGammaTransportCavernsECenter:connect_one_way_entrance(Area3InteriorGammaCAccessLower, function ()
 	return All(
 		OpenMorphTunnelDoor,
-		CanHighLedge
+		CanAlmostHighLedge
 	)
 end)
 Area3InteriorGammaTransportCavernsECenter:connect_two_ways_entrance(Area3InteriorGammaTransportCavernsESouthwest, OpenMorphTunnelDoor)
@@ -785,7 +825,11 @@ Area3InteriorGammaTransportCavernsESouthwest:connect_one_way_entrance(Area3Inter
 	return Any(
 		CanSpiderBoost,
 		GravitySuit,
-		GrappleBeam
+		GrappleBeam,
+		All(
+			HighJumpBoots,
+			SuperJumpBeginner
+		)
 	)
 end)
 Area3InteriorGammaTransportCavernsESoutheast:connect_one_way_entrance(ParabyPeripheryLeft) -- Normal Door
@@ -803,7 +847,7 @@ WallfireWatchMain:connect_one_way_entrance(Area3InteriorGammaCAccessUpper) -- No
 WallfireWatchMain:connect_one_way_entrance(WallfireWatchTop, function ()
 	return All(
 		OpenMorphTunnelDoor,
-		CanFlyVertical
+		CanAlmostHigherJump
 	)
 end)
 WallfireWatchTop:connect_one_way_entrance(FanControl, OpenSuperDoor)
@@ -826,13 +870,13 @@ end)
 Area3InteriorGammaS:connect_one_way_entrance(Area3InteriorGammaSAccess, function ()
 	return All(
 		OpenMorphTunnelDoor,
-		CanGrappleTunnel
+		CanEscapeInteriorGammaArenaSouth
 	)
 end)
 Area3InteriorGammaS:connect_one_way_entrance(SecuirtySite, function ()
 	return All(
 		OpenPowerBombDoor,
-		CanHighLedge
+		CanAlmostHighLedge
 	)
 end)
 Area3InteriorGammaS:connect_one_way(Area3InteriorGammaSGamma, CanDamageMetroid)

@@ -23,11 +23,8 @@ LabTeleporterW:connect_one_way_entrance(RobotRetreatBottom, function ()
 						Any(
 							SpaceJump,
 							All(
-								CanHighJump,
-								Any(
-									CanPowerBomb,
-									CanIBJDouble
-								)
+								CanAlmostHighJumpGap,
+								CanBombBlock
 							),
 							All(
 								CanSpider,
@@ -67,7 +64,10 @@ LabTeleporterW:connect_one_way_entrance(RobotRetreatBottom, function ()
 			All(
 				ScrewAttack,
 				CanClimbShaft,
-				CanHighJump
+				Any(
+					HighJumpBoots,
+					SuperJumpBeginner
+				)
 			),
 			CanPowerBomb
 		),
@@ -156,7 +156,7 @@ LabTeleporterEUpper:connect_one_way_entrance(LabTeleporterELower)
 LabTeleporterELower:connect_one_way_entrance(LabTeleporterEUpper, function ()
 	return Any(
 		ScrewAttack,
-		CanHighLedge
+		CanAlmostHighLedge
 	)
 end)
 LabTeleporterELower:connect_one_way_entrance(Area7OmegaSAccessRight, OpenGigadoraDoor)
@@ -164,7 +164,7 @@ LabTeleporterELower:connect_one_way_entrance(LabTeleporterEBottom, OpenMorphTunn
 LabTeleporterEBottom:connect_one_way_entrance(LabTeleporterELower, function ()
 	return All(
 		OpenMorphTunnelDoor,
-		CanShortShaft
+		CanShorterShaft
 	)
 end)
 LabTeleporterEBottom:connect_one_way_entrance(WallfireWorkstationSaveStation, OpenChargeDoor)
@@ -208,13 +208,13 @@ TransportArea6Transport:connect_one_way_entrance(TransportArea6Tunnels, function
 	)
 end)
 TransportArea6Transport:connect_two_ways_entrance(TransportArea6Left, OpenMorphTunnelDoor)
-TransportArea6Transport:connect_one_way_entrance(TransportArea6Top, CanShortShaft)
+TransportArea6Transport:connect_one_way_entrance(TransportArea6Top, CanShorterShaft)
 TransportArea6Top:connect_one_way_entrance(TransportArea6Left)
 TransportArea6Top:connect_one_way_entrance(TransportArea6Transport)
--- TransportArea6Top:connect_one_way_entrance(WallfireWorkstationBottom, CanClimbWall) - locked door
+-- TransportArea6Top:connect_one_way_entrance(WallfireWorkstationBottom, CanAlmostHigherLedge) - locked door
 TransportArea6Top:connect_one_way(TransportArea6TopPickup, function ()
 	return All(
-		CanClimbWall,
+		CanAlmostHigherLedge,
 		CanAnyMissile
 	)
 end)
@@ -250,16 +250,16 @@ TransportArea6Left:connect_one_way_entrance(TransportArea6Tunnels, function ()
 		CanBombBlock
 	)
 end)
-TransportArea6Left:connect_one_way_entrance(TransportArea6Top, CanHighLedge)
+TransportArea6Left:connect_one_way_entrance(TransportArea6Top, CanShorterShaft)
 TransportArea6Left:connect_two_ways_entrance(TransportArea6Bottom, CanEscapeTransporttoArea6Bottom)
-TransportArea6Left:connect_one_way_entrance(LabTeleporterW, CanHighLedge) -- Normal Door
+TransportArea6Left:connect_one_way_entrance(LabTeleporterW, CanAlmostHighLedge) -- Normal Door
 TransportArea6Left:connect_one_way(TransportArea6LeftPickup, function ()
 	return All(
 		MetroidHatchling,
 		CanBombBlock
 	)
 end)
-TransportArea6Bottom:connect_one_way_entrance(GrapplePuzzleMadness, CanHighLedge) -- Normal Door
+TransportArea6Bottom:connect_one_way_entrance(GrapplePuzzleMadness, CanAlmostHighLedge) -- Normal Door
 TransportArea6Bottom:connect_one_way(TransportArea6BottomPickup, function ()
 	return All(
 		CanPowerBomb,
@@ -313,16 +313,7 @@ WallfireWorkstationClimb:connect_one_way_entrance(WallfireWorkstationTop, functi
 		CanClimbWall,
 		Any(
 			CanDamageToughEnemyRanged,
-			All(
-				Any(
-					PhaseDrift,
-					LightningArmor
-				),
-				Any(
-					HighJumpBoots,
-					SpaceJump
-				)
-			)
+			CanJumpUpWallfireWorkstation
 		)
 	)
 end)
@@ -337,12 +328,8 @@ WallfireWorkstationClimb:connect_one_way(WallfireWorkstationClimbPickup, functio
 			All(
 				MorphBall,
 				Any(
-					PhaseDrift,
-					LightningArmor
-				),
-				Any(
-					HighJumpBoots,
-					SpaceJump
+					CanDamageToughEnemyRanged,
+					CanJumpUpWallfireWorkstation
 				)
 			)
 		)
@@ -381,10 +368,7 @@ RobotRetreatBottom:connect_one_way_entrance(LabTeleporterW) -- Normal Door
 RobotRetreatBottom:connect_one_way_entrance(RobotRetreatGrappleBlock, function ()
 	return Any(
 		CanClimbWall,
-		All(
-			HighJumpBoots,
-			CanClimbShaft
-		)
+		CanClimbElevatedShaft
 	)
 end)
 RobotRetreatGrappleBlock:connect_one_way_entrance(RobotRetreatBottom)
@@ -402,8 +386,8 @@ RobotRetreatLeftExit:connect_one_way_entrance(RobotRetreatTop, function ()
 			CanSpider
 		),
 		All(
-			CanPowerBomb,
-			CanHighJump
+			CanBombBlock,
+			CanShorterShaft
 		)
 	)
 end)

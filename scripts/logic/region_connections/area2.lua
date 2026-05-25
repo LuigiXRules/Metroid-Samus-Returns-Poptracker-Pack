@@ -107,7 +107,12 @@ end)
 CritterPlaygroundTop:connect_one_way_entrance(RockIcicleCorridor) -- Normal Door
 CritterPlaygroundTop:connect_one_way_entrance(Area2ExteriorInnerAlpha) -- Normal Door
 CritterPlaygroundTop:connect_one_way_entrance(CritterPlaygroundMiddle)
-CritterPlaygroundMiddle:connect_one_way_entrance(CritterPlaygroundTop, CanClimbWall)
+CritterPlaygroundMiddle:connect_one_way_entrance(CritterPlaygroundTop, function()
+	return Any(
+		CanClimbWall,
+		CanHigherJump
+	)
+end)
 CritterPlaygroundMiddle:connect_one_way_entrance(CritterPlaygroundPickup, function()
 	return All(
 		MetroidHatchling,
@@ -120,7 +125,7 @@ CritterPlaygroundTunnel:connect_one_way_entrance(DamExteriorEast, OpenMorphTunne
 CritterPlaygroundTunnel:connect_one_way_entrance(CritterPlaygroundPickup, function()
 	return All(
 		OpenMorphTunnelDoor,
-		CanClimbWall,
+		CanHigherJump,
 		CanBombBlock
 	)
 end)
@@ -263,7 +268,8 @@ Area2ExteriorCavernsTeleporterLeft:connect_one_way_entrance(Area2ExteriorCaverns
 		CanAnyMissile,
 		Any(
 			HighJumpBoots,
-			SpaceJump
+			SpaceJump,
+			CanSuperJumpMorphExtend
 		),
 		Any(
 			IceBeam,
@@ -329,7 +335,7 @@ Area2ExteriorCavernsAlphaE:connect_one_way(Area2ExteriorCavernsAlphaEAlpha, CanD
 
 -- Interior
 WaveBeamNorthwest:connect_one_way_entrance(DamExteriorWest) -- Elevator
-WaveBeamNorthwest:connect_two_ways_entrance(WaveBeamSouth, CanEscapeWaveChamber)
+WaveBeamNorthwest:connect_two_ways_entrance(WaveBeamSouth, CanEscapeDamExteriorWest)
 WaveBeamSouth:connect_one_way_entrance(LavaGenerator, OpenChargeDoor)
 WaveBeamSouth:connect_one_way_entrance(GeneratorAccessUpper, OpenChargeDoor)
 WaveBeamSouth:connect_one_way_entrance(WaveBeamNortheast, function()
@@ -339,7 +345,7 @@ WaveBeamSouth:connect_one_way_entrance(WaveBeamNortheast, function()
 			LightningArmor,
 			CanDamageToughEnemy
 		),
-		CanClimbWall
+		CanAlmostHigherJump
 	)
 end)
 WaveBeamSouth:connect_one_way_entrance(WaveBeamEast, OpenMorphTunnelDoor)
@@ -356,10 +362,10 @@ WaveBeamNortheast:connect_one_way_entrance(WaveBeamSouth, OpenMorphTunnelDoor)
 WaveBeamNortheast:connect_one_way_entrance(Area2InteriorIntersectionSideTunnel, OpenTaramargaDoor)
 WaveBeamChamber:connect_one_way_entrance(Area2InteriorIntersectionNorthChamber, OpenMissileDoor)
 
-Area2InteriorIntersectionSideTunnel:connect_one_way_entrance(Area2InteriorIntersectionSoutheast)
+Area2InteriorIntersectionSideTunnel:connect_one_way_entrance(Area2InteriorIntersectionSoutheast, CanEscapeWhimsicalWaterwheels)
 Area2InteriorIntersectionSideTunnel:connect_one_way_entrance(WaveBeamNortheast, OpenTaramargaDoor)
 Area2InteriorIntersectionSideTunnel:connect_one_way_entrance(Area2InteriorIntersectionSouthTunnel, function() return Has(ScrewAttack) end)
-Area2InteriorIntersectionSoutheast:connect_one_way_entrance(Area2InteriorIntersectionSideTunnel, CanHighLedge)
+Area2InteriorIntersectionSoutheast:connect_one_way_entrance(Area2InteriorIntersectionSideTunnel, CanEscapeWhimsicalWaterwheels)
 Area2InteriorIntersectionSoutheast:connect_one_way_entrance(WhimsicalWaterwheels) -- Normal Door
 Area2InteriorIntersectionSouthTunnel:connect_one_way_entrance(Area2InteriorIntersectionSouth, function()
 	return All(
@@ -428,7 +434,7 @@ LavaGenerator:connect_one_way(LavaGeneratorPickup, function()
 						MovementSimple,
 						Any(
 							WallJumpSimple,
-							CanHighJump
+							CanAlmostHighJump
 						)
 					)
 				)
@@ -481,7 +487,7 @@ end)
 GulluggHideout:connect_one_way_entrance(DamBasementUpper, function()
 	return All(
 		OpenMorphTunnelDoor,
-		CanHighJump
+		CanAlmostHighJump
 	)
 end)
 HighJumpBootsUpper:connect_one_way_entrance(HighJumpBootsAccess, OpenMissileDoor)
@@ -573,7 +579,7 @@ end)
 TransportAreas1And3Area3:connect_one_way_entrance(TransportAreas1And3Seal, OpenMorphTunnelDoor)
 TransportAreas1And3Area3:connect_one_way_entrance(TransportArea2Upper) -- Elevator
 Area2EntrywayTeleporterLower:connect_one_way_entrance(TransportAreas1And3Seal) -- Normal Door
-Area2EntrywayTeleporterLower:connect_one_way_entrance(Area2EntrywayTeleporterUpper, CanHighLedge)
+Area2EntrywayTeleporterLower:connect_one_way_entrance(Area2EntrywayTeleporterUpper, CanAlmostHighLedge)
 Area2EntrywayTeleporterUpper:connect_one_way_entrance(Area2EntrywayTeleporterLower)
 -- Area2EntrywayTeleporterUpper:connect_one_way_entrance(TransportAreas1And3Area1, function() return Has(MorphBall) end) - Normal Door; no logical effect; subregion "Upper" doesn't exist?
 Area2EntrywayTeleporterUpper:connect_one_way_entrance(Area2EntrywayAlpha2Arena) -- Normal Door
@@ -593,7 +599,12 @@ Area2TransportAccessUpper:connect_one_way_entrance(LightningArmorUpper, function
 end,
 {LightningArmorTutorial}) -- Normal Door; involves events created earlier
 Area2TransportAccessUpper:connect_two_ways_entrance(Area2TransportAccessLower, CanEscapeTransportAccess)
-Area2TransportAccessLower:connect_one_way_entrance(FleechSwarmFloodway, CanHighLedge)
+Area2TransportAccessLower:connect_one_way_entrance(FleechSwarmFloodway, function()
+	return Any(
+		CanEscapeTransportAccess,
+		CanHighLedge
+	)
+end)
 Area2TransportAccessLower:connect_one_way_entrance(LightningArmorLower) -- Normal Door
 FleechSwarmFloodway:connect_one_way_entrance(Area2TransportAccessLower)
 FleechSwarmFloodway:connect_one_way(FleechSwarmFloodwayPickup, CanFleechSwarm)

@@ -33,7 +33,7 @@ MorphBallUpper:connect_one_way_entrance(MorphBallLower, OpenMorphTunnelDoor)
 MorphBallLower:connect_one_way_entrance(MorphBallUpper, function()
 	return All(
 		OpenMorphTunnelDoor,
-		CanHighLedge
+		CanAlmostHighLedge
 	)
 end)
 MorphBallLower:connect_two_ways_entrance(ChozoSealUpper) -- Normal Door
@@ -53,7 +53,7 @@ TransportArea1:connect_one_way_entrance(SurfaceTransportCache, function() return
 TransportArea1:connect_one_way(TransportArea1Pickup, function()
 	return All(
 		MorphBall,
-		CanHighLedge
+		CanAlmostHighLedge
 	)
 end)
 
@@ -62,7 +62,7 @@ ChozoCacheE:connect_one_way(ChargeBeamAccess, OpenMorphTunnelDoor)
 ChargeBeamChamber:connect_one_way_entrance(ChargeBeamAccess, function()
 	return All(
 		OpenMissileDoor,
-		CanHighLedge
+		CanAlmostHighLedge
 	)
 end)
 ChargeBeamChamber:connect_one_way_entrance(ChargeBeamAccess, OpenChargeDoor)
@@ -90,7 +90,10 @@ CavernCavity:connect_one_way_entrance(EnergyRechargeShaftUpper) -- Normal Door
 CavernCavity:connect_one_way_entrance(CavernAlcove, function()
 	return All(
 		OpenMorphTunnelDoor,
-		CanClimbShaft
+		Any(
+			CanClimbShaft,
+			CanAlmostHighLedge
+		)
 	)
 end)
 ChargeBeamAccess:connect_one_way_entrance(ScanPulseLeft, OpenChargeDoor)
@@ -108,11 +111,7 @@ HornoadHallwayWest:connect_one_way_entrance(HornoadHallwayEast, function()
 	return Any(
 		CanAnyMissile,
 		MorphBall,
-		CanFlyVertical,
-		All(
-			HighJumpBoots,
-			WallJumpSimple
-		)
+		CanClimbElevatedShaft
 	)
 end)
 HornoadHallwayEast:connect_one_way_entrance(HornoadHallwayWest)

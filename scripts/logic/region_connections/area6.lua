@@ -29,7 +29,7 @@ HideoutSprawlMain:connect_one_way_entrance(HideoutSprawlBottom)
 HideoutSprawlMain:connect_one_way_entrance(Area6OmegaAccess, function ()
 	return All(
 		ScrewAttack,
-		CanHighLedge
+		CanAlmostHighLedge
 	)
 end) -- Normal Door
 HideoutSprawlMain:connect_one_way(HideoutSprawlMainPickup, function ()
@@ -170,23 +170,11 @@ Area6Zeta:connect_one_way_entrance(CrumblingBridgeLeft) -- Normal Door
 Area6Zeta:connect_one_way(Area6ZetaZeta, CanDamageMetroid)
 
 -- Entrance
-Area6TransportArea5:connect_one_way_entrance(TransportAreas4And6Bottom, function ()
-	return Any(
-		HighJumpBoots,
-		SpaceJump,
-		CanSpider,
-		DamageBoostStatic
-	)
-end) -- Elevator
+Area6TransportArea5:connect_one_way_entrance(TransportAreas4And6Bottom, CanCrossTransporttoArea5) -- Elevator
 Area6TransportArea5:connect_one_way_entrance(Area6ChozoSealWMain, function ()
-	return Any(
-		HighJumpBoots,
-		SpaceJump,
-		CanSpider,
-		All(
-			CanHighLedge,
-			DamageBoostStatic
-		)
+	return All(
+		CanAlmostHighLedge,
+		CanCrossTransporttoArea5
 	)
 end)
 Area6ChozoSealELower:connect_one_way_entrance(Area6ChozoSealWTop, OpenMorphTunnelDoor)
@@ -195,7 +183,7 @@ Area6ChozoSealELower:connect_one_way_entrance(Area6ChozoSealEUpper, function ()
 		CanBombBlock,
 		CanAnyMissile,
 		GrappleBeam,
-		CanHighLedge,
+		CanAlmostHighLedge,
 		Any(
 			SpaceJump,
 			SpiderBall,
@@ -226,7 +214,7 @@ Area6ChozoSealEUpper:connect_one_way(Area6ChozoSealEUpperPickup, function ()
 		)
 	)
 end)
-Area6OmegaAccess:connect_one_way_entrance(HideoutSprawlMain, CanHighJump) -- Normal Door
+Area6OmegaAccess:connect_one_way_entrance(HideoutSprawlMain, CanAlmostHighJump) -- Normal Door
 Area6OmegaAccess:connect_one_way_entrance(HideoutSprawlTunnels, OpenPowerBombDoor)
 Area6OmegaAccess:connect_one_way_entrance(Area6Omega, CanEscapeOmegaArena)
 Area6ChozoSealWMain:connect_one_way_entrance(Area6TransportArea5) -- Normal Door
@@ -263,7 +251,8 @@ Area6ChozoSealWMain:connect_one_way(Area6ChozoSealWMainPickupBottom, function ()
 		Any(
 			SpaceJump,
 			HighJumpBoots,
-			WallJumpSimple
+			WallJumpSimple,
+			SuperJumpEasy
 		)
 	)
 end)
@@ -273,11 +262,11 @@ Area6ChozoSealWPassageway:connect_one_way_entrance(Area6TransportArea5, function
 		GrappleBeam
 	)
 end) -- Normal Door
-Area6ChozoSealWPassageway:connect_one_way_entrance(Area6ChozoSealWTop, CanClimbWall)
+Area6ChozoSealWPassageway:connect_one_way_entrance(Area6ChozoSealWTop, CanHigherLedge)
 Area6ChozoSealWTop:connect_one_way_entrance(Area6ChozoSealWPassageway)
 Area6ChozoSealWTop:connect_one_way_entrance(Area6ChozoSealELower, OpenMorphTunnelDoor)
 Area6ChozoSealWTop:connect_two_ways_entrance(Area6TeleporterNLower) -- Normal Door
-Area6TeleporterNLower:connect_one_way_entrance(Area6TeleporterNUpper, CanShortShaft)
+Area6TeleporterNLower:connect_one_way_entrance(Area6TeleporterNUpper, CanShorterShaft)
 Area6TeleporterNUpper:connect_one_way_entrance(Area6TeleporterNLower)
 Area6TeleporterNUpper:connect_one_way_entrance(HideoutEntrance, OpenChargeDoor)
 -- Area6TeleporterNUpper:connect_one_way_entrance(Area6TeleporterNAccess) - locked door

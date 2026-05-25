@@ -32,7 +32,7 @@ Area4CavesIntersectionTerminalPickup:connect_one_way(Area4CavesIntersectionTermi
 SpazerBeamChamber:connect_one_way_entrance(AmethystAltars, function ()
 	return All(
 		OpenGigadoraDoor,
-		CanHighLedge
+		CanEscapeSpazerChamber
 	)
 end)
 -- CrumbleCatwalk:connect_one_way_entrance(Area4CavesIntersectionTerminalCenter) - locked door
@@ -132,7 +132,12 @@ TransportArea3MinesRightSeal:connect_two_ways_entrance(TransportArea3MinesBottom
 		CanBombBlock
 	)
 end)
-TransportArea3MinesRightSeal:connect_one_way_entrance(TransportArea3MinesMinesTransport, OpenMorphTunnelDoor)
+TransportArea3MinesRightSeal:connect_one_way_entrance(TransportArea3MinesMinesTransport, function()
+	return All(
+		OpenMorphTunnelDoor,
+		CanShortShaft
+	)
+end)
 -- TransportArea3MinesRightSeal:connect_one_way_entrance(Area4TransportArea5) - blocked by grapple block
 TransportArea3MinesMinesTransport:connect_one_way_entrance(TransportArea3MinesRightSeal, OpenMorphTunnelDoor)
 TransportArea3MinesMinesTransport:connect_one_way_entrance(MinesTransportCentralCaves) -- Elevator
@@ -148,7 +153,7 @@ TransportArea3MinesBottomLeft:connect_one_way_entrance(Area4TransportArea5Upper,
 Area4CavesAlpha2:connect_one_way_entrance(Area4CavesAlpha2AccessUpper, CanEscapeEvolvedAlpha) -- Normal Door
 Area4CavesAlpha2:connect_one_way(Area4CavesAlpha2Pickup, function ()
 	return Any(
-		CanShortShaft,
+		CanClimbShaft,
 		CanEscapeEvolvedAlpha
 	)
 end)
@@ -266,7 +271,7 @@ AmethystAltars:connect_one_way_entrance(AmethystAltarsPickup, function ()
 		Any(
 			IceBeam,
 			All(
-				CanFlyVertical,
+				CanAlmostHigherJump,
 				MovementSimple
 			)
 		)
@@ -325,7 +330,7 @@ MinesIntersectionTerminalExit:connect_one_way_entrance(MinesIntersectionTerminal
 end)
 MinesIntersectionTerminalExit:connect_one_way_entrance(TsumuriTunnel)
 MinesIntersectionTerminalBottom:connect_one_way_entrance(MinesIntersectionTerminalExit)
-MinesIntersectionTerminalBottom:connect_one_way_entrance(MinesIntersectionTerminalSaveStation, CanHighLedge)
+MinesIntersectionTerminalBottom:connect_one_way_entrance(MinesIntersectionTerminalSaveStation, CanAlmostHighLedge)
 MinesIntersectionTerminalBottom:connect_one_way(MinesIntersectionTerminalBottomPickup, function ()
 	return All(
 		CanBombBlock,
@@ -343,7 +348,8 @@ MinesIntersectionTerminalSaveStation:connect_one_way_entrance(MinesIntersectionT
 MinesIntersectionTerminalSaveStation:connect_one_way_entrance(MinesIntersectionTerminalMiddle, function ()
 	return Any(
 		HighJumpBoots,
-		CanClimbWall
+		CanClimbWall,
+		SuperJumpEasy
 	)
 end)
 MinesIntersectionTerminalSaveStation:connect_one_way_entrance(GemstoneGorgeBottom, OpenSuperDoor)
@@ -357,10 +363,10 @@ end)
 MinesIntersectionTerminalMiddle:connect_one_way_entrance(LavaReservoirRight, OpenGigadoraDoor)
 MinesIntersectionTerminalMiddle:connect_one_way_entrance(SuperMissileChamber, OpenMissileDoor)
 MinesIntersectionTerminalAccessway:connect_one_way_entrance(MinesIntersectionTerminalMiddle)
-MinesIntersectionTerminalAccessway:connect_one_way_entrance(MinesIntersectionTerminalTop, CanShortShaft)
+MinesIntersectionTerminalAccessway:connect_one_way_entrance(MinesIntersectionTerminalTop, CanShorterShaft)
 MinesIntersectionTerminalAccessway:connect_one_way_entrance(SuperMissileChamber, OpenSuperDoor)
 MinesIntersectionTerminalTop:connect_one_way_entrance(MinesIntersectionTerminalAccessway)
-MinesIntersectionTerminalTop:connect_one_way_entrance(GreenCrystalDugout, CanHighLedge)
+MinesIntersectionTerminalTop:connect_one_way_entrance(GreenCrystalDugout, CanAlmostHighLedge)
 MinesIntersectionTerminalTop:connect_one_way(MinesIntersectionTerminalTopPickup, function ()
 	return All(
 		SuperMissile,
@@ -383,13 +389,21 @@ SuperMissileChamber:connect_one_way_entrance(MinesIntersectionTerminalAccessway,
 		Any(
 			CanClimbWall,
 			All(
-				CanHighJump,
+				CanAlmostHighJump,
 				CanClimbShaft
 			)
 		)
 	)
 end)
-SuperMissileChamber:connect_one_way(SuperMissilePickup, CanClimbWall)
+SuperMissileChamber:connect_one_way(SuperMissilePickup, function()
+	return Any(
+		CanClimbWall,
+		All(
+			CanAlmostHigherJump,
+			WallJumpSimple
+		)
+	)
+end)
 PinkCrystalPreserveTop:connect_two_ways_entrance(PinkCrystalPreserveBottom, CanEscapePinkCrystals)
 PinkCrystalPreserveTop:connect_two_ways_entrance(PinkCrystalPreservePickup, function ()
 	return Any(
@@ -399,7 +413,7 @@ PinkCrystalPreserveTop:connect_two_ways_entrance(PinkCrystalPreservePickup, func
 end)
 PinkCrystalPreserveBottom:connect_one_way_entrance(Area4MinesZeta, function ()
 	return Any(
-		CanHighJump,
+		CanAlmostHighJump,
 		All(
 			CanSpider,
 			Any(
@@ -452,6 +466,10 @@ DualPondAlcove:connect_one_way(DualPondAlcovePickup, function ()
 					All(
 						CanSpider,
 						MovementSimple
+					),
+					All(
+						SuperJumpMedium,
+						WallJumpSimple
 					)
 				),
 				Any(
@@ -501,7 +519,7 @@ GawronGrooveRight:connect_one_way_entrance(GawronGrooveTop, function ()
 	return All(
 		VariaSuit,
 		Any(
-			CanHighLedge,
+			CanAlmostHighLedge,
 			MovementSimple
 		)
 	)
@@ -606,7 +624,7 @@ BasaltBasinTop:connect_one_way_entrance(GawronGrooveRight, function ()
 		SuperMissile,
 		VariaSuit,
 		CanBombBlock,
-		CanHighLedge
+		CanAlmostHighLedge
 	)
 end)
 BasaltBasinSeal:connect_one_way_entrance(GawronGrooveArenaRight, function ()

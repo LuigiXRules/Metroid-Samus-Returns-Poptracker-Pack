@@ -575,7 +575,7 @@ function CanEscapeEvolvedAlphaNorthtoGamma()
 		CanBombBlock
 	)
 end
-function CanEscapeInteriorGammaSouth()
+function CanEscapeInteriorGammaArenaSouth()
 	return Any(
 		GrappleBeam,
 		All(
