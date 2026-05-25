@@ -464,7 +464,15 @@ Area5ExteriorZetaAccessRight:connect_one_way_entrance(ParabyParlor, function ()
 end)
 Area5ExteriorZetaAccessLeft:connect_one_way_entrance(Area5ExteriorZeta, CanEscapeExteriorZetaArena) -- Normal Door
 RedPlantMaze:connect_one_way_entrance(TowerExtIntersection, OpenPowerBombDoor)
-RedPlantMaze:connect_one_way(RedPlantMazePickup, function() return Has(LightningArmor) end)
+RedPlantMaze:connect_one_way(RedPlantMazePickup, function() 
+	return Any(
+		LightningArmor,
+		All(
+			MetroidHatchling,
+			CanBombBlock
+		)
+	)
+end)
 TransportTowerIntN:connect_one_way_entrance(TowerExtSouthwest) -- Normal Door
 TransportTowerIntN:connect_one_way_entrance(TransportTowerExtW) -- Elevator
 Area5ExteriorZeta:connect_one_way_entrance(Area5ExteriorZetaAccessLeft, CanEscapeExteriorZetaArena) -- Normal Door

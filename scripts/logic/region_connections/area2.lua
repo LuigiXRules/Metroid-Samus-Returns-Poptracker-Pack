@@ -196,7 +196,7 @@ SpikeRavinePickup:connect_one_way(SpikeRavinePickupPickup, function() return Has
 Area2ExteriorCavernsMaze:connect_one_way_entrance(Area2ExteriorCavernsSaveStation, function()
 	return All(
 		OpenMorphTunnelDoor,
-		CanBomb
+		CanBombBlock
 	)
 end)
 Area2ExteriorCavernsMaze:connect_one_way(Area2ExteriorCavernsMazePickup, CanBombBlock)
@@ -204,7 +204,7 @@ Area2ExteriorCavernsSaveStation:connect_one_way_entrance(Area2ExteriorCavernsEnt
 Area2ExteriorCavernsSaveStation:connect_one_way_entrance(Area2ExteriorCavernsMaze, function()
 	return All(
 		OpenMorphTunnelDoor,
-		CanBomb
+		CanBombBlock
 	)
 end)
 Area2ExteriorCavernsSaveStation:connect_one_way_entrance(Area2ExteriorCavernsAlphaNw) -- Normal Door

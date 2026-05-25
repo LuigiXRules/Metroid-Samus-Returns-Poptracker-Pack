@@ -895,7 +895,6 @@ Area3InteriorGammaCAccessUpper:connect_one_way_entrance(Area3InteriorGammaCAcces
 		CanPowerBomb
 	)
 end)
-Area3InteriorGammaCAccessHidingSpot:connect_one_way_entrance(WallfireWatchMain) -- Normal Door
 Area3InteriorGammaCAccessHidingSpot:connect_one_way_entrance(Area3InteriorGammaCAccessUpper, function ()
 	return All(
 		OpenMorphTunnelDoor,

@@ -314,12 +314,7 @@ Area4TransportArea5Upper:connect_one_way(TransportArea5UpperPickup, function ()
 	)
 end)
 Area4TransportArea5Lower:connect_one_way_entrance(VenomousPondLeft) -- Normal Door
-Area4TransportArea5Lower:connect_one_way_entrance(TransportAreas4And6Upper, function ()
-	return All(
-		MorphBall,
-		GrappleBeam
-	)
-end) -- Elevator
+Area4TransportArea5Lower:connect_one_way_entrance(TransportAreas4And6Upper) -- Elevator
 
 -- Mines
 MinesIntersectionTerminalExit:connect_one_way_entrance(MinesIntersectionTerminalBottom, function ()
