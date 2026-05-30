@@ -447,7 +447,8 @@ function CanCrossTransportArea8()
 		Any(
 			SpaceJump,
 			CanSpiderBoost,
-			CanThorns
+			CanThorns,
+			CanClimbElevatedShaft
 		)
 	)
 end
@@ -1072,7 +1073,8 @@ function CanEscapeQueenArena()
 		Any(
 			All(
 				SpaceJump,
-				ScrewAttack
+				ScrewAttack,
+				CanBombBlock
 			),
 			MetroidHatchling
 		)

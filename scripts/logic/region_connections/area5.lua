@@ -510,10 +510,8 @@ Area5ExteriorGamma2Arena:connect_one_way(Area5ExteriorGamma2ArenaGamma, function
 		VariaSuit,
 		CanDamageMetroid,
 		Any(
-			All(
-				SpaceJump,
-				GravitySuit
-			),
+			SpaceJump,
+			GravitySuit,
 			CanSpider,
 			DamageBoostStatic
 		)
@@ -530,7 +528,8 @@ Area5ExteriorGamma:connect_one_way(Area5ExteriorGammaPickup, function ()
 		Any(
 			CanClimbWall,
 			HighJumpBoots,
-			CanSuperJumpMorphExtend
+			CanSuperJumpMorphExtend,
+			CanIBJDouble
 		),
 		CanBombBlock,
 		CanBlobthrower
@@ -606,6 +605,10 @@ Area5InteriorSaveStationSaveStation:connect_one_way_entrance(Area5InteriorSaveSt
 					DamageBoostStatic,
 					MovementSimple
 				)
+			),
+			All(
+				HighJumpBoots,
+				CanIBJDiagonal
 			)
 		)
 	)

@@ -344,7 +344,8 @@ MinesIntersectionTerminalSaveStation:connect_one_way_entrance(MinesIntersectionT
 	return Any(
 		HighJumpBoots,
 		CanClimbWall,
-		SuperJumpEasy
+		SuperJumpEasy,
+		CanIBJDiagonal
 	)
 end)
 MinesIntersectionTerminalSaveStation:connect_one_way_entrance(GemstoneGorgeBottom, OpenSuperDoor)
