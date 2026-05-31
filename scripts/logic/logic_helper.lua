@@ -585,7 +585,8 @@ function CanEscapeInteriorGammaArenaSouth()
 				CanSuperJumpMorphExtend,
 				CanIBJDouble
 			)
-		)
+		),
+		CanFlyVertical
 	)
 end
 
