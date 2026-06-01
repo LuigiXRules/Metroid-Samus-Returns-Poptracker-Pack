@@ -2903,7 +2903,7 @@
               {
                 "name": "Lower",
                 "item_count": 1,
-                "access_rules": ["^$CanReach|Area5LobbyTeleporterWLake"],
+                "access_rules": ["^$CanReach|Area5LobbyTeleporterWLakePickup"],
                 "chest_unopened_img": "images/items/aeion_tank.png",
                 "chest_opened_img": "images/items/aeion_tank_obtained.png"
               }

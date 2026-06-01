@@ -201,7 +201,17 @@ end)
 Area5LobbyTeleporterWLake:connect_one_way_entrance(JShapeTunnelBottom, function ()
 	return All(
 		OpenMorphTunnelDoor,
-		GrappleBeam
+		GrappleBeam,
+		GravitySuit,
+		SpaceJump,
+		ScrewAttack
+	)
+end)
+Area5LobbyTeleporterWLake:connect_one_way(Area5LobbyTeleporterWLakePickup, function ()
+	return All(
+		GravitySuit,
+		SpaceJump,
+		ScrewAttack
 	)
 end)
 Area5LobbyTeleporterWUpper:connect_one_way_entrance(Area5LobbyTeleporterWLower)
@@ -669,6 +679,7 @@ GrappleShufflerPuzzleTop:connect_one_way_entrance(GrappleShufflerPuzzleBottom, f
 end)
 GrappleShufflerPuzzleTop:connect_one_way(GrappleShufflerPuzzleTopPickup, function ()
 	return All(
+		GrappleBeam,
 		ScrewAttack,
 		CanSpider,
 		CanBombBlock

@@ -49,7 +49,12 @@ TransportArea1:connect_one_way_entrance(ChozoSealTunnel, function()
 	)
 end)
 TransportArea1:connect_one_way_entrance(TransportSurfaceArea2Surface) -- Elevator
-TransportArea1:connect_one_way_entrance(SurfaceTransportCache, function() return Has(MetroidHatchling) end)
+TransportArea1:connect_one_way_entrance(SurfaceTransportCache, function()
+	return Any(
+		MetroidHatchling,
+		PowerBomb
+	)
+end)
 TransportArea1:connect_one_way(TransportArea1Pickup, function()
 	return All(
 		MorphBall,

@@ -526,6 +526,7 @@ Area5LobbyPassagewayUpper = SRLocation.New("Area5LobbyPassagewayUpper")
 Area5LobbyPassagewayLower = SRLocation.New("Area5LobbyPassagewayLower")
 -- locations
 Area5LobbyAlpha2Alpha = SRLocation.New("Area5LobbyAlpha2Alpha")
+Area5LobbyTeleporterWLakePickup = SRLocation.New("Area5LobbyTeleporterWLakePickup")
 PhaseDriftPickupArtifact = SRLocation.New("PhaseDriftPickupArtifact")
 PhaseDriftPickupPitfallBlocks = SRLocation.New("PhaseDriftPickupPitfallBlocks")
 MeboidMillpondLakePickup = SRLocation.New("MeboidMillpondLakePickup")
