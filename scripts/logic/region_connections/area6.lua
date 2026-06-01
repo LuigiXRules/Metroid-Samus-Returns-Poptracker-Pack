@@ -167,7 +167,7 @@ Area6ZetaAccess:connect_one_way_entrance(Area6Omega, CanBombBlock) -- Normal Doo
 Area6ZetaAccess:connect_one_way_entrance(Area6Zeta, CanBombBlock) -- Normal Door
 Area6Zeta:connect_one_way_entrance(Area6ZetaAccess) -- Normal Door
 Area6Zeta:connect_one_way_entrance(CrumblingBridgeLeft) -- Normal Door
-Area6Zeta:connect_one_way(Area6ZetaZeta, CanDamageMetroid)
+Area6Zeta:connect_one_way(Area6ZetaZeta, CanCombatZeta)
 
 -- Entrance
 Area6TransportArea5:connect_one_way_entrance(TransportAreas4And6Bottom, CanCrossTransporttoArea5) -- Elevator

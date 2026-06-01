@@ -253,7 +253,7 @@ Area3ExteriorGammaUpperArena:connect_one_way_entrance(Area3ExteriorGammaEntrance
 		CanBombBlock
 	)
 end)
-Area3ExteriorGammaUpperArena:connect_one_way(Area3ExteriorGammaUpperArenaGamma, CanDamageMetroid)
+Area3ExteriorGammaUpperArena:connect_one_way(Area3ExteriorGammaUpperArenaGamma, CanCombatGamma)
 -- NooksCranny:connect_one_way_entrance() - something related to a Gamma?
 FactoryExtAccessLower:connect_one_way_entrance(Area3ExteriorTransportCavernsNTransport) -- Normal Door
 FactoryExtAccessLower:connect_one_way_entrance(BeamBurstPickup, function ()
@@ -344,7 +344,7 @@ TransportFactoryExtNBottom:connect_one_way_entrance(Area3CavernsGammaSMazeEntran
 end)
 Area3CavernsAlpha2W:connect_one_way_entrance(TransportFactoryExtNUpper) -- Normal Door
 Area3CavernsAlpha2W:connect_one_way_entrance(TransportFactoryExtW) -- Normal Door
-Area3CavernsAlpha2W:connect_one_way(Area3CavernsAlpha2WAlpha, CanDamageMetroid)
+Area3CavernsAlpha2W:connect_one_way(Area3CavernsAlpha2WAlpha, CanCombatEvolvedAlpha)
 Area3CavernsGammaCArena:connect_one_way_entrance(TransportFactoryExtNLower) -- Normal Door
 Area3CavernsGammaCArena:connect_two_ways_entrance(Area3CavernsGammaCExit, function ()
 	return All(
@@ -352,7 +352,7 @@ Area3CavernsGammaCArena:connect_two_ways_entrance(Area3CavernsGammaCExit, functi
 		CanBlobthrower
 	)
 end)
-Area3CavernsGammaCArena:connect_one_way(Area3CavernsGammaCArenaGamma, CanDamageMetroid)
+Area3CavernsGammaCArena:connect_one_way(Area3CavernsGammaCArenaGamma, CanCombatGamma)
 Area3CavernsGammaCExit:connect_one_way_entrance(LetumShrine) -- Normal Door
 Area3CavernsGammaSMazeEntrance:connect_one_way_entrance(TransportFactoryExtNBottom, function ()
 	return All(
@@ -421,7 +421,7 @@ Area3CavernsGammaSArena:connect_one_way_entrance(Area3CavernsGammaSMazeJunction,
 	)
 end)
 Area3CavernsGammaSArena:connect_one_way_entrance(Area3CavernsGammaSEast, CanBombBlock) -- Normal Door
-Area3CavernsGammaSArena:connect_one_way(Area3CavernsGammaSArenaGamma, CanDamageMetroid)
+Area3CavernsGammaSArena:connect_one_way(Area3CavernsGammaSArenaGamma, CanCombatGamma)
 Area3CavernsGammaSEast:connect_one_way_entrance(Area3CavernsGammaSMazeJunction, OpenMorphTunnelDoor)
 Area3CavernsGammaSEast:connect_one_way_entrance(RamulkenRollwayLower, OpenTaramargaDoor)
 Area3CavernsSaveStationN:connect_one_way_entrance(GravittGardenMiddle) -- Normal Door
@@ -635,7 +635,7 @@ Area3CavernsGamma2S:connect_two_ways_entrance(Area3CavernsGamma2SAccess, functio
 		CanBombBlock
 	)
 end)
-Area3CavernsGamma2S:connect_one_way(Area3CavernsGamma2SGamma, CanDamageMetroid)
+Area3CavernsGamma2S:connect_one_way(Area3CavernsGamma2SGamma, CanCombatEvolvedGamma)
 Area3CavernsGamma2SAccess:connect_two_ways_entrance(WaterfallCavern) -- Normal Door
 WaterfallCavern:connect_one_way_entrance(Area3CavernsTeleporterELower) -- Normal Door
 Area3CavernsGamma2N:connect_one_way_entrance(Area3CavernsAlpha2NExit, function() return Has(VariaSuit) end)
@@ -647,7 +647,7 @@ Area3CavernsGamma2N:connect_one_way(Area3CavernsGamma2NGamma, function ()
 			CanSpider,
 			GravitySuit
 		),
-		CanDamageMetroid
+		CanCombatEvolvedGamma
 	)
 end)
 TransportFactoryExtW:connect_one_way_entrance(Area3CavernsAlpha2W) -- Normal Door
@@ -659,7 +659,7 @@ Area3CavernsAlpha2NArena:connect_two_ways_entrance(Area3CavernsAlpha2NExit, func
 		CanEscapeEvolvedAlphaNorthtoGamma
 	)
 end)
-Area3CavernsAlpha2NArena:connect_one_way(Area3CavernsAlpha2NArenaAlpha, CanDamageMetroid)
+Area3CavernsAlpha2NArena:connect_one_way(Area3CavernsAlpha2NArenaAlpha, CanCombatEvolvedAlpha)
 Area3CavernsAlpha2NExit:connect_one_way_entrance(Area3CavernsGamma2N) -- Normal Door
 LetumShrine:connect_one_way_entrance(Area3CavernsGammaCExit) -- Normal Door
 -- LetumShrine:connect_one_way_entrance(Area3CavernsTeleporterW) - Normal Door; not logically relevant
@@ -803,7 +803,7 @@ end)
 Area3InteriorGammaTransportCavernsEArena:connect_one_way_entrance(Area3InteriorGammaTransportCavernsEArenaGamma, function ()
 	return All(
 		CanReach(Area3InteriorGammaCAccessHidingSpot),
-		CanDamageMetroid
+		CanCombatGamma
 	)
 end,
 {Area3InteriorGammaCAccessHidingSpot})
@@ -856,7 +856,7 @@ Area3InteriorAlpha:connect_one_way_entrance(Area3InteriorAlphaAccessTop, functio
 Area3InteriorAlpha:connect_one_way(Area3InteriorAlphaAlpha, function ()
 	return All(
 		VariaSuit,
-		CanDamageMetroid
+		CanCombatAlpha
 	)
 end)
 Area3InteriorAlpha:connect_one_way(Area3InteriorAlphaLava, function ()
@@ -879,7 +879,7 @@ Area3InteriorGammaS:connect_one_way_entrance(SecuirtySite, function ()
 		CanAlmostHighLedge
 	)
 end)
-Area3InteriorGammaS:connect_one_way(Area3InteriorGammaSGamma, CanDamageMetroid)
+Area3InteriorGammaS:connect_one_way(Area3InteriorGammaSGamma, CanCombatGamma)
 -- DedicatedCallisoRoost:connect_one_way_entrance() - not logically relevant
 -- FactoryTeleporterAccess:connect_one_way_entrance() - not logically relevant
 Area3InteriorGammaCAccessUpper:connect_one_way_entrance(WallfireWatchMain) -- Normal Door

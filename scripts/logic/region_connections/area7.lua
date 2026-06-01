@@ -169,7 +169,7 @@ LabTeleporterEBottom:connect_one_way_entrance(LabTeleporterELower, function ()
 end)
 LabTeleporterEBottom:connect_one_way_entrance(WallfireWorkstationSaveStation, OpenChargeDoor)
 Area7Omega2:connect_one_way_entrance(WallfireWorkstationArena, OpenGigadoraDoor)
-Area7Omega2:connect_one_way(Area7Omega2Omega, CanCombatOmega)
+Area7Omega2:connect_one_way(Area7Omega2Omega, CanCombatEvolvedOmega)
 
 RobotRegimeLower:connect_one_way_entrance(LabTeleporterEUpper, OpenGryncoreDoor)
 RobotRegimeLower:connect_one_way_entrance(SpiderBoostTunnelSNortheast, function ()

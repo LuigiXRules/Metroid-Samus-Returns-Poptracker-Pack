@@ -132,10 +132,10 @@ SpiderBallTunnel:connect_one_way_entrance(DestroyedArmory, function()
 		OpenMorphTunnelDoor,
 		CanBombBlock
 	)
-end) -- check w/ David
+end)
 SpiderBallTunnel:connect_one_way(SpiderBallTunnelPickup, CanBombBlock)
 Area1ExteriorAlpha:connect_one_way_entrance(TempleExteriorSouthwest) -- Normal Door
-Area1ExteriorAlpha:connect_one_way(Area1ExteriorAlphaAlpha, CanDamageMetroid)
+Area1ExteriorAlpha:connect_one_way(Area1ExteriorAlphaAlpha, CanCombatAlpha)
 Area1ExteriorAlpha:connect_one_way(Area1ExteriorAlphaPickup, function()
 	return All(
 		CanBombBlock,
@@ -196,9 +196,9 @@ Area1CavernsAlphaSwAccess:connect_one_way_entrance(Area1CavernsAlphaSw, function
 	)
 end)
 Area1CavernsAlphaSe:connect_one_way_entrance(Area1CavernsLobby) -- Normal Door
-Area1CavernsAlphaSe:connect_one_way(Area1CavernsAlphaSeAlpha, CanDamageMetroid)
+Area1CavernsAlphaSe:connect_one_way(Area1CavernsAlphaSeAlpha, CanCombatAlpha)
 Area1CavernsAlphaNe:connect_one_way_entrance(Area1CavernsAlphaNeAccess) -- Normal Door
-Area1CavernsAlphaNe:connect_one_way(Area1CavernsAlphaNeAlpha, CanDamageMetroid)
+Area1CavernsAlphaNe:connect_one_way(Area1CavernsAlphaNeAlpha, CanCombatAlpha)
 WaterMazeTunnel:connect_one_way_entrance(GulluggGangway)
 WaterMazeTunnel:connect_one_way_entrance(Area1CavernsSaveStationMain)
 WaterMazeMaze:connect_one_way_entrance(GulluggGangway, OpenGryncoreDoor)
@@ -408,6 +408,6 @@ Area1CavernsAlphaSw:connect_one_way_entrance(Area1CavernsAlphaSwAccess, function
 		CanBombBlock
 	)
 end)
-Area1CavernsAlphaSw:connect_one_way(Area1CavernsAlphaSwAlpha, CanDamageMetroid)
+Area1CavernsAlphaSw:connect_one_way(Area1CavernsAlphaSwAlpha, CanCombatAlpha)
 ChuteLeechCabin:connect_one_way_entrance(GulluggGangway)
 ChuteLeechCabin:connect_one_way_entrance(TempleExteriorSouthwest)

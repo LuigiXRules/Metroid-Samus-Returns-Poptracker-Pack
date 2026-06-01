@@ -341,14 +341,6 @@ function CanDamageToughEnemy()
 		ScrewAttack
 	)
 end
-function CanDamageMetroid()
-	return Any(
-		MissileLauncher,
-		SuperMissile,
-		CanBeamBurst,
-		IceBeam
-	)
-end
 function CanBlobthrower()
 	return Any(
 		CanBeamBurst,
@@ -374,14 +366,6 @@ function CanFleechSwarm()
 	return Any(
 		LightningArmor,
 		GravitySuit
-	)
-end
-
-function CanCombatOmega()
-	return All(
-		CanDamageMetroid,
-		SpaceJump,
-		MorphBall
 	)
 end
 
@@ -414,6 +398,96 @@ function OpenGryncoreDoor()
 end
 function OpenTaramargaDoor()
 	return Has(WaveBeam)
+end
+
+-- Combat logic; band-aid solution until I figure out how to do this properly
+function CanCombatMetroidNoAmmo()
+	return Any(
+		IceBeam,
+		CanBeamBurst
+	)
+end
+function CanBeamBurstandIceBeam()
+	return All(
+		IceBeam,
+		CanBeamBurst
+	)
+end
+function CanDamageWeakMetroid()
+	return Any(
+		CanCombatMetroidNoAmmo,
+		CanAnyMissile
+	)
+end
+function CanCombatAlpha()
+	return Any(
+		CanCombatMetroidNoAmmo,
+		CanAnyMissile
+	)
+end
+function CanCombatEvolvedAlpha()
+	return CanDamageWeakMetroid()
+end
+function CanCombatGamma()
+	return Any(
+		CanCombatMetroidNoAmmo,
+		CanAnyMissile
+	)
+end
+function CanCombatEvolvedGamma()
+	return All(
+		CanCombatMetroidNoAmmo,
+		Any(
+			MissileTank,
+			SuperMissile
+		)
+	)
+end
+
+function CanCombatZeta()
+	return Any(
+		CanCombatMetroidNoAmmo,
+		All(
+			GrappleBeam,
+			CanAnyMissile
+		)
+	)
+end
+function CanCombatEvolvedZeta()
+	return CanCombatZeta()
+end
+function CanDodgeOmega()
+	return All(
+		SpaceJump,
+		MorphBall
+	)
+end
+function CanDamageOmegawithMissiles()
+	return All(
+		CanAnyMissile,
+		Any(
+			IceBeam,
+			PlasmaBeam
+		)
+	)
+end
+function CanCombatOmega()
+	return All(
+		CanDodgeOmega,
+		Any(
+			CanBeamBurst,
+			CanDamageOmegawithMissiles
+		),
+		Any(
+			CanBeamBurstandIceBeam,
+			CanPowerBomb,
+			CanDamageOmegawithMissiles,
+			PlasmaBeam
+		)
+	)
+end
+function CanCombatEvolvedOmega()
+	return CanCombatOmega()
 end
 
 -- Region specific
@@ -836,9 +910,12 @@ end
 function CanCombatDiggernaut()
 	return All(
 		Any(
+			PlasmaBeam,
 			MissileLauncher,
-			SuperMissile,
-			CanBeamBurst
+			All(
+				SuperMissile,
+				Has(SuperMissileTank, 5)
+			)
 		),
 		MorphBall,
 		Bomb,
@@ -1004,11 +1081,26 @@ function CanCombatMetroidLarva()
 end
 function CanCombatQueen()
 	return All(
-		CanDamageMetroid,
 		CanSpider,
 		Any(
 			SpaceJump,
 			CanSpiderBoost
+		),
+		CanBeamBurstandIceBeam,
+		Any(
+			CanPowerBomb,
+			All(
+				MissileLauncher,
+				Has(MissileTank, 2)
+			),
+			All(
+				SuperMissile,
+				Has(SuperMissileTank, 4)
+			),
+			All(
+				MissileLauncher,
+				SuperMissile
+			) -- Any more combinations would require a major refactoring of the combat logic
 		)
 	)
 end

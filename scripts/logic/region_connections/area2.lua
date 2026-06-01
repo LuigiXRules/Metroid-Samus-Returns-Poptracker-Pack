@@ -216,7 +216,7 @@ Area2ExteriorCavernsAlphaNw:connect_one_way_entrance(Area2ExteriorCavernsLobby, 
 		CanClimbWall
 	)
 end)
-Area2ExteriorCavernsAlphaNw:connect_one_way(Area2ExteriorCavernsAlphaNwAlpha, CanDamageMetroid)
+Area2ExteriorCavernsAlphaNw:connect_one_way(Area2ExteriorCavernsAlphaNwAlpha, CanCombatAlpha)
 Area2ExteriorCavernsLobby:connect_one_way_entrance(Area2ExteriorCavernsAlphaNw, function()
 	return All(
 		OpenChargeDoor,
@@ -234,7 +234,7 @@ Area2ExteriorCavernsAlphaSw:connect_one_way_entrance(Area2ExteriorCavernsLobby, 
 Area2ExteriorCavernsAlphaSw:connect_one_way(Area2ExteriorCavernsAlphaSwAlpha, function()
 	return All(
 		VariaSuit,
-		CanDamageMetroid
+		CanCombatAlpha
 	)
 end)
 Area2ExteriorCavernsAlphaEAccessLeft:connect_one_way_entrance(Area2ExteriorCavernsSaveStation)
@@ -297,7 +297,7 @@ end)
 Area2ExteriorCavernsTeleporterRight:connect_one_way_entrance(Area2ExteriorCavernsAlpha2) -- Normal Door
 Area2ExteriorAlpha2:connect_one_way_entrance(DamExteriorAlphaLedge) -- Normal Door
 Area2ExteriorAlpha2:connect_one_way_entrance(SereneShelter, OpenSuperDoor)
-Area2ExteriorAlpha2:connect_one_way(Area2ExteriorAlpha2Alpha, CanDamageMetroid)
+Area2ExteriorAlpha2:connect_one_way(Area2ExteriorAlpha2Alpha, CanCombatEvolvedAlpha)
 SereneShelter:connect_one_way_entrance(Area2ExteriorAlpha2, OpenSuperDoor)
 SereneShelter:connect_one_way(SereneShelterPickup, function()
 	return All(
@@ -312,9 +312,9 @@ SereneShelter:connect_one_way(SereneShelterPickup, function()
 	)
 end)
 Area2ExteriorCavernsAlpha2:connect_one_way_entrance(Area2ExteriorCavernsTeleporterRight) -- Normal Door
-Area2ExteriorCavernsAlpha2:connect_one_way(Area2ExteriorCavernsAlpha2Alpha, CanDamageMetroid)
+Area2ExteriorCavernsAlpha2:connect_one_way(Area2ExteriorCavernsAlpha2Alpha, CanCombatEvolvedAlpha)
 Area2ExteriorInnerAlpha:connect_one_way_entrance(CritterPlaygroundTop) -- Normal Door
-Area2ExteriorInnerAlpha:connect_one_way(Area2ExteriorInnerAlphaAlpha, CanDamageMetroid)
+Area2ExteriorInnerAlpha:connect_one_way(Area2ExteriorInnerAlphaAlpha, CanCombatAlpha)
 RockIcicleCorridor:connect_one_way_entrance(DamExteriorWest) -- Normal Door
 RockIcicleCorridor:connect_one_way_entrance(CritterPlaygroundTop) -- Normal Door
 Area2ExteriorMaintenanceTunnel:connect_one_way_entrance(FanFunnel, function()
@@ -331,7 +331,7 @@ Area2ExteriorCavernsAlphaE:connect_one_way_entrance(Area2ExteriorCavernsAlphaEAc
 		CanEscapeCavernsAlphaEast
 	)
 end)
-Area2ExteriorCavernsAlphaE:connect_one_way(Area2ExteriorCavernsAlphaEAlpha, CanDamageMetroid)
+Area2ExteriorCavernsAlphaE:connect_one_way(Area2ExteriorCavernsAlphaEAlpha, CanCombatAlpha)
 
 -- Interior
 WaveBeamNorthwest:connect_one_way_entrance(DamExteriorWest) -- Elevator
@@ -516,7 +516,7 @@ Area2InteriorTeleporterStorage:connect_one_way(Area2InteriorTeleporterStoragePic
 end)
 Area2InteriorGamma:connect_one_way_entrance(LavaGenerator, OpenChargeDoor)
 Area2InteriorGamma:connect_one_way_entrance(Area2InteriorIntersectionSouth, OpenChargeDoor)
-Area2InteriorGamma:connect_one_way(Area2InteriorGammaGamma, CanDamageMetroid)
+Area2InteriorGamma:connect_one_way(Area2InteriorGammaGamma, CanCombatGamma)
 -- VariaSuitChamber:connect_one_way_entrance() - may be unused
 GeneratorAccessUpper:connect_one_way_entrance(WaveBeamSouth, function()
 	return All(
@@ -615,6 +615,6 @@ Area2EntrywayAlpha2Arena:connect_two_ways_entrance(Area2EntrywayAlpha2Exit, func
 		CanAnyMissile
 	)
 end)
-Area2EntrywayAlpha2Arena:connect_one_way(Area2EntrywayAlpha2ArenaAlpha, CanDamageMetroid)
+Area2EntrywayAlpha2Arena:connect_one_way(Area2EntrywayAlpha2ArenaAlpha, CanCombatEvolvedAlpha)
 Area2EntrywayAlpha2Exit:connect_one_way_entrance(Area2TransportAccessUpper)
 

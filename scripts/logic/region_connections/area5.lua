@@ -303,7 +303,7 @@ Area5LobbyTeleporterEPickup:connect_one_way_entrance(Area5LobbyPassagewayUpper, 
 end)
 Area5LobbyAlpha2:connect_one_way_entrance(Area5LobbyTeleporterEUpper) -- Normal Door
 Area5LobbyAlpha2:connect_one_way_entrance(MeboidMillpondLake) -- Normal Door
-Area5LobbyAlpha2:connect_one_way(Area5LobbyAlpha2Alpha, CanDamageMetroid)
+Area5LobbyAlpha2:connect_one_way(Area5LobbyAlpha2Alpha, CanCombatEvolvedAlpha)
 Area5LobbyGamma2Access:connect_one_way_entrance(Area5LobbyTeleporterWLower) -- Normal Door
 Area5LobbyGamma2Access:connect_one_way_entrance(Area5LobbyGamma2, function ()
 	return All(
@@ -356,7 +356,7 @@ end)
 Area5LobbyGamma2:connect_one_way(Area5LobbyGamma2Gamma, function ()
 	return All(
 		VariaSuit,
-		CanDamageMetroid
+		CanCombatEvolvedGamma
 	)
 end)
 Area5LobbyPassagewayUpper:connect_one_way_entrance(TransportAreas4And6Upper)
@@ -476,7 +476,7 @@ end)
 TransportTowerIntN:connect_one_way_entrance(TowerExtSouthwest) -- Normal Door
 TransportTowerIntN:connect_one_way_entrance(TransportTowerExtW) -- Elevator
 Area5ExteriorZeta:connect_one_way_entrance(Area5ExteriorZetaAccessLeft, CanEscapeExteriorZetaArena) -- Normal Door
-Area5ExteriorZeta:connect_one_way(Area5ExteriorZetaZeta, CanDamageMetroid)
+Area5ExteriorZeta:connect_one_way(Area5ExteriorZetaZeta, CanCombatZeta)
 ParabyParlor:connect_one_way_entrance(Area5ExteriorZetaAccessRight, function ()
 	return All(
 		OpenMorphTunnelDoor,
@@ -508,7 +508,7 @@ Area5ExteriorGamma2Arena:connect_one_way_entrance(Area5ExteriorGamma2Access) -- 
 Area5ExteriorGamma2Arena:connect_one_way(Area5ExteriorGamma2ArenaGamma, function ()
 	return All(
 		VariaSuit,
-		CanDamageMetroid,
+		CanCombatEvolvedGamma,
 		Any(
 			SpaceJump,
 			GravitySuit,
@@ -537,7 +537,7 @@ Area5ExteriorGamma:connect_one_way(Area5ExteriorGammaPickup, function ()
 end)
 Area5ExteriorGamma:connect_one_way(Area5ExteriorGammaGamma, function ()
 	return All(
-		CanDamageMetroid,
+		CanCombatGamma,
 		CanClimbWall,
 		CanBombBlock
 	)
@@ -824,7 +824,7 @@ Area5InteriorGamma2:connect_one_way(Area5InteriorGamma2Gamma, function ()
 	return All(
 		SpaceJump,
 		VariaSuit,
-		CanDamageMetroid
+		CanCombatEvolvedGamma
 	)
 end)
 Area5InteriorTeleporter:connect_one_way_entrance(GrappleShufflerTunnel, CanAlmostHighLedge) -- Normal Door
@@ -832,7 +832,7 @@ Area5InteriorTeleporter:connect_one_way_entrance(GrappleShufflerTunnel, CanAlmos
 Area5InteriorTeleporter:connect_one_way_entrance(GrappleShufflerPuzzleTop) -- Normal Door
 Area5InteriorTeleporter:connect_one_way(Area5InteriorTeleporterPickup, function() return Has(MetroidHatchling) end)
 Area5InteriorZeta2:connect_one_way_entrance(Area5InteriorZeta2AccessRight, CanEscapeEvolvedZetaArena) -- Normal Door
-Area5InteriorZeta2:connect_one_way(Area5InteriorZeta2Zeta, CanDamageMetroid)
+Area5InteriorZeta2:connect_one_way(Area5InteriorZeta2Zeta, CanCombatEvolvedZeta)
 Area5InteriorGamma2Access:connect_one_way_entrance(Area5InteriorSaveStationWater, function ()
 	return All(
 		OpenMorphTunnelDoor,

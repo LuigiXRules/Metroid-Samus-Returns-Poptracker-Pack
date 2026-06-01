@@ -159,7 +159,7 @@ Area4CavesAlpha2:connect_one_way(Area4CavesAlpha2Pickup, function ()
 end)
 Area4CavesAlpha2:connect_one_way(Area4CavesAlpha2Alpha, function ()
 	return All(
-		CanDamageMetroid,
+		CanCombatEvolvedAlpha,
 		CanEscapeEvolvedAlpha
 	)
 end)
@@ -223,7 +223,7 @@ Area4CavesGammaArena:connect_two_ways_entrance(Area4CavesGammaLower, function ()
 		CanBombBlock
 	)
 end)
-Area4CavesGammaArena:connect_one_way(Area4CavesGammaArenaGamma, CanDamageMetroid)
+Area4CavesGammaArena:connect_one_way(Area4CavesGammaArenaGamma, CanCombatGamma)
 Area4CavesGammaLower:connect_one_way_entrance(Area4CavesGammaAccessSTop)
 Area4CavesGammaLower:connect_one_way(Area4CavesGammaLowerPickup, function ()
 	return All(
@@ -477,7 +477,7 @@ DualPondAlcove:connect_one_way(DualPondAlcovePickup, function ()
 	)
 end)
 Area4MinesZeta:connect_one_way_entrance(PinkCrystalPreserveBottom) -- Normal Door
-Area4MinesZeta:connect_one_way(Area4MinesZetaZeta, CanDamageMetroid)
+Area4MinesZeta:connect_one_way(Area4MinesZetaZeta, CanCombatZeta)
 
 GawronGrooveLeft:connect_one_way_entrance(GawronGrooveTop, function ()
 	return All(
@@ -596,7 +596,7 @@ end)
 Area4MinesGamma2:connect_one_way(Area4MinesGamma2Gamma, function ()
 	return All(
 		VariaSuit,
-		CanDamageMetroid
+		CanCombatEvolvedGamma
 	)
 end)
 

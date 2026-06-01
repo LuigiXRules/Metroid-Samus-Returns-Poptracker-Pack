@@ -76,7 +76,7 @@ end)
 SurfaceEastAlphaLobby:connect_one_way_entrance(MoheekMarket, OpenMorphTunnelDoor)
 SurfaceEastAlphaLobby:connect_one_way_entrance(ChozoCacheW, OpenGryncoreDoor)
 SurfaceEastAlphaArena:connect_one_way_entrance(SurfaceAmmoRecharge) -- Normal Door
-SurfaceEastAlphaArena:connect_one_way_entrance(SurfaceEastAlphaArenaAlpha, CanDamageMetroid)
+SurfaceEastAlphaArena:connect_one_way_entrance(SurfaceEastAlphaArenaAlpha, CanDamageWeakMetroid)
 SurfaceEastAlphaPickup:connect_one_way_entrance(MoheekMarket, OpenMorphTunnelDoor)
 ScanPulseRight:connect_one_way_entrance(ChozoSealUpper) -- Normal Door
 ScanPulseRight:connect_two_ways_entrance(ScanPulseLeft, OpenMorphTunnelDoor)
