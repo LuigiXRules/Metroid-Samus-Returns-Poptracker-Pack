@@ -49,10 +49,14 @@ Area3ExteriorMaze:connect_one_way(Area3ExteriorMazePickup, function()
 			CanSpiderBoost,
 			MovementSimple,
 			All(
+				MovementDisabled,
+				AccessibilityLevel.SequenceBreak
+			),
+			All(
 				MetroidHatchling,
 				Any(
 					CanSpider,
-					MovementSimple
+					MovementSimple -- accessibility level should be covered above; not sure why this is listed separately here when MovementSimple will bypass this argument entirely
 				)
 			)
 		)
@@ -87,7 +91,13 @@ FactoryExtPlatform:connect_one_way_entrance(FactoryExtTop, function ()
 		SpaceJump,
 		CanIBJVertical,
 		All(
-			MovementSimple,
+			Any(
+				MovementSimple,
+				All(
+					MovementDisabled,
+					AccessibilityLevel.SequenceBreak
+				)
+			),
 			CanSpiderBoost
 		)
 	)
@@ -99,7 +109,11 @@ FactoryExtCrevice:connect_one_way_entrance(FactoryExtTop, function ()
 		OpenMorphTunnelDoor,
 		Any(
 			KnowledgeSimple,
-			CanAlmostHighLedge
+			CanAlmostHighLedge,
+			All(
+				KnowledgeDisabled,
+				AccessibilityLevel.SequenceBreak
+			)
 		),
 		GrappleBeam,
 		CanSpider
@@ -144,7 +158,11 @@ Area3ExteriorEntranceMaze:connect_one_way(Area3ExteriorEntranceMazePickup, funct
 			SpaceJump,
 			PhaseDrift,
 			CanSpider,
-			MovementSimple
+			MovementSimple,
+			All(
+				MovementDisabled,
+				AccessibilityLevel.SequenceBreak
+			)
 		)
 	)
 end)
@@ -164,7 +182,11 @@ Area3ExteriorTransportCavernsNTransport:connect_one_way_entrance(Area3ExteriorTr
 				CanShortShaft,
 				Any(
 					CanSpider,
-					DamageBoostStatic
+					DamageBoostStatic,
+					All(
+						DamageBoostDisabled,
+						AccessibilityLevel.SequenceBreak
+					)
 				)
 			)
 		)
@@ -270,6 +292,10 @@ FactoryExtAccessLower:connect_one_way_entrance(BeamBurstPickup, function ()
 				LightningArmor
 			),
 			WallJumpIntermediate,
+			All(
+				WallJumpSimple,
+				AccessibilityLevel.SequenceBreak
+			),
 			CanAlmostHigherJump
 		)
 	)
@@ -281,7 +307,11 @@ FactoryExtAccessLower:connect_one_way_entrance(FactoryExtAccessUpper, function (
 			All(
 				Any(
 					CanAlmostHighLedge,
-					WallJumpIntermediate
+					WallJumpIntermediate,
+					All(
+						WallJumpSimple,
+						AccessibilityLevel.SequenceBreak
+					)
 				),
 				CanDamageToughEnemy
 			)
@@ -491,6 +521,10 @@ RamulkenRollwayLower:connect_one_way_entrance(RamulkenRollwayUpper, function ()
 			GrappleBeam,
 			Any(
 				KnowledgeSimple,
+				All(
+					KnowledgeDisabled,
+					AccessibilityLevel.SequenceBreak
+				),
 				CanClimbWall,
 				CanAlmostHigherJump
 			)
@@ -503,7 +537,11 @@ RamulkenRollwayLower:connect_one_way(RamulkenRollwayLowerPickup, function ()
 			CanPowerBomb,
 			Any(
 				CanSpider,
-				MovementSimple
+				MovementSimple,
+				All(
+					MovementDisabled,
+					AccessibilityLevel.SequenceBreak
+				)
 			)
 		),
 		All(
@@ -517,6 +555,10 @@ RamulkenRollwayLower:connect_one_way(RamulkenRollwayLowerPickup, function ()
 			Any(
 				CanSpider,
 				MovementSimple,
+				All(
+					MovementDisabled,
+					AccessibilityLevel.SequenceBreak
+				),
 				All(
 					GravitySuit,
 					SpaceJump
@@ -540,7 +582,13 @@ Area3CavernsTeleporterELower:connect_one_way_entrance(Area3CavernsTeleporterEUpp
 		CanClimbWall,
 		All(
 			HighJumpBoots,
-			WallJumpSimple
+			Any(
+				WallJumpSimple,
+				All(
+					WallJumpDisabled,
+					AccessibilityLevel.SequenceBreak
+				)
+			)
 		)
 	)
 end)
@@ -578,7 +626,13 @@ QuarryShaftLower:connect_one_way_entrance(LonelyLoopBottom, function ()
 			CanClimbWall,
 			All(
 				HighJumpBoots,
-				WallJumpIntermediate
+				Any(
+					WallJumpIntermediate,
+					All(
+						WallJumpSimple,
+						AccessibilityLevel.SequenceBreak
+					)
+				)
 			)
 		)
 	)
@@ -828,7 +882,13 @@ Area3InteriorGammaTransportCavernsESouthwest:connect_one_way_entrance(Area3Inter
 		GrappleBeam,
 		All(
 			HighJumpBoots,
-			SuperJumpBeginner
+			Any(
+				SuperJumpBeginner,
+				All(
+					SuperJumpDisabled,
+					AccessibilityLevel.SequenceBreak
+				)
+			)
 		)
 	)
 end)

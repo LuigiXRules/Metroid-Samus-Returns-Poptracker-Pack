@@ -29,27 +29,54 @@ end
 
 function CanIBJDouble()
 	return All(
-		IBJDouble,
+		Any(
+			IBJDouble,
+			All(
+				IBJDisabled,
+				AccessibilityLevel.SequenceBreak
+			)
+		),
 		CanBomb
 	)
 end
 function CanIBJVertical()
 	return All(
-		IBJVertical,
+		Any(
+			IBJVertical,
+			All(
+				IBJDouble,
+				AccessibilityLevel.SequenceBreak
+			)
+		),
 		CanBomb
 	)
 end
 function CanIBJDiagonal()
 	return All(
-		IBJDiagonal,
+		Any(
+			IBJDiagonal,
+			All(
+				IBJVertical,
+				AccessibilityLevel.SequenceBreak
+			)
+		),
 		CanBomb
 	)
 end
 
 function CanSuperJumpMorphExtend()
-	return All(
-		SuperJumpMedium,
-		MorphExtendsMedium
+	return Any(
+		All(
+			SuperJumpMedium,
+			MorphExtendsMedium
+		),
+		All(
+			AccessibilityLevel.SequenceBreak,
+			Any(
+				SuperJumpEasy,
+				MorphExtendsEasy
+			)
+		)
 	)
 end
 
@@ -67,14 +94,22 @@ function CanBeamBlockThroughTunnel()
 	return Any(
 		WaveBeam,
 		CanBombBlock,
-		MovementSimple
+		MovementSimple,
+		All(
+			MovementDisabled,
+			AccessibilityLevel.SequenceBreak
+		)
 	)
 end
 function CanBeamBlockThroughFanTunnel()
 	return Any(
 		WaveBeam,
 		CanPowerBomb,
-		MovementSimple
+		MovementSimple,
+		All(
+			MovementDisabled,
+			AccessibilityLevel.SequenceBreak
+		)
 	)
 end
 
@@ -96,15 +131,22 @@ function CanSpiderBoostUnderwater()
 		CanSpiderBoost,
 		Any(
 			GravitySuit,
-			KnowledgeSimple
+			KnowledgeSimple,
+			AccessibilityLevel.SequenceBreak
 		)
 	)
 end
 
 function CanSpiderBoostThroughPitfalls()
-	return All(
-		KnowledgeSimple,
-		CanSpiderBoost
+	return Any(
+		All(
+			KnowledgeSimple,
+			CanSpiderBoost
+		),
+		All(
+			KnowledgeDisabled,
+			AccessibilityLevel.SequenceBreak
+		)
 	)
 end
 function CanCrossPitfallBridge()
@@ -183,7 +225,11 @@ end
 function CanAlmostHighJump()
 	return Any(
 		CanHighJump,
-		SuperJumpBeginner
+		SuperJumpBeginner,
+		All(
+			SuperJumpDisabled,
+			AccessibilityLevel.SequenceBreak
+		)
 	)
 end
 function CanAlmostHighLedge()
@@ -195,7 +241,11 @@ end
 function CanAlmostHighJumpGap()
 	return Any(
 		CanHighJump,
-		SuperJumpEasy
+		SuperJumpEasy,
+		All(
+			SuperJumpBeginner,
+			AccessibilityLevel.SequenceBreak
+		)
 	)
 end
 function CanUnderwaterAlmostHighJump()
@@ -220,14 +270,24 @@ function CanJumpUnderwater()
 	return Any(
 		HighJumpBoots,
 		GravitySuit,
-		SuperJumpEasy
+		SuperJumpEasy,
+		All(
+			SuperJumpBeginner,
+			AccessibilityLevel.SequenceBreak
+		)
 	)
 end
 
 function CanHighSuperJump()
-	return All(
-		SuperJumpBeginner,
-		HighJumpBoots
+	return Any(
+		All(
+			SuperJumpBeginner,
+			HighJumpBoots
+		),
+		All(
+			SuperJumpDisabled,
+			AccessibilityLevel.SequenceBreak
+		)
 	)
 end
 function CanHighSuperJumporClimb()
@@ -259,6 +319,10 @@ function CanHigherJump()
 		All(
 			HighJumpBoots,
 			CanIBJDouble
+		),
+		All(
+			SuperJumpBeginner,
+			AccessibilityLevel.SequenceBreak
 		)
 	)
 end
@@ -294,19 +358,31 @@ end
 function CanShorterShaft()
 	return Any(
 		WallJumpSimple,
-		CanAlmostHighLedge
+		CanAlmostHighLedge,
+		All(
+			WallJumpDisabled,
+			AccessibilityLevel.SequenceBreak
+		)
 	)
 end
 function CanShortShaft()
 	return Any(
 		CanHighLedge,
-		WallJumpSimple
+		WallJumpSimple,
+		All(
+			WallJumpDisabled,
+			AccessibilityLevel.SequenceBreak
+		)
 	)
 end
 function CanClimbShaft()
 	return Any(
 		CanClimbWall,
-		WallJumpSimple
+		WallJumpSimple,
+		All(
+			WallJumpDisabled,
+			AccessibilityLevel.SequenceBreak
+		)
 	)
 end
 function CanClimbElevatedShaft()
@@ -316,7 +392,11 @@ function CanClimbElevatedShaft()
 			CanClimbShaft,
 			Any(
 				CanHighJumpNoGrip,
-				SuperJumpEasy
+				SuperJumpEasy,
+				All(
+					SuperJumpBeginner,
+					AccessibilityLevel.SequenceBreak
+				)
 			)
 		)
 	)
@@ -359,7 +439,11 @@ end
 function CanThorns()
 	return Any(
 		LightningArmor,
-		DamageBoostStatic
+		DamageBoostStatic,
+		All(
+			DamageBoostDisabled,
+			AccessibilityLevel.SequenceBreak
+		)
 	)
 end
 function CanFleechSwarm()
@@ -375,6 +459,10 @@ function OpenChargeDoor()
 		All(
 			KnowledgeSimple,
 			CanBeamBurst
+		),
+		All(
+			KnowledgeDisabled,
+			AccessibilityLevel.SequenceBreak
 		)
 	)
 end
@@ -692,7 +780,11 @@ function CanCrossPurplePuddle()
 	return Any(
 		SpaceJump,
 		CanSpider,
-		DamageBoostStatic -- may need to be fixed?
+		DamageBoostStatic, -- may need to be fixed?
+		All(
+			DamageBoostDisabled,
+			AccessibilityLevel.SequenceBreak
+		)
 	)
 end
 function CanTraverseTransitTunnel()
@@ -729,7 +821,14 @@ function CanEscapePinkCrystals()
 			CanSpiderBoost,
 			Any(
 				DamageBoostStatic,
-				KnowledgeSimple
+				KnowledgeSimple,
+				All(
+					Any(
+						DamageBoostDisabled,
+						KnowledgeDisabled
+					),
+					AccessibilityLevel.SequenceBreak
+				)
 			)
 		)
 	)
@@ -806,9 +905,19 @@ function CanWallJumptoInteriorGammaAccess()
 		Any(
 			All(
 				PhaseDrift,
-				WallJumpSimple
+				Any(
+					WallJumpSimple,
+					All(
+						WallJumpDisabled,
+						AccessibilityLevel.SequenceBreak
+					)
+				)
 			),
-			WallJumpIntermediate
+			WallJumpIntermediate,
+			All(
+				WallJumpSimple,
+				AccessibilityLevel.SequenceBreak
+			)
 		)
 	)
 end
@@ -817,11 +926,24 @@ function CanCrossTowerExteriorBlobthrower()
 	return Any(
 		CanBlobthrower,
 		CanHighJump,
-		All(
-			SuperJumpEasy,
-			Any(
-				MovementSimple,
-				DamageBoostStatic
+		Any(
+			All(
+				SuperJumpEasy,
+				Any(
+					MovementSimple,
+					DamageBoostStatic,
+					All(
+						Any(
+							MovementDisabled,
+							DamageBoostDisabled
+						),
+						AccessibilityLevel.SequenceBreak
+					)
+				)
+			),
+			All(
+				SuperJumpBeginner,
+				AccessibilityLevel.SequenceBreak
 			)
 		)
 	)
@@ -885,7 +1007,11 @@ function CanCrossTransporttoArea5()
 		HighJumpBoots,
 		SpaceJump,
 		CanSpider,
-		DamageBoostStatic
+		DamageBoostStatic,
+		All(
+			DamageBoostDisabled,
+			AccessibilityLevel.SequenceBreak
+		)
 	)
 end
 function CanCrossCrumblingBridge()
@@ -903,7 +1029,11 @@ function CanNavigateHideoutSprawlTunnels()
 		Any(
 			HighJumpBoots,
 			ScrewAttack,
-			WallJumpSimple
+			WallJumpSimple,
+			All(
+				WallJumpDisabled,
+				AccessibilityLevel.SequenceBreak
+			)
 		)
 	)
 end
@@ -951,11 +1081,24 @@ function CanEscapeChozoSealE()
 	return Any(
 		CanClimbWall,
 		All(
-			WallJumpSimple,
+			Any(
+				WallJumpSimple,
+				All(
+					WallJumpDisabled,
+					AccessibilityLevel.SequenceBreak
+				)
+			),
 			Any(
 				HighJumpBoots,
 				SuperJumpBeginner,
-				MorphExtendsEasy
+				MorphExtendsEasy,
+				All(
+					Any(
+						SuperJumpDisabled,
+						MorphExtendsDisabled
+					),
+					AccessibilityLevel.SequenceBreak
+				)
 			)
 		)
 	)
@@ -1015,7 +1158,11 @@ function CanJumpUpWallfireWorkstation()
 		Any(
 			HighJumpBoots,
 			SpaceJump,
-			SuperJumpEasy
+			SuperJumpEasy,
+			All(
+				SuperJumpBeginner,
+				AccessibilityLevel.SequenceBreak
+			)
 		)
 	)
 end
@@ -1040,7 +1187,11 @@ function CanEscapeRobotRegimeBottom()
 			CanThorns,
 			Any(
 				WallJumpIntermediate,
-				CanSpider
+				CanSpider,
+				All(
+					WallJumpSimple,
+					AccessibilityLevel.SequenceBreak
+				)
 			)
 		)
 	)
@@ -1110,10 +1261,23 @@ function CanClimbNestNetwork()
 		CanClimbWall,
 		All(
 			HighJumpBoots,
-			WallJumpSimple,
+			Any(
+				WallJumpSimple,
+				All(
+					WallJumpDisabled,
+					AccessibilityLevel.SequenceBreak
+				)
+			),
 			Any(
 				SuperJumpBeginner,
-				MorphExtendsEasy
+				MorphExtendsEasy,
+				All(
+					Any(
+						SuperJumpDisabled,
+						MorphExtendsDisabled
+					),
+					AccessibilityLevel.SequenceBreak
+				)
 			)
 		)
 	)
@@ -1124,7 +1288,14 @@ function CanClimbNestNetworkTunnels()
 		Any(
 			HighJumpBoots,
 			WallJumpSimple,
-			SuperJumpEasy
+			SuperJumpEasy,
+			All(
+				Any(
+					WallJumpDisabled,
+					SuperJumpBeginner
+				),
+				AccessibilityLevel.SequenceBreak
+			)
 		)
 	)
 end

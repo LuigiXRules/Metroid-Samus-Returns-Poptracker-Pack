@@ -55,7 +55,11 @@ TransportAreas4And6Upper:connect_one_way_entrance(Area5LobbyPassagewayUpper)
 TransportAreas4And6Upper:connect_one_way_entrance(TransportAreas4And6Chamber, function ()
 	return Any(
 		LightningArmor,
-		DamageBoostStatic
+		DamageBoostStatic,
+		All(
+			DamageBoostDisabled,
+			AccessibilityLevel.SequenceBreak
+		)
 	)
 end)
 TransportAreas4And6Upper:connect_one_way_entrance(TransportAreas4And6Southwest)
@@ -70,6 +74,10 @@ TransportAreas4And6Chamber:connect_one_way_entrance(TransportAreas4And6Upper, fu
 	return Any(
 		LightningArmor,
 		DamageBoostStatic,
+		All(
+			DamageBoostDisabled,
+			AccessibilityLevel.SequenceBreak
+		),
 		All(
 			MorphBall,
 			ScrewAttack
@@ -96,7 +104,13 @@ TransportAreas4And6Southwest:connect_one_way_entrance(TransportAreas4And6PickupL
 			CanClimbWall,
 			All(
 				HighJumpBoots,
-				WallJumpSimple
+				Any(
+					WallJumpSimple,
+					All(
+						WallJumpDisabled,
+						AccessibilityLevel.SequenceBreak
+					)
+				)
 			)
 		)
 	)
@@ -109,8 +123,20 @@ TransportAreas4And6Southeast:connect_one_way_entrance(TransportAreas4And6Chamber
 			SpaceJump,
 			HighJumpBoots,
 			All(
-				WallJumpSimple,
-				MovementSimple
+				Any(
+					WallJumpSimple,
+					All(
+						WallJumpDisabled,
+						AccessibilityLevel.SequenceBreak
+					)
+				),
+				Any(
+					MovementSimple,
+					All(
+						MovementDisabled,
+						AccessibilityLevel.SequenceBreak
+					)
+				)
 			)
 		)
 	)
@@ -176,7 +202,13 @@ Area5LobbyTeleporterWLower:connect_one_way_entrance(Area5LobbyGamma2Access, func
 		),
 		All(
 			CanSpiderBoostUnderwater,
-			DamageBoostStatic
+			Any(
+				DamageBoostStatic,
+				All(
+					DamageBoostDisabled,
+					AccessibilityLevel.SequenceBreak
+				)
+			)
 		)
 	)
 end) -- Normal Door
@@ -253,14 +285,24 @@ JShapeTunnelTop:connect_one_way_entrance(Area5LobbySaveStationExit, function ()
 	return All(
 		OpenMorphTunnelDoor,
 		CanBombBlock,
-		MovementSimple
+		Any(
+			MovementSimple,
+			All(
+				MovementDisabled,
+				AccessibilityLevel.SequenceBreak
+			)
+		)
 	)
 end)
 JShapeTunnelTop:connect_one_way_entrance(Area5LobbyTeleporterWLower, function ()
 	return All(
 		OpenMorphTunnelDoor,
 		CanBombBlock,
-		MovementSimple
+		MovementSimple,
+		All(
+			MovementDisabled,
+			AccessibilityLevel.SequenceBreak
+		)
 	)
 end)
 JShapeTunnelTop:connect_one_way_entrance(JShapeTunnelBottom, OpenMorphTunnelDoor)
@@ -397,7 +439,13 @@ TowerExtIntersection:connect_one_way_entrance(Area5ExteriorGamma2Access, functio
 		SpaceJump,
 		All(
 			LightningArmor,
-			DamageBoostStatic,
+			Any(
+				DamageBoostStatic,
+				All(
+					DamageBoostDisabled,
+					AccessibilityLevel.SequenceBreak
+				)
+			),
 			CanSpiderBoost
 		)
 	)
@@ -523,7 +571,11 @@ Area5ExteriorGamma2Arena:connect_one_way(Area5ExteriorGamma2ArenaGamma, function
 			SpaceJump,
 			GravitySuit,
 			CanSpider,
-			DamageBoostStatic
+			DamageBoostStatic,
+			All(
+				DamageBoostDisabled,
+				AccessibilityLevel.SequenceBreak
+			)
 		)
 	)
 end)
@@ -590,8 +642,20 @@ Area5InteriorSaveStationSaveStation:connect_one_way_entrance(Area5InteriorSaveSt
 		Any(
 			CanHighLedge,
 			All(
-				WallJumpSimple,
-				MorphExtendsEasy
+				Any(
+					WallJumpSimple,
+					All(
+						WallJumpDisabled,
+						AccessibilityLevel.SequenceBreak
+					)
+				),
+				Any(
+					MorphExtendsEasy,
+					All(
+						MorphExtendsDisabled,
+						AccessibilityLevel.SequenceBreak
+					)
+				)
 			)
 		),
 		Any(
@@ -599,21 +663,50 @@ Area5InteriorSaveStationSaveStation:connect_one_way_entrance(Area5InteriorSaveSt
 			CanIBJDiagonal,
 			All(
 				CanSpider,
-				MovementSimple
+				Any(
+					MovementSimple,
+					All(
+						MovementDisabled,
+						AccessibilityLevel.SequenceBreak
+					)
+				)
 			),
 			CanHighSuperJump,
 			All(
-				DamageBoostStatic,
-				MovementSimple
+				Any(
+					DamageBoostStatic,
+					All(
+						DamageBoostDisabled,
+						AccessibilityLevel.SequenceBreak
+					)
+				),
+				Any(
+					MovementSimple,
+					All(
+						MovementDisabled,
+						AccessibilityLevel.SequenceBreak
+					)
+				)
 			),
 			All(
 				Any(
 					HighJumpBoots,
-					SuperJumpEasy
+					SuperJumpEasy,
+					All(
+						SuperJumpBeginner,
+						AccessibilityLevel.SequenceBreak
+					)
 				),
 				Any(
 					DamageBoostStatic,
-					MovementSimple
+					MovementSimple,
+					All(
+						Any(
+							DamageBoostDisabled,
+							MovementDisabled
+						),
+						AccessibilityLevel.SequenceBreak
+					)
 				)
 			),
 			All(
@@ -644,11 +737,23 @@ Area5InteriorSaveStationExit:connect_one_way_entrance(Area5InteriorSaveStationSa
 		),
 		All(
 			CanSpiderBoost,
-			MovementSimple
+			Any(
+				MovementSimple,
+				All(
+					MovementDisabled,
+					AccessibilityLevel.SequenceBreak
+				)
+			)
 		),
 		All(
 			HighJumpBoots,
-			DamageBoostStatic
+			Any(
+				DamageBoostStatic,
+				All(
+					DamageBoostDisabled,
+					AccessibilityLevel.SequenceBreak
+				)
+			)
 		)
 	)
 end)
@@ -701,8 +806,20 @@ AutrackAcropolis:connect_one_way_entrance(TransportTowerExtW, function ()
 					SpaceJump,
 					HighJumpBoots,
 					All(
-						WallJumpSimple,
-						SuperJumpBeginner
+						Any(
+							WallJumpSimple,
+							All(
+								WallJumpDisabled,
+								AccessibilityLevel.SequenceBreak
+							)
+						),
+						Any(
+							SuperJumpBeginner,
+							All(
+								SuperJumpDisabled,
+								AccessibilityLevel.SequenceBreak
+							)
+						)
 					)
 				)
 			)

@@ -52,7 +52,11 @@ AmphitheaterBottom:connect_one_way(AmphitheaterBottomPickupUpperRight, function 
 		Any(
 			CanSpider,
 			PhaseDrift,
-			MovementSimple
+			MovementSimple,
+			All(
+				MovementDisabled,
+				AccessibilityLevel.SequenceBreak
+			)
 		)
 	)
 end)
@@ -74,7 +78,13 @@ AmphitheaterOverhangTunnel:connect_one_way(AmphitheaterOverhangTunnelPickup, fun
 	return Any(
 		CanSpiderBoost,
 		All(
-			MovementSimple,
+			Any(
+				MovementSimple,
+				All(
+					MovementDisabled,
+					AccessibilityLevel.SequenceBreak
+				)
+			),
 			Any(
 				CanPowerBomb,
 				All(
@@ -107,7 +117,11 @@ AmphitheaterCrossway:connect_one_way(AmphitheaterCrosswayPickup, function ()
 		Any(
 			HighJumpBoots,
 			SpaceJump,
-			WallJumpSimple
+			WallJumpSimple,
+			All(
+				WallJumpDisabled,
+				AccessibilityLevel.SequenceBreak
+			)
 		),
 		CanBombBlock
 	)
@@ -123,7 +137,13 @@ AmphitheaterCenter:connect_one_way_entrance(AmphitheaterTop, function ()
 		CanClimbWall,
 		All(
 			CanAlmostHighLedge,
-			MorphExtendsEasy
+			Any(
+				MorphExtendsEasy,
+				All(
+					MorphExtendsDisabled,
+					AccessibilityLevel.SequenceBreak
+				)
+			)
 		)
 	)
 end)
@@ -273,7 +293,15 @@ Area8TransportArea7:connect_one_way_entrance(NestVestibule, function ()
 					WallJumpIntermediate,
 					All(
 						WallJumpSimple,
-						HighJumpBoots
+						Any(
+							HighJumpBoots,
+							AccessibilityLevel.SequenceBreak
+						)
+					),
+					All(
+						HighJumpBoots,
+						WallJumpDisabled,
+						AccessibilityLevel.SequenceBreak
 					)
 				)		
 			)
@@ -298,12 +326,22 @@ NestVestibule:connect_one_way(NestVestibulePickup, function ()
 			SpaceJump,
 			All(
 				HighJumpBoots,
-				WallJumpIntermediate
+				Any(
+					WallJumpIntermediate,
+					All(
+						WallJumpSimple,
+						AccessibilityLevel.SequenceBreak
+					)
+				)
 			)
 		),
 		Any(
 			SpiderBall,
-			MovementSimple
+			MovementSimple,
+			All(
+				MovementDisabled,
+				AccessibilityLevel.SequenceBreak
+			)
 		)
 	)
 end)

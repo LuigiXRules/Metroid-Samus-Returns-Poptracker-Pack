@@ -67,7 +67,13 @@ DamExteriorBottom:connect_one_way_entrance(DamExteriorTop, function()
 		CanIBJDiagonal,
 		All(
 			CanSpider,
-			DamageBoostStatic
+			Any(
+				DamageBoostStatic,
+				All(
+					DamageBoostDisabled,
+					AccessibilityLevel.SequenceBreak
+				)
+			)
 		)
 	)
 end)
@@ -79,7 +85,13 @@ DamExteriorAlphaLedge:connect_one_way_entrance(DamExteriorTop, function()
 		CanIBJDiagonal,
 		All(
 			CanSpider,
-			DamageBoostStatic
+			Any(
+				DamageBoostStatic,
+				All(
+					DamageBoostDisabled,
+					AccessibilityLevel.SequenceBreak
+				)
+			)
 		)
 	)
 end)
@@ -158,7 +170,11 @@ Area2ExteriorCavernsEntrance:connect_one_way(Area2ExteriorCavernsEntrancePickup,
 		Any(
 			CanSpider,
 			PhaseDrift,
-			MovementSimple
+			MovementSimple,
+			All(
+				MovementDisabled,
+				AccessibilityLevel.SequenceBreak
+			)
 		),
 		Any(
 			MetroidHatchling,
@@ -305,7 +321,13 @@ SereneShelter:connect_one_way(SereneShelterPickup, function()
 		Any(
 			CanBomb,
 			All(
-				MovementSimple,
+				Any(
+					MovementSimple,
+					All(
+						MovementDisabled,
+						AccessibilityLevel.SequenceBreak
+					)
+				),
 				CanPowerBomb
 			)
 		)
@@ -431,10 +453,20 @@ LavaGenerator:connect_one_way(LavaGeneratorPickup, function()
 					CanPowerBomb,
 					CanIBJDouble,
 					All(
-						MovementSimple,
+						Any(
+							MovementSimple,
+							All(
+								MovementDisabled,
+								AccessibilityLevel.SequenceBreak
+							)
+						),
 						Any(
 							WallJumpSimple,
-							CanAlmostHighJump
+							CanAlmostHighJump,
+							All(
+								WallJumpDisabled,
+								AccessibilityLevel.SequenceBreak
+							)
 						)
 					)
 				)
