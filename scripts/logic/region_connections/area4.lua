@@ -272,13 +272,7 @@ AmethystAltars:connect_one_way_entrance(AmethystAltarsPickup, function ()
 			IceBeam,
 			All(
 				CanAlmostHigherJump,
-				Any(
-					MovementSimple,
-					All(
-						MovementDisabled,
-						AccessibilityLevel.SequenceBreak
-					)
-				)
+				CanMovementSimple
 			)
 		)
 	)
@@ -350,11 +344,7 @@ MinesIntersectionTerminalSaveStation:connect_one_way_entrance(MinesIntersectionT
 	return Any(
 		HighJumpBoots,
 		CanClimbWall,
-		SuperJumpEasy,
-		All(
-			SuperJumpBeginner,
-			AccessibilityLevel.SequenceBreak
-		),
+		CanSuperJumpEasy,
 		CanIBJDiagonal
 	)
 end)
@@ -406,13 +396,7 @@ SuperMissileChamber:connect_one_way(SuperMissilePickup, function()
 		CanClimbWall,
 		All(
 			CanAlmostHigherJump,
-			Any(
-				WallJumpSimple,
-				All(
-					WallJumpDisabled,
-					AccessibilityLevel.SequenceBreak
-				)
-			)
+			CanWallJumpSimple
 		)
 	)
 end)
@@ -431,11 +415,7 @@ PinkCrystalPreserveBottom:connect_one_way_entrance(Area4MinesZeta, function ()
 			Any(
 				Bomb,
 				SpringBall,
-				MovementSimple,
-				All(
-					MovementDisabled,
-					AccessibilityLevel.SequenceBreak
-				)
+				CanMovementSimple
 			)
 		)
 	)
@@ -473,11 +453,7 @@ DualPondAlcove:connect_one_way(DualPondAlcovePickup, function ()
 	return All(
 		CanSpiderBoost,
 		Any(
-			KnowledgeSimple,
-			All(
-				KnowledgeDisabled,
-				AccessibilityLevel.SequenceBreak
-			),
+			CanKnowledgeSimple,
 			GravitySuit,
 			All(
 				Any(
@@ -485,29 +461,11 @@ DualPondAlcove:connect_one_way(DualPondAlcovePickup, function ()
 					HighJumpBoots,
 					All(
 						CanSpider,
-						Any(
-							MovementSimple,
-							All(
-								MovementDisabled,
-								AccessibilityLevel.SequenceBreak
-							)
-						)
+						CanMovementSimple
 					),
 					All(
-						Any(
-							SuperJumpMedium,
-							All(
-								SuperJumpEasy,
-								AccessibilityLevel.SequenceBreak
-							)
-						),
-						Any(
-							WallJumpSimple,
-							All(
-								WallJumpDisabled,
-								AccessibilityLevel.SequenceBreak
-							)
-						)
+						CanSuperJumpMedium,
+						CanWallJumpSimple
 					)
 				),
 				Any(
@@ -558,11 +516,7 @@ GawronGrooveRight:connect_one_way_entrance(GawronGrooveTop, function ()
 		VariaSuit,
 		Any(
 			CanAlmostHighLedge,
-			MovementSimple,
-			All(
-				MovementDisabled,
-				AccessibilityLevel.SequenceBreak
-			)
+			CanMovementSimple
 		)
 	)
 end)
@@ -595,11 +549,7 @@ GawronGrooveArenaLeft:connect_two_ways_entrance(GawronGrooveArenaRight, function
 		Any(
 			CanFly,
 			CanSpiderBoost,
-			DamageBoostStatic,
-			All(
-				DamageBoostDisabled,
-				AccessibilityLevel.SequenceBreak
-			)
+			CanDamageBoostStatic
 		)
 	)
 end)

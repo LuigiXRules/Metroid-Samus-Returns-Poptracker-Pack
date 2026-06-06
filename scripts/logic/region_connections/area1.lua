@@ -20,24 +20,14 @@ TransportSurfaceArea2Area2:connect_one_way_entrance(TransportSurfaceArea2Surface
 		Any(
 			Bomb,
 			All(
-				Any(
-					MovementSimple,
-					All(
-						MovementDisabled,
-						AccessibilityLevel.SequenceBreak
-					)
-				),
+				CanMovementSimple,
 				MissileLauncher
 			),
 			All(
 				ScrewAttack,
 				Any(
 					CanClimbShaft,
-					MovementSimple,
-					All(
-						MovementDisabled,
-						AccessibilityLevel.SequenceBreak
-					)
+					CanMovementSimple
 				)
 			)
 		)
@@ -93,15 +83,9 @@ InnerTempleEHallUpper:connect_one_way_entrance(InnerTempleUpperHallway, function
 		),
 		CanSuperJumpMorphExtend,
 		All(
-			SuperJumpBeginner,
-			WallJumpSimple,
-			MorphExtendsEasy
-		),
-		All(
-			SuperJumpDisabled,
-			WallJumpDisabled,
-			MorphExtendsDisabled,
-			AccessibilityLevel.SequenceBreak
+			CanSuperJumpBeginner,
+			CanWallJumpSimple,
+			CanMorphExtendsEasy
 		)
 	)
 end) -- Normal Door
@@ -129,11 +113,7 @@ DestroyedArmory:connect_one_way(DestroyedArmoryPickup, function()
 			CanSpider,
 			Any(
 				CanBombBlock,
-				MovementIntermediate,
-				All(
-					MovementSimple,
-					AccessibilityLevel.SequenceBreak
-				)
+				CanMovementIntermediate
 			)
 		)
 	)
@@ -195,11 +175,7 @@ Area1CavernsLobby:connect_one_way_entrance(Area1CavernsEnergyRecharge, function(
 	return All(
 		Any(
 			CanAlmostHighLedge,
-			MovementSimple,
-			All(
-				MovementDisabled,
-				AccessibilityLevel.SequenceBreak
-			)
+			CanMovementSimple
 		),
 		CanBombBlock
 	)
@@ -372,11 +348,7 @@ InnerTempleVentShaftShaft:connect_one_way_entrance(InnerTempleVentShaftShaftPick
 		All(
 			HighJumpBoots,
 			Any(
-				WallJumpIntermediate,
-				All(
-					WallJumpSimple,
-					AccessibilityLevel.SequenceBreak
-				)
+				CanWallJumpIntermediate
 			)
 		)
 	)

@@ -205,13 +205,7 @@ SurfaceTransportArea8Hallway:connect_one_way(SurfaceTransportArea8HallwayPickup,
 			CanIBJVertical,
 			All(
 				SpaceJump,
-				Any(
-					MovementSimple,
-					All(
-						MovementDisabled,
-						AccessibilityLevel.SequenceBreak
-					)
-				)
+				CanMovementSimple
 			)
 		)
 	)

@@ -59,6 +59,11 @@ MorphExtendsMedium = "morph_extends_medium"
 DNARequired = "dnarequired"
 DNAAvailable = "dnaavailable"
 
+-- Yellow Location Settings
+YellowTricksDisabled = "yellow_tricks_disabled"
+YellowTricksSome = "yellow_tricks_some"
+YellowTricksAll = "yellow_tricks_all"
+
 -- Start Locations
 -- LandingSiteEast = "landing_site_east"
 
