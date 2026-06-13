@@ -175,7 +175,7 @@ SpikeRavineUpper:connect_one_way_entrance(Area2ExteriorCavernsEntrance, function
 end)
 SpikeRavineUpper:connect_one_way_entrance(SpikeRavineLower)
 SpikeRavineUpper:connect_one_way_entrance(SpikeRavinePickup, function()
-	return All(
+	return Any(
 		GrappleBeam,
 		CanSpiderBoost
 	)
