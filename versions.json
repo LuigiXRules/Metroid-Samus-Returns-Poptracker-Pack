@@ -1,6 +1,12 @@
 {
 	"versions": [
 		{
+			"package_version": "0.4.0",
+			"download_url": "https://github.com/LuigiXRules/Metroid-Samus-Returns-Poptracker-Pack/releases/download/0.4.0/samus_returns_pack.zip",
+			"sha256": "24a12ec45999edf4eacd38cea37f572532f49b88a005b8d77f142e265f2bb689",
+			"changelog": ["Out of Logic Locations settings"]
+		},
+		{
 			"package_version": "0.3.1",
 			"download_url": "https://github.com/LuigiXRules/Metroid-Samus-Returns-Poptracker-Pack/releases/download/0.3.1/samus_returns_pack.zip",
 			"sha256": "dbe4af4809f8a7bf8c9b0042527d00d374114e592b99766d59427aab1a8210b9",
