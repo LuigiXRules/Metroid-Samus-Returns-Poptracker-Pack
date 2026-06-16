@@ -67,7 +67,7 @@ DamExteriorBottom:connect_one_way_entrance(DamExteriorTop, function()
 		CanIBJDiagonal,
 		All(
 			CanSpider,
-			DamageBoostStatic
+			CanDamageBoostStatic
 		)
 	)
 end)
@@ -79,7 +79,7 @@ DamExteriorAlphaLedge:connect_one_way_entrance(DamExteriorTop, function()
 		CanIBJDiagonal,
 		All(
 			CanSpider,
-			DamageBoostStatic
+			CanDamageBoostStatic
 		)
 	)
 end)
@@ -158,7 +158,7 @@ Area2ExteriorCavernsEntrance:connect_one_way(Area2ExteriorCavernsEntrancePickup,
 		Any(
 			CanSpider,
 			PhaseDrift,
-			MovementSimple
+			CanMovementSimple
 		),
 		Any(
 			MetroidHatchling,
@@ -175,7 +175,7 @@ SpikeRavineUpper:connect_one_way_entrance(Area2ExteriorCavernsEntrance, function
 end)
 SpikeRavineUpper:connect_one_way_entrance(SpikeRavineLower)
 SpikeRavineUpper:connect_one_way_entrance(SpikeRavinePickup, function()
-	return All(
+	return Any(
 		GrappleBeam,
 		CanSpiderBoost
 	)
@@ -305,7 +305,7 @@ SereneShelter:connect_one_way(SereneShelterPickup, function()
 		Any(
 			CanBomb,
 			All(
-				MovementSimple,
+				CanMovementSimple,
 				CanPowerBomb
 			)
 		)
@@ -431,9 +431,9 @@ LavaGenerator:connect_one_way(LavaGeneratorPickup, function()
 					CanPowerBomb,
 					CanIBJDouble,
 					All(
-						MovementSimple,
+						CanMovementSimple,
 						Any(
-							WallJumpSimple,
+							CanWallJumpSimple,
 							CanAlmostHighJump
 						)
 					)

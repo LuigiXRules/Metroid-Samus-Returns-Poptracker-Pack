@@ -33,7 +33,7 @@ LabTeleporterW:connect_one_way_entrance(RobotRetreatBottom, function ()
 						)
 					),
 					All(
-						MovementSimple,
+						CanMovementSimple,
 						GrappleBeam,
 						CanSpiderBoost
 					)
@@ -48,7 +48,7 @@ LabTeleporterW:connect_one_way_entrance(RobotRetreatBottom, function ()
 					SpaceJump,
 					All(
 						HighJumpBoots,
-						WallJumpSimple
+						CanWallJumpSimple
 					)
 				)
 			),
@@ -66,7 +66,7 @@ LabTeleporterW:connect_one_way_entrance(RobotRetreatBottom, function ()
 				CanClimbShaft,
 				Any(
 					HighJumpBoots,
-					SuperJumpBeginner
+					CanSuperJumpBeginner
 				)
 			),
 			CanPowerBomb
@@ -131,7 +131,7 @@ SpiderBoostTunnelSSoutheast:connect_one_way_entrance(SpiderBoostTunnelSSouthwest
 				CanBomb,
 				Any(
 					CanSpider,
-					MovementSimple
+					CanMovementSimple
 				)
 			)
 		)
@@ -239,7 +239,7 @@ TransportArea6Tunnels:connect_one_way(TransportArea6TunnelsPickup, function ()
 			CanSpider,
 			All(
 				CanClimbShaft,
-				MovementIntermediate
+				CanMovementIntermediate
 			)
 		)
 	)
@@ -417,7 +417,7 @@ SpiderBoostTunnelNTunnel:connect_one_way_entrance(RobotRegimeUpper, function ()
 		CanSpiderBoost,
 		Any(
 			CanEscapeRobotRegimeBottom,
-			MovementSimple
+			CanMovementSimple
 		)
 	)
 end)

@@ -179,7 +179,7 @@ TransitTunnelMiddle:connect_one_way_entrance(TransitTunnelBottom, function ()
 			All(
 				CanReach(TransportArea3MinesLeftGrappleBlock),
 				GrappleBeam,
-				CanBomb()
+				CanBomb
 			)
 		)
 	)
@@ -272,7 +272,7 @@ AmethystAltars:connect_one_way_entrance(AmethystAltarsPickup, function ()
 			IceBeam,
 			All(
 				CanAlmostHigherJump,
-				MovementSimple
+				CanMovementSimple
 			)
 		)
 	)
@@ -344,7 +344,7 @@ MinesIntersectionTerminalSaveStation:connect_one_way_entrance(MinesIntersectionT
 	return Any(
 		HighJumpBoots,
 		CanClimbWall,
-		SuperJumpEasy,
+		CanSuperJumpEasy,
 		CanIBJDiagonal
 	)
 end)
@@ -396,7 +396,7 @@ SuperMissileChamber:connect_one_way(SuperMissilePickup, function()
 		CanClimbWall,
 		All(
 			CanAlmostHigherJump,
-			WallJumpSimple
+			CanWallJumpSimple
 		)
 	)
 end)
@@ -415,7 +415,7 @@ PinkCrystalPreserveBottom:connect_one_way_entrance(Area4MinesZeta, function ()
 			Any(
 				Bomb,
 				SpringBall,
-				MovementSimple
+				CanMovementSimple
 			)
 		)
 	)
@@ -453,7 +453,7 @@ DualPondAlcove:connect_one_way(DualPondAlcovePickup, function ()
 	return All(
 		CanSpiderBoost,
 		Any(
-			KnowledgeSimple,
+			CanKnowledgeSimple,
 			GravitySuit,
 			All(
 				Any(
@@ -461,11 +461,11 @@ DualPondAlcove:connect_one_way(DualPondAlcovePickup, function ()
 					HighJumpBoots,
 					All(
 						CanSpider,
-						MovementSimple
+						CanMovementSimple
 					),
 					All(
-						SuperJumpMedium,
-						WallJumpSimple
+						CanSuperJumpMedium,
+						CanWallJumpSimple
 					)
 				),
 				Any(
@@ -516,7 +516,7 @@ GawronGrooveRight:connect_one_way_entrance(GawronGrooveTop, function ()
 		VariaSuit,
 		Any(
 			CanAlmostHighLedge,
-			MovementSimple
+			CanMovementSimple
 		)
 	)
 end)
@@ -549,7 +549,7 @@ GawronGrooveArenaLeft:connect_two_ways_entrance(GawronGrooveArenaRight, function
 		Any(
 			CanFly,
 			CanSpiderBoost,
-			DamageBoostStatic
+			CanDamageBoostStatic
 		)
 	)
 end)

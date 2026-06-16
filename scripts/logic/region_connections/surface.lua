@@ -205,7 +205,7 @@ SurfaceTransportArea8Hallway:connect_one_way(SurfaceTransportArea8HallwayPickup,
 			CanIBJVertical,
 			All(
 				SpaceJump,
-				MovementSimple
+				CanMovementSimple
 			)
 		)
 	)

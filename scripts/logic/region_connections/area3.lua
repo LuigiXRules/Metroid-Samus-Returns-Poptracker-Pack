@@ -47,12 +47,12 @@ Area3ExteriorMaze:connect_one_way(Area3ExteriorMazePickup, function()
 		),
 		Any(
 			CanSpiderBoost,
-			MovementSimple,
+			CanMovementSimple,
 			All(
 				MetroidHatchling,
 				Any(
 					CanSpider,
-					MovementSimple
+					CanMovementSimple
 				)
 			)
 		)
@@ -87,7 +87,7 @@ FactoryExtPlatform:connect_one_way_entrance(FactoryExtTop, function ()
 		SpaceJump,
 		CanIBJVertical,
 		All(
-			MovementSimple,
+			CanMovementSimple,
 			CanSpiderBoost
 		)
 	)
@@ -98,7 +98,7 @@ FactoryExtCrevice:connect_one_way_entrance(FactoryExtTop, function ()
 	return All(
 		OpenMorphTunnelDoor,
 		Any(
-			KnowledgeSimple,
+			CanKnowledgeSimple,
 			CanAlmostHighLedge
 		),
 		GrappleBeam,
@@ -144,7 +144,7 @@ Area3ExteriorEntranceMaze:connect_one_way(Area3ExteriorEntranceMazePickup, funct
 			SpaceJump,
 			PhaseDrift,
 			CanSpider,
-			MovementSimple
+			CanMovementSimple
 		)
 	)
 end)
@@ -164,7 +164,7 @@ Area3ExteriorTransportCavernsNTransport:connect_one_way_entrance(Area3ExteriorTr
 				CanShortShaft,
 				Any(
 					CanSpider,
-					DamageBoostStatic
+					CanDamageBoostStatic
 				)
 			)
 		)
@@ -269,7 +269,7 @@ FactoryExtAccessLower:connect_one_way_entrance(BeamBurstPickup, function ()
 				MorphBall,
 				LightningArmor
 			),
-			WallJumpIntermediate,
+			CanWallJumpIntermediate,
 			CanAlmostHigherJump
 		)
 	)
@@ -281,7 +281,7 @@ FactoryExtAccessLower:connect_one_way_entrance(FactoryExtAccessUpper, function (
 			All(
 				Any(
 					CanAlmostHighLedge,
-					WallJumpIntermediate
+					CanWallJumpIntermediate
 				),
 				CanDamageToughEnemy
 			)
@@ -490,7 +490,7 @@ RamulkenRollwayLower:connect_one_way_entrance(RamulkenRollwayUpper, function ()
 		All(
 			GrappleBeam,
 			Any(
-				KnowledgeSimple,
+				CanKnowledgeSimple,
 				CanClimbWall,
 				CanAlmostHigherJump
 			)
@@ -503,7 +503,7 @@ RamulkenRollwayLower:connect_one_way(RamulkenRollwayLowerPickup, function ()
 			CanPowerBomb,
 			Any(
 				CanSpider,
-				MovementSimple
+				CanMovementSimple
 			)
 		),
 		All(
@@ -516,7 +516,7 @@ RamulkenRollwayLower:connect_one_way(RamulkenRollwayLowerPickup, function ()
 			),
 			Any(
 				CanSpider,
-				MovementSimple,
+				CanMovementSimple,
 				All(
 					GravitySuit,
 					SpaceJump
@@ -540,7 +540,7 @@ Area3CavernsTeleporterELower:connect_one_way_entrance(Area3CavernsTeleporterEUpp
 		CanClimbWall,
 		All(
 			HighJumpBoots,
-			WallJumpSimple
+			CanWallJumpSimple
 		)
 	)
 end)
@@ -578,7 +578,7 @@ QuarryShaftLower:connect_one_way_entrance(LonelyLoopBottom, function ()
 			CanClimbWall,
 			All(
 				HighJumpBoots,
-				WallJumpIntermediate
+				CanWallJumpIntermediate
 			)
 		)
 	)
@@ -828,7 +828,7 @@ Area3InteriorGammaTransportCavernsESouthwest:connect_one_way_entrance(Area3Inter
 		GrappleBeam,
 		All(
 			HighJumpBoots,
-			SuperJumpBeginner
+			CanSuperJumpBeginner
 		)
 	)
 end)

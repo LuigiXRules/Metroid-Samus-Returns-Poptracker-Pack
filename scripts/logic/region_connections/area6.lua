@@ -188,7 +188,7 @@ Area6ChozoSealELower:connect_one_way_entrance(Area6ChozoSealEUpper, function ()
 			SpaceJump,
 			SpiderBall,
 			LightningArmor,
-			DamageBoostStatic
+			CanDamageBoostStatic
 		)
 	)
 end)
@@ -208,7 +208,7 @@ Area6ChozoSealEUpper:connect_one_way(Area6ChozoSealEUpperPickup, function ()
 				Any(
 					CanSpider,
 					PhaseDrift,
-					MovementSimple
+					CanMovementSimple
 				)
 			)
 		)
@@ -231,7 +231,7 @@ Area6ChozoSealWMain:connect_one_way(Area6ChozoSealWMainPickupTunnel, function ()
 		CanBombBlock,
 		Any(
 			CanSpider,
-			MovementSimple
+			CanMovementSimple
 		)
 	)
 end)
@@ -251,8 +251,8 @@ Area6ChozoSealWMain:connect_one_way(Area6ChozoSealWMainPickupBottom, function ()
 		Any(
 			SpaceJump,
 			HighJumpBoots,
-			WallJumpSimple,
-			SuperJumpEasy
+			CanWallJumpSimple,
+			CanSuperJumpEasy
 		)
 	)
 end)

@@ -169,5 +169,27 @@
         "codes": "morph_extends, morph_extends_medium"
       }
     ]
+  },
+  {
+    "codes": "Yellow Tricks, yellow_tricks",
+    "type": "progressive",
+    "initial_stage_idx": 0,
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/settings/yellow_tricks_disabled.png",
+        "img_mods": "@disabled",
+        "codes": "yellow_tricks, yellow_tricks_disabled"
+      },
+      {
+        "img": "images/settings/yellow_tricks_some.png",
+        "codes": "yellow_tricks, yellow_tricks_some"
+      },
+      {
+        "img": "images/settings/yellow_tricks_all.png",
+        "codes": "yellow_tricks, yellow_tricks_all"
+      }
+    ]
   }
 ]

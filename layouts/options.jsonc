@@ -38,6 +38,19 @@
               ]
             }
           ]
+        },
+        {
+          "title": "Pack Settings",
+          "content": [
+            {
+              "type": "itemgrid",
+              "item_h_alignment": "center",
+              "item_size": "300, 40",
+              "rows": [
+                [ "yellow_tricks" ]
+              ]
+            }
+          ]
         }
       ]
     }
