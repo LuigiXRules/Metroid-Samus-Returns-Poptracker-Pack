@@ -249,12 +249,7 @@ NestShaftW:connect_one_way_entrance(QueenAccess, CanNavigateMetroidNestShaftWest
 NestShaftW:connect_one_way(NestShaftWPickup, CanNavigateMetroidNestShaftWest)
 QueenAccess:connect_one_way_entrance(NestShaftW) -- Normal Door
 QueenAccess:connect_one_way_entrance(Queen, CanEscapeQueenArena)
-Queen:connect_one_way_entrance(QueenAccess, function ()
-	return All(
-		SpaceJump,
-		ScrewAttack
-	)
-end)
+Queen:connect_one_way_entrance(QueenAccess, CanEscapeQueenArenaTop)
 Queen:connect_one_way_entrance(HatchlingChamber, CanCombatQueen)
 Area8TransportArea7:connect_one_way_entrance(Area7TransportArea8, function ()
 	return Any(
@@ -280,7 +275,12 @@ Area8TransportArea7:connect_one_way_entrance(NestVestibule, function ()
 		)
 	)
 end) -- Normal Door
--- HatchlingChamber:connect_one_way_entrance(Queen, CanEscapeQueenArena)
+HatchlingChamber:connect_one_way_entrance(Queen, function ()
+	return All(
+		CanReverseArea8,
+		CanEscapeQueenArenaTop
+	)
+end)
 HatchlingChamber:connect_one_way_entrance(TransportSurfaceBottom, function () 
 	return All(
 		Has(MetroidHatchling),

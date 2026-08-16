@@ -191,5 +191,23 @@
         "codes": "yellow_tricks, yellow_tricks_all"
       }
     ]
+  },
+  {
+    "codes": "Reverse Area 8, reverse_area_8, reverse8",
+    "type": "progressive",
+    "initial_stage_idx": 0,
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/settings/reverse_area_8_disabled.png",
+        "img_mods": "@disabled",
+        "codes": "reverse8, reverse8_disabled"
+      },
+      {
+        "img": "images/settings/reverse_area_8_enabled.png",
+        "codes": "reverse8, reverse8_enabled"
+      }
+    ]
   }
 ]

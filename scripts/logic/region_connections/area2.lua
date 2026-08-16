@@ -381,7 +381,12 @@ Area2InteriorIntersectionNorthTunnel:connect_one_way_entrance(Area2InteriorInter
 Area2InteriorIntersectionSouthChamber:connect_one_way_entrance(Area2InteriorIntersectionSouthTunnel, function() return Has(ScrewAttack) end)
 Area2InteriorIntersectionSouthChamber:connect_one_way_entrance(GeneratorAccessNortheast, OpenChargeDoor)
 Area2InteriorIntersectionSouthChamber:connect_one_way_entrance(WallfireCorridor, OpenMissileDoor)
-Area2InteriorIntersectionSouthChamber:connect_one_way(Area2InteriorIntersectionSouthChamberTunnelPickup, function() return Has(ScrewAttack) end)
+Area2InteriorIntersectionSouthChamber:connect_one_way(Area2InteriorIntersectionSouthChamberTunnelPickup, function() 
+	return All(
+		CanBombBlock,
+		ScrewAttack
+	)
+end)
 Area2InteriorIntersectionSouth:connect_one_way_entrance(Area2InteriorIntersectionSouthTunnel, function()
 	return All(
 		OpenMorphTunnelDoor,

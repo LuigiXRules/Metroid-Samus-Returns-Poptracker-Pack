@@ -7,7 +7,7 @@
       "type": "tabbed",
       "tabs": [
           {
-          "title": "DNA Settings",
+          "title": "Options",
           "content": [
             {
               "type": "itemgrid",
@@ -40,13 +40,14 @@
           ]
         },
         {
-          "title": "Pack Settings",
+          "title": "Misc Settings",
           "content": [
             {
               "type": "itemgrid",
               "item_h_alignment": "center",
               "item_size": "300, 40",
               "rows": [
+                [ "reverse_area_8" ],
                 [ "yellow_tricks" ]
               ]
             }

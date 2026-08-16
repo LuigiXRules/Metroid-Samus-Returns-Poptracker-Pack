@@ -55,9 +55,11 @@ MorphExtendsDisabled = "morph_extends_disabled"
 MorphExtendsEasy = "morph_extends_easy"
 MorphExtendsMedium = "morph_extends_medium"
 
--- DNA stuff
+-- General Settings
 DNARequired = "dnarequired"
 DNAAvailable = "dnaavailable"
+ReverseArea8Disabled = "reverse8disabled"
+ReverseArea8Enabled = "reverse8enabled"
 
 -- Yellow Location Settings
 YellowTricksDisabled = "yellow_tricks_disabled"
@@ -83,7 +85,8 @@ SlotDataTable = {
 	{"dna_required", "consumable"},
 	{"dna_available", "consumable"},
 	{"super_jump", "progressive"},
-	{"morph_extends", "progressive"}
+	{"morph_extends", "progressive"},
+	{"reverse_area_8", "progressive"}
 }
 
 

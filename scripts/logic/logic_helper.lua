@@ -665,6 +665,10 @@ function CanCombatEvolvedOmega()
 	return CanCombatOmega()
 end
 
+function CanReverseArea8()
+	return Has(ReverseArea8Enabled)
+end
+
 -- Region specific
 -- Surface
 function CanEscapeCavernCavity()
@@ -1343,15 +1347,18 @@ function CanEscapeNestNetworkTunnels()
 		)
 	)
 end
+function CanEscapeQueenArenaTop()
+	return 	All(
+		SpaceJump,
+		ScrewAttack,
+		CanBombBlock
+	)
+end
 function CanEscapeQueenArena()
 	return All(
 		CanCombatQueen,
 		Any(
-			All(
-				SpaceJump,
-				ScrewAttack,
-				CanBombBlock
-			),
+			CanEscapeQueenArenaTop,
 			MetroidHatchling
 		)
 	)

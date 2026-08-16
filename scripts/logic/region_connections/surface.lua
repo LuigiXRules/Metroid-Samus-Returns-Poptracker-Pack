@@ -86,7 +86,7 @@ SurfaceEastAlphaPickup:connect_one_way_entrance(MoheekMarket, OpenMorphTunnelDoo
 ScanPulseRight:connect_one_way_entrance(ChozoSealUpper) -- Normal Door
 ScanPulseRight:connect_two_ways_entrance(ScanPulseLeft, OpenMorphTunnelDoor)
 ScanPulseLeft:connect_one_way_entrance(ChargeBeamAccess, OpenChargeDoor)
-ScanPulseLeft:connect_one_way_entrance(CavernCavity)
+ScanPulseLeft:connect_one_way_entrance(CavernCavity, CanEscapeCavernCavity)
 ChozoCacheW:connect_one_way_entrance(SurfaceEastAlphaLobby, OpenGryncoreDoor)
 MoheekMarket:connect_one_way_entrance(SurfaceEastAlphaLobby, OpenMorphTunnelDoor)
 MoheekMarket:connect_one_way_entrance(SurfaceEastAlphaPickup, OpenMorphTunnelDoor)
