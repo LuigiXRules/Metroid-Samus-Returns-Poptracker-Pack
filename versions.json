@@ -1,6 +1,12 @@
 {
 	"versions": [
 		{
+			"package_version": "0.4.1",
+			"download_url": "https://github.com/LuigiXRules/Metroid-Samus-Returns-Poptracker-Pack/releases/download/0.4.1/samus_returns_pack.zip",
+			"sha256": "897ac772f6d0a767fbe6e22470bc7eb3046bcc29b709965be09d6b5a6192c5a3",
+			"changelog": ["Apworld 0.3.0 logic parity, Broadcast View bugfix"]
+		},
+		{
 			"package_version": "0.4.0",
 			"download_url": "https://github.com/LuigiXRules/Metroid-Samus-Returns-Poptracker-Pack/releases/download/0.4.0/samus_returns_pack.zip",
 			"sha256": "24a12ec45999edf4eacd38cea37f572532f49b88a005b8d77f142e265f2bb689",
