@@ -9,7 +9,6 @@ Some of the maps are kinda big, but you can zoom in using the scroll wheel on yo
 ## Next Steps
 
 - Fine-tune some of the location placements
-- Make locations you could obtain with higher trick levels appear yellow
 - Add hint locations to the seal statue things (maybe)
 - Make locations you can see but not obtain appear blue
 - Create the framework for blast shield/elevator rando (if I have time)
